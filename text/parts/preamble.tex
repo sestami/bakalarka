@@ -1,0 +1,76 @@
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+
+\renewcommand{\baselinestretch}{1.5}
+
+%\usepackage{a4wide}
+\usepackage[left=3.5cm, right=2cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage[figurename=Obr.,
+            format=plain,
+            labelfont=it,
+            textfont=it]{caption}
+\usepackage[rgb]{xcolor}
+\usepackage{float}
+\usepackage{subcaption}
+
+\frenchspacing
+
+\usepackage[]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{siunitx}
+
+%\usepackage{array}
+%\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage[]{longtable}
+\usepackage{booktabs}
+
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{50 pt}%
+{\setlength{\parindent}{0pt} \raggedright \normalfont
+\bfseries\Huge\thechapter.\ #1
+\par\nobreak\vspace{40 pt}}}
+\makeatother
+%\usepackage{titlesec}
+%\titleformat{\chapter}[block]{\normalfont\huge\bfseries}{\thechapter}{1em}{\Huge}
+%\titleformat{\section}
+  %{\normalfont\Large\bfseries}
+  %{\thesection}
+  %{1em}
+  %{\MakeUppercase}
+%\titleformat{\subsection}
+  %{\normalfont\large\bfseries}
+  %{\thesubsection}
+  %{1em}
+  %{}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.61858pt}
+
+%\usepackage{csquotes}
+\usepackage[
+   backend=biber
+  ,style=iso-numeric
+  ,autolang=other
+  ,pagetotal=true
+  ,sortlocale=cs_CZ
+  ,bibencoding=UTF8
+  ,spacecolon=false
+  ,block=ragged
+]{biblatex}
+
+\addbibresource{citace.bib}
+
+\usepackage[unicode, pdftex, colorlinks=true, linkcolor=red,
+urlcolor=blue, citecolor=blue, pdfauthor=MichalSestak, pdftitle=DoseDistributionInsideTheISS]{hyperref}
+
+%\usepackage{soulpos}
+%\usepackage{lmodern}
+%\usepackage[author={Michal Šesták}]{pdfcomment}
+

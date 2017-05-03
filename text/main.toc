@@ -1,0 +1,22 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {czech}
+\contentsline {chapter}{\IeC {\'U}vod}{7}{chapter*.4}
+\contentsline {chapter}{\numberline {1}Kosmick\IeC {\'e} z\IeC {\'a}\IeC {\v r}en\IeC {\'\i } v bl\IeC {\'\i }zk\IeC {\'e}m okol\IeC {\'\i } Zem\IeC {\v e}}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}Zdroje kosmick\IeC {\'e}ho z\IeC {\'a}\IeC {\v r}en\IeC {\'\i } v LEO}{9}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Galaktick\IeC {\'e} kosmick\IeC {\'e} z\IeC {\'a}\IeC {\v r}en\IeC {\'\i }}{9}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Zemsk\IeC {\'e} radia\IeC {\v c}n\IeC {\'\i } p\IeC {\'a}sy}{10}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Slune\IeC {\v c}n\IeC {\'\i } \IeC {\v c}\IeC {\'a}sticov\IeC {\'e} ud\IeC {\'a}losti}{11}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Sekund\IeC {\'a}rn\IeC {\'\i } \IeC {\v c}\IeC {\'a}stice}{12}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Faktory ovliv\IeC {\v n}uj\IeC {\'\i }c\IeC {\'\i } kosmick\IeC {\'e} z\IeC {\'a}\IeC {\v r}en\IeC {\'\i } v LEO}{12}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}F\IeC {\'a}ze sol\IeC {\'a}rn\IeC {\'\i }ho cyklu}{12}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Inklinace orbity}{12}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Nadmo\IeC {\v r}sk\IeC {\'a} v\IeC {\'y}\IeC {\v s}ka}{13}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}V\IeC {\'y}chodn\IeC {\'\i }/z\IeC {\'a}padn\IeC {\'\i } anizotropie zachycen\IeC {\'y}ch proton\IeC {\r u}}{13}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}St\IeC {\'\i }n\IeC {\v e}n\IeC {\'\i } stanice}{13}{subsection.1.2.5}
+\contentsline {chapter}{\numberline {2}Mezin\IeC {\'a}rodn\IeC {\'\i } kosmick\IeC {\'a} stanice}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Modul Columbus}{15}{section.2.1}
+\contentsline {chapter}{\numberline {3}Experimenty DOSIS a DOSIS 3D}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rozm\IeC {\'\i }st\IeC {\v e}n\IeC {\'\i } pasivn\IeC {\'\i }ch detektor\IeC {\r u}}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pr\IeC {\r u}b\IeC {\v e}h experimentu}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}V\IeC {\'y}voj nadmo\IeC {\v r}sk\IeC {\'e} v\IeC {\'y}\IeC {\v s}ky a sol\IeC {\'a}rn\IeC {\'\i }ho cyklu}{19}{subsection.3.2.1}

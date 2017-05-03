@@ -1,0 +1,32 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[a4paper,12pt,oneside]{report}
+\input{parts/preamble}
+%\includeonly{parts/titlepage}
+%\includeonly{parts/kosmickeZareni, parts/ISS, parts/experimentDOSIS}
+\includeonly{parts/ISS,parts/experimentDOSIS}
+\begin{document}
+\pagestyle{empty}
+
+\include{parts/titlepage}
+\tableofcontents
+
+\pagestyle{fancy}
+\lhead{}
+\nocite{*}
+\def\arraystretch{0.8}
+
+\include{parts/uvod}
+
+\include{parts/kosmickeZareni}
+
+\include{parts/ISS}
+
+\include{parts/experimentDOSIS}
+
+%\nocite{*}
+\printbibliography[title=Seznam literatury]
+\end{document}
+
+
+
+
