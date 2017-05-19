@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.26)  1 MAY 2017 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.26)  17 MAY 2017 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -919,6 +919,9 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count168
 \@thisrulewidth=\dimen194
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen195
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip63
 \f@ncyO@elh=\skip64
@@ -1235,7 +1238,7 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen195
+\@linkdim=\dimen196
 \Hy@linkcounter=\count355
 \Hy@pagecounter=\count356
 
@@ -1266,10 +1269,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count358
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen196
+\XeTeXLinkMargin=\dimen197
 \Fld@menulength=\count359
-\Field@Width=\dimen197
-\Fld@charsize=\dimen198
+\Field@Width=\dimen198
+\Fld@charsize=\dimen199
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1321,7 +1324,8 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                Setting 'seconds=true' on input line 7.
 
 (./main.aux (./parts/titlepage.aux) (./parts/uvod.aux)
-(./parts/kosmickeZareni.aux) (./parts/ISS.aux) (./parts/experimentDOSIS.aux))
+(./parts/kosmickeZareni.aux) (./parts/ISS.aux) (./parts/detektory.aux)
+(./parts/experimentDosis.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -1402,13 +1406,13 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count367
-\scratchdimen=\dimen199
+\scratchdimen=\dimen256
 \scratchbox=\box56
 \nofMPsegments=\count368
 \nofMParguments=\count369
 \everyMPshowfont=\toks29
 \MPscratchCnt=\count370
-\MPscratchDim=\dimen256
+\MPscratchDim=\dimen257
 \MPnumerator=\count371
 \makeMPintoPDFobject=\count372
 \everyMPtoPDFconversion=\toks30
@@ -1526,7 +1530,14 @@ Package biblatex Info: Data encoding 'UTF8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
-(./main.bbl)
+(./main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'dosis_HSP1000':
+(biblatex)                - Entry 'dosis_HSP1000' (citace.bib): Invalid format 
+'ODZ ÚJF AVƒR' of date field 'date' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
 \AtBeginShipoutBox=\box57
@@ -1581,145 +1592,209 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./main.toc)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-
+ (./main.toc
 [6
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `parts/ISS.aux'.
-
- (./parts/ISS.tex
-Kapitola 2.
-<images/ISS_celek.jpg, id=72, 1505.625pt x 877.2775pt>
-File: images/ISS_celek.jpg Graphic file (type jpg)
-
-<use images/ISS_celek.jpg>
-Package pdftex.def Info: images/ISS_celek.jpg used on input line 14.
-(pdftex.def)             Requested size: 441.01773pt x 256.96071pt.
- [14
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
 
-
-
- <./images/ISS_celek.jpg>]
 
 Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
-(nag)                Use \slshape or \textsl instead on input line 46.
+(nag)                Use \slshape or \textsl instead on input line 17.
 
 
 Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
-(nag)                Use \rmfamily or \textrm instead on input line 46.
+(nag)                Use \rmfamily or \textrm instead on input line 17.
 
-[15] <images/ISS_columbus.png, id=107, 1896.08376pt x 971.63pt>
-File: images/ISS_columbus.png Graphic file (type png)
+[7]
+\openout2 = `parts/experimentDosis.aux'.
 
-<use images/ISS_columbus.png>
-Package pdftex.def Info: images/ISS_columbus.png used on input line 50.
-(pdftex.def)             Requested size: 441.01773pt x 225.9906pt.
-
-<images/columbus_outside.jpg, id=111, 3043.37pt x 2071.74pt>
-File: images/columbus_outside.jpg Graphic file (type jpg)
-
-<use images/columbus_outside.jpg>
-Package pdftex.def Info: images/columbus_outside.jpg used on input line 56.
-(pdftex.def)             Requested size: 441.01773pt x 300.18913pt.
-)
-
-Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
-(nag)                Use \slshape or \textsl instead on input line 22.
+ (./parts/experimentDosis.tex
+Kapitola 4.
+[21
 
 
-Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
-(nag)                Use \rmfamily or \textrm instead on input line 22.
-
-[16 <./images/ISS_columbus.png> <./images/columbus_outside.jpg>]
-\openout2 = `parts/experimentDOSIS.aux'.
 
 
-(./parts/experimentDOSIS.tex
-Kapitola 3.
-<images/columbus_rozmisteni.jpg, id=129, 192.72pt x 130.7284pt>
+
+
+] <images/columbus_rozmisteni.jpg, id=137, 192.72pt x 130.7284pt>
 File: images/columbus_rozmisteni.jpg Graphic file (type jpg)
 
 <use images/columbus_rozmisteni.jpg>
-Package pdftex.def Info: images/columbus_rozmisteni.jpg used on input line 12.
+Package pdftex.def Info: images/columbus_rozmisteni.jpg used on input line 41.
 (pdftex.def)             Requested size: 441.01773pt x 299.15692pt.
- [17
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-]
-<images/dosis_timeline.png, id=142, 1164.35pt x 376.40625pt>
+<images/dosis_timeline.png, id=144, 1164.35pt x 376.40625pt>
 File: images/dosis_timeline.png Graphic file (type png)
 
 <use images/dosis_timeline.png>
-Package pdftex.def Info: images/dosis_timeline.png used on input line 24.
+Package pdftex.def Info: images/dosis_timeline.png used on input line 56.
 (pdftex.def)             Requested size: 441.01773pt x 142.57063pt.
 
-<images/dosis_timeline_passive.png, id=145, 960.58875pt x 631.35875pt>
-File: images/dosis_timeline_passive.png Graphic file (type png)
-
-<use images/dosis_timeline_passive.png>
-Package pdftex.def Info: images/dosis_timeline_passive.png used on input line 3
-0.
-(pdftex.def)             Requested size: 441.01773pt x 289.8698pt.
-
 
 Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
-(nag)                Use \slshape or \textsl instead on input line 31.
+(nag)                Use \slshape or \textsl instead on input line 57.
 
 
 Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
-(nag)                Use \rmfamily or \textrm instead on input line 31.
+(nag)                Use \rmfamily or \textrm instead on input line 57.
 
-[18 <./images/columbus_rozmisteni.jpg>]
+[22]
+Overfull \hbox (5.27985pt too wide) in alignment at lines 90--90
+[][][][][][] 
+ []
+
 
 Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
-(nag)                Use \slshape or \textsl instead on input line 37.
+(nag)                Use \slshape or \textsl instead on input line 93.
 
 
 Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
-(nag)                Use \rmfamily or \textrm instead on input line 37.
+(nag)                Use \rmfamily or \textrm instead on input line 93.
 
-[19 <./images/dosis_timeline.png> <./images/dosis_timeline_passive.png (PNG cop
-y)>] <images/dosis_altitude.jpeg, id=164, 995.72pt x 965.6075pt>
+[23 <./images/columbus_rozmisteni.jpg> <./images/dosis_timeline.png>]
+<images/dosis_altitude.jpeg, id=165, 995.72pt x 965.6075pt>
 File: images/dosis_altitude.jpeg Graphic file (type jpg)
 
 <use images/dosis_altitude.jpeg>
-Package pdftex.def Info: images/dosis_altitude.jpeg used on input line 42.
+Package pdftex.def Info: images/dosis_altitude.jpeg used on input line 102.
 (pdftex.def)             Requested size: 198.45662pt x 192.45505pt.
 
-<images/dosis_solarCycle.jpeg, id=165, 995.72pt x 965.6075pt>
+<images/dosis_solarCycle.jpeg, id=166, 995.72pt x 965.6075pt>
 File: images/dosis_solarCycle.jpeg Graphic file (type jpg)
 
 <use images/dosis_solarCycle.jpeg>
-Package pdftex.def Info: images/dosis_solarCycle.jpeg used on input line 47.
+Package pdftex.def Info: images/dosis_solarCycle.jpeg used on input line 107.
 (pdftex.def)             Requested size: 198.45662pt x 192.45505pt.
-)
+
 
 Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
-(nag)                Use \slshape or \textsl instead on input line 24.
+(nag)                Use \slshape or \textsl instead on input line 114.
 
 
 Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
-(nag)                Use \rmfamily or \textrm instead on input line 24.
+(nag)                Use \rmfamily or \textrm instead on input line 114.
 
-[20 <./images/dosis_altitude.jpeg> <./images/dosis_solarCycle.jpeg>]
+[24]
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 122.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 122.
+
+[25 <./images/dosis_altitude.jpeg> <./images/dosis_solarCycle.jpeg>]
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 154.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 154.
+
+[26]
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 181.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 181.
+
+[27] <images/dosis_activeDetectors.jpg, id=208, 1423.3175pt x 1204.5pt>
+File: images/dosis_activeDetectors.jpg Graphic file (type jpg)
+
+<use images/dosis_activeDetectors.jpg>
+Package pdftex.def Info: images/dosis_activeDetectors.jpg used on input line 18
+6.
+(pdftex.def)             Requested size: 352.81552pt x 298.56955pt.
+
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 193.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 193.
+
+[28 <./images/dosis_activeDetectors.jpg>]
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 209.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 209.
+
+[29]
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 238.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 238.
+
+[30] <images/dosis_vysl_jednaSada.jpg, id=238, 1806.75pt x 2074.75125pt>
+File: images/dosis_vysl_jednaSada.jpg Graphic file (type jpg)
+
+<use images/dosis_vysl_jednaSada.jpg>
+Package pdftex.def Info: images/dosis_vysl_jednaSada.jpg used on input line 243
+.
+(pdftex.def)             Requested size: 405.83957pt x 466.05176pt.
+
+<images/dosis_vysl_viceSad.png, id=246, 689.57625pt x 711.65875pt>
+File: images/dosis_vysl_viceSad.png Graphic file (type png)
+
+<use images/dosis_vysl_viceSad.png>
+Package pdftex.def Info: images/dosis_vysl_viceSad.png used on input line 252.
+(pdftex.def)             Requested size: 286.65883pt x 295.84325pt.
+
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 256.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 256.
+
+[31 <./images/dosis_vysl_jednaSada.jpg>]
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 258.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 258.
+
+[32 <./images/dosis_vysl_viceSad.png (PNG copy)>])
+
+Package nag Warning: Command \sl is an old LaTeX 2.09 command. 
+(nag)                Use \slshape or \textsl instead on input line 25.
+
+
+Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
+(nag)                Use \rmfamily or \textrm instead on input line 25.
+
+[33]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 27.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [21
+ [34
 
 
 ]
@@ -1731,9 +1806,9 @@ Package nag Warning: Command \sl is an old LaTeX 2.09 command.
 Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
 (nag)                Use \rmfamily or \textrm instead on input line 27.
 
-[22]
+[35]
 
-Package nag Warning: 12 complaints in total.
+Package nag Warning: 28 complaints in total.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
 
@@ -1744,28 +1819,38 @@ Package nag Warning: Command \sl is an old LaTeX 2.09 command.
 Package nag Warning: Command \rm is an old LaTeX 2.09 command. 
 (nag)                Use \rmfamily or \textrm instead on input line 28.
 
-[23]
+[36]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (./main.aux (./parts/titlepage.aux) (./parts/uvod.aux)
-(./parts/kosmickeZareni.aux) (./parts/ISS.aux) (./parts/experimentDOSIS.aux))
+(./parts/kosmickeZareni.aux) (./parts/ISS.aux) (./parts/detektory.aux)
+(./parts/experimentDosis.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5F400FDC3064C5BDAFC4506AEE971F69;1196.
+(rerunfilecheck)             Checksum: 45CB3CBA4B7C8411CCA71DD59B86BC2D;3254.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30300 strings out of 493029
- 540323 string characters out of 6136233
- 985237 words of memory out of 5000000
- 33338 multiletter control sequences out of 15000+600000
- 22338 words of font info for 94 fonts, out of 8000000 for 9000
+ 30463 strings out of 493029
+ 543144 string characters out of 6136233
+ 996418 words of memory out of 5000000
+ 33418 multiletter control sequences out of 15000+600000
+ 29202 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,65p,10378b,2590s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.1.2.5} has been referenced but does no
-t exist, replaced by a fixed one
+ 42i,14n,65p,10378b,2587s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.2.5} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.1.2.4} has been referenced but does not 
 exist, replaced by a fixed one
@@ -1804,20 +1889,25 @@ pdfTeX warning (dest): name{chapter*.4} has been referenced but does not exist,
  replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sftt1200.pfb>
-Output written on main.pdf (11 pages, 7839304 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfb
+x2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl
+1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sftt1200.pfb>
+Output written on main.pdf (18 pages, 2297272 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 23641 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 34452 words of extra memory for PDF output out of 35830 (max. 10000000)
 

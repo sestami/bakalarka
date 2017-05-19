@@ -1,5 +1,37 @@
 TO DO
--obměnit citace (kap. kosmickeZareni)
--připsat něco ke Stínění stanice
+kosmickeZareni
 
+-obměnit citace (kap. kosmickeZareni) (částečně OK, ale ne úplně !!!)
+-připsat něco ke Stínění stanice (OK)
+-zjistit, jak se ctou ty TLD materialy od NPI
+-v dosis2 je spousta dobrych veci do vysledku (obr. atd)
 
+POZNÁMKY
+experimentDosis.tex
+-> No significant differences of the neutron signal between PDP locations were observed. (dosis, s. 10, druhý sloupec)
+
+-> dát tam ty dva obrázky z dosis2? (z aktivní části měření)
+
+detektory.tex
+
+->"Among the disadvantages of TLDs is that they provide no LET information and consequently no information about the dose equivalent. In addition TLDs tend to record the dose for high-LET (P 10 keV/lm) radiation with less than 100% efficiency and, thus, systematically undermeasure the total dose. ... CR-39 PNTD is used to measure the LET spectrum above ~5 keV/um." (benton, s. 11, Passive detectors)
+
+->"A material commonly used in SSNTDs (solid-state nuclear track detector) is polyallyl diglycol carbonate (PADC), also known as Tastrak, CR-39 and CR39" (https://en.wikipedia.org/wiki/Solid-state_nuclear_track_detector)
+
+->"Usually, it is necessary to combine several types of detectors. For the measurements of dose characteristics on board spacecraft, a combination of thermoluminescent detectors (TLD) and plastic nuclear track detectors (PNTD) is very suitable and often used. ..." (passDetectors, s. 1, Introduction) - TADY JE POROVNANI TLD A PNTD!!!
+
+->PNTD Page a HARZLAS jsou oba dva CR-39 (Tastrak, polyallyldiglycolcarbonate)
+
+->TED (track etched detectors) == SSNTD (solid state nuclear track detectors); PNTD (plastic nuclear track detectors, je to asi podmnožina SSNTD)
+
+->the first use of CR-39 PNTD in space coincided with the first flight of the Space Shuttle in 1981 [24] and CR-39 has remained the PNTD of choice ever since. CR-39 PNTD is used to measure the LET spectrum above ~5 keV/um. (benton, s. 11, Passive detectors)
+
+->benton et. all vymysleli měření pomocí kombinace TLDs a PNTDs!!! (benton, s. 11, druhy sloupec)
+
+->TLD: rozdíl mezi 6LiF:Mg, Ti a 7Li:Mg, Ti (pomalé neutrony)
+
+->TLD: "gamma-equivalentneutron dose" (see also Berger et al. 2013) (dosis, s.10, druhý sloupec)
+
+diskuze a závěr
+
+->zminit to, ze se potrebuje merit dlouhodobe kvuli parametrum jako slunecni cyklus a nadmorska vyska atd. a dale ze potrebujeme znat dobre pouzivane detektory atd (dosis, results and discussion)

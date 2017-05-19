@@ -1,0 +1,5 @@
+-prikaz na spusteni python programu: 
+	python vypocet_LET-T.py Img.nap 7.5 
+
+
+-korekci na LET>1000 provest napsanim noveho skriptu v pythonu (v podstate okopirovani, jen vlozeni if (L>1000) a else)

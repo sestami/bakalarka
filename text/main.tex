@@ -2,8 +2,8 @@
 \documentclass[a4paper,12pt,oneside]{report}
 \input{parts/preamble}
 %\includeonly{parts/titlepage}
-%\includeonly{parts/kosmickeZareni, parts/ISS, parts/experimentDOSIS}
-\includeonly{parts/ISS,parts/experimentDOSIS}
+\includeonly{parts/experimentDosis}
+%\includeonly{parts/ISS,parts/experimentDosis, parts/detektory}
 \begin{document}
 \pagestyle{empty}
 
@@ -12,7 +12,6 @@
 
 \pagestyle{fancy}
 \lhead{}
-\nocite{*}
 \def\arraystretch{0.8}
 
 \include{parts/uvod}
@@ -21,9 +20,10 @@
 
 \include{parts/ISS}
 
-\include{parts/experimentDOSIS}
+\include{parts/detektory}
 
-%\nocite{*}
+\include{parts/experimentDosis}
+\nocite{*}
 \printbibliography[title=Seznam literatury]
 \end{document}
 
