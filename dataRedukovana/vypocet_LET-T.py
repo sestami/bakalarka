@@ -115,8 +115,16 @@ for str_line in inFile:
 
 outFile.close()
 
+# ZAPSANI DAVKY A DAVKOVEHO EKVIVALENTU
+Dsum = sum(D_list)
+Hsum = sum(H_list)
+
+histFile.write('D = '+str(Dsum)+'\n')
+histFile.write('H = '+str(Hsum)+'\n')
+histFile.write('\n')
+
 # VYHOTOVENI LET SPEKTER
-print 'pocet stop skutecny:' + str(len(L_list))
+print 'pocet stop skutecny: ' + str(len(L_list))
 
 histFile.write('#LET '+'cetnost\n')
 
@@ -195,17 +203,13 @@ print 'pocet stop, ktere se nezaradily do zadneho intervalu: '+ str(pocetNezazna
 # vykresleni
 # plt.plot(osaX,cetnost)
 plt.step(osaX,cetnost,where='mid')
-plt.xlabel('$LET$ [keV/$\mu$m]')
-plt.ylabel('$N$ [-]')
+plt.xlabel('$LET$ [keV/$\mu$m]',fontsize=15)
+plt.ylabel('$N$ [-]',fontsize=15)
+plt.title('PDP 1',fontsize=25)
 plt.xscale('log')
 plt.yscale('log')
 # plt.grid()
-plt.show()
+# plt.show()
+plt.savefig('praktickaCast_spektrum1.eps',bbox_inches='tight')
 
-# Dsum = sum(D_list)
-# Hsum = sum(H_list)
-
-# histFile.write('D = '+str(Dsum)+'\n')
-# histFile.write('H = '+str(Hsum)+'\n')
-# histFile.write('\n')
 
