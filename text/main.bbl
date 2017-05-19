@@ -19,6 +19,40 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{benton}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4657c93c3776e16543f1ca8f5478cbf1}{%
+           family={Benton},
+           familyi={B\bibinitperiod},
+           given={E.R},
+           giveni={E\bibinitperiod}}}%
+        {{hash=74ddd8914b63c0d6f244ad3108c6dfd9}{%
+           family={Benton},
+           familyi={B\bibinitperiod},
+           given={E.V},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{139a30c93066c5b4c1b304005ad1bac5}
+      \strng{fullhash}{139a30c93066c5b4c1b304005ad1bac5}
+      \strng{authornamehash}{139a30c93066c5b4c1b304005ad1bac5}
+      \strng{authorfullhash}{139a30c93066c5b4c1b304005ad1bac5}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0168-583X}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms}
+      \field{note}{Advanced Topics in Solid State Dosimetry}
+      \field{number}{1–2}
+      \field{title}{Space radiation dosimetry in low-Earth orbit and beyond}
+      \field{volume}{184}
+      \field{year}{2001}
+      \field{pages}{255\bibrangedash 294}
+      \range{pages}{40}
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0168583X01007480
+      \endverb
+    \endentry
     \entry{dosis}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -33,8 +67,8 @@
       \strng{fullhash}{ebba5fe5d6a0d4b8a7ac31d664c90943}
       \strng{authornamehash}{ebba5fe5d6a0d4b8a7ac31d664c90943}
       \strng{authorfullhash}{ebba5fe5d6a0d4b8a7ac31d664c90943}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -111,8 +145,8 @@
       \strng{fullhash}{adfc8f563d69f6eccd53b1ef6a1017dc}
       \strng{authornamehash}{4a19d34e0c1176315e1e3af34e71364c}
       \strng{authorfullhash}{adfc8f563d69f6eccd53b1ef6a1017dc}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -128,143 +162,6 @@
       \verb https://doi.org/10.1051/swsc/2017005
       \endverb
     \endentry
-    \entry{dosis_oulu}{online}{}
-      \name{author}{1}{}{%
-        {{hash=9b4206a960ba5644bbadbb1d70d2bf6b}{%
-           family={Usoskin},
-           familyi={U\bibinitperiod},
-           given={Ilya},
-           giveni={I\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {NASA}%
-      }
-      \strng{namehash}{9b4206a960ba5644bbadbb1d70d2bf6b}
-      \strng{fullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
-      \strng{authornamehash}{9b4206a960ba5644bbadbb1d70d2bf6b}
-      \strng{authorfullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Cosmic Ray Station of the University of Oulu}
-      \field{urlday}{1}
-      \field{urlmonth}{5}
-      \field{urlyear}{2017}
-      \field{year}{}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb http://cosmicrays.oulu.fi
-      \endverb
-    \endentry
-    \entry{activeDetectors}{article}{}
-      \name{author}{4}{}{%
-        {{hash=055d32cb2a7edb56092c3c1197ebd5b8}{%
-           family={Narici},
-           familyi={N\bibinitperiod},
-           given={Livio},
-           giveni={L\bibinitperiod}}}%
-        {{hash=780caf01b078955aaa96acfb1751153a}{%
-           family={Berger},
-           familyi={B\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=9a6973f9c310216a6feac43dfc230854}{%
-           family={Matthiä},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=255c1653c5de46978ef184795bb68c9d}{%
-           family={Reitz},
-           familyi={R\bibinitperiod},
-           given={Günther},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \strng{fullhash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \strng{authornamehash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \strng{authorfullhash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A reliable radiation risk assessment in space is a mandatory step for the development of countermeasures and long duration mission planning in human spaceflight. Research in radiobiology provides information about possible risks linked to radiation. In addition, for a meaningful risk evaluation, the radiation exposure has to be assessed to a sufficient level of accuracy. Consequently, both the radiation models predicting the risks and the measurements used to validate such models must have an equivalent precision. Corresponding measurements can be performed both with passive and active devices. The former are easier to handle, cheaper, lighter and smaller but they measure neither the time dependence of the radiation environment nor some of the details useful for a comprehensive radiation risk assessment. Active detectors provide most of these details and have been extensively used in the International Space Station (ISS). To easily access such an amount of data, a single point access is becoming essential. This review presents an ongoing work on the development of a tool which allows obtaining information about all relevant measurements performed with active detectors providing reliable inputs for radiation model validation.}
-      \field{issn}{2234-943X}
-      \field{journaltitle}{Frontiers in Oncology}
-      \field{title}{Radiation Measurements Performed with Active Detectors Relevant for Human Space Exploration}
-      \field{volume}{5}
-      \field{year}{2015}
-      \field{pages}{273}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3389/fonc.2015.00273
-      \endverb
-      \verb{url}
-      \verb http://journal.frontiersin.org/article/10.3389/fonc.2015.00273
-      \endverb
-    \endentry
-    \entry{dosis_HSP1000}{online}{}
-      \name{author}{1}{}{%
-        {{hash=4a622fce7243f84951eeed46d4e66f6b}{%
-           family={AVČR},
-           familyi={A\bibinitperiod},
-           given={ODZ\bibnamedelima ÚJF},
-           giveni={O\bibinitperiod\bibinitdelim Ú\bibinitperiod}}}%
-      }
-      \list{organization}{0}{%
-      }
-      \strng{namehash}{4a622fce7243f84951eeed46d4e66f6b}
-      \strng{fullhash}{4a622fce7243f84951eeed46d4e66f6b}
-      \strng{authornamehash}{4a622fce7243f84951eeed46d4e66f6b}
-      \strng{authorfullhash}{4a622fce7243f84951eeed46d4e66f6b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Mikroskop HSP-1000}
-      \field{urlday}{13}
-      \field{urlmonth}{5}
-      \field{urlyear}{2017}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb http://cesky.odz.ujf.cas.cz/home/vybaveni/mikroskop-hsp-1ooo
-      \endverb
-      \warn{\item Entry 'dosis_HSP1000' (citace.bib): Invalid format 'ODZ ÚJF AVČR' of date field 'date' - ignoring}
-    \endentry
-    \entry{benton}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4657c93c3776e16543f1ca8f5478cbf1}{%
-           family={Benton},
-           familyi={B\bibinitperiod},
-           given={E.R},
-           giveni={E\bibinitperiod}}}%
-        {{hash=74ddd8914b63c0d6f244ad3108c6dfd9}{%
-           family={Benton},
-           familyi={B\bibinitperiod},
-           given={E.V},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{139a30c93066c5b4c1b304005ad1bac5}
-      \strng{fullhash}{139a30c93066c5b4c1b304005ad1bac5}
-      \strng{authornamehash}{139a30c93066c5b4c1b304005ad1bac5}
-      \strng{authorfullhash}{139a30c93066c5b4c1b304005ad1bac5}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0168-583X}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms}
-      \field{note}{Advanced Topics in Solid State Dosimetry}
-      \field{number}{1–2}
-      \field{title}{Space radiation dosimetry in low-Earth orbit and beyond}
-      \field{volume}{184}
-      \field{year}{2001}
-      \field{pages}{255\bibrangedash 294}
-      \range{pages}{40}
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0168583X01007480
-      \endverb
-    \endentry
     \entry{toNemecky}{article}{}
       \name{author}{1}{}{%
         {{hash=03a4e350feb9bc1d60398e8aca31b04b}{%
@@ -277,8 +174,8 @@
       \strng{fullhash}{03a4e350feb9bc1d60398e8aca31b04b}
       \strng{authornamehash}{03a4e350feb9bc1d60398e8aca31b04b}
       \strng{authorfullhash}{03a4e350feb9bc1d60398e8aca31b04b}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0939-3889}
@@ -296,66 +193,6 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0939388908000792
       \endverb
       \keyw{Messungen des Strahlenfeldes}
-    \endentry
-    \entry{spe_iss}{article}{}
-      \name{author}{12}{}{%
-        {{hash=43b1433aee753f05eb85b11272d37722}{%
-           family={{Di Fino, Luca}},
-           familyi={D\bibinitperiod}}}%
-        {{hash=028b50f5af34f77dab84fbce9be9dad8}{%
-           family={{Zaconte, Veronica}},
-           familyi={Z\bibinitperiod}}}%
-        {{hash=03224278905a882a5c91536f1e72fe63}{%
-           family={{Stangalini, Marco}},
-           familyi={S\bibinitperiod}}}%
-        {{hash=86b01ed8887a1cb4465453f153271502}{%
-           family={{Sparvoli, Roberta}},
-           familyi={S\bibinitperiod}}}%
-        {{hash=522177bba55db65b237bb115a544edff}{%
-           family={{Picozza, Piergiorgio}},
-           familyi={P\bibinitperiod}}}%
-        {{hash=5fa37466ece11bd896f6fa647548ca87}{%
-           family={{Piazzesi, Roberto}},
-           familyi={P\bibinitperiod}}}%
-        {{hash=eb62664494aa1035699c201f9bd509c2}{%
-           family={{Narici, Livio}},
-           familyi={N\bibinitperiod}}}%
-        {{hash=aa6df78af198fd05039358d43dbf75c9}{%
-           family={{Larosa, Marianna}},
-           familyi={L\bibinitperiod}}}%
-        {{hash=21e28fe1d7cd796af31c8b432cf11c63}{%
-           family={{Del Moro, Dario}},
-           familyi={D\bibinitperiod}}}%
-        {{hash=06e6ecc8150d1f42c6091ce6919c453f}{%
-           family={{Casolino, Marco}},
-           familyi={C\bibinitperiod}}}%
-        {{hash=84449a22b777895806c81bb9959dc074}{%
-           family={{Berrilli, Francesco}},
-           familyi={B\bibinitperiod}}}%
-        {{hash=8b737727ac5b5b8d176f2c762e590a41}{%
-           family={{Scardigli, Stefano}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{fe6dbad9d70c486bfd51e8111af72213}
-      \strng{fullhash}{ae0eac3849f019f06f397bd4db3765e3}
-      \strng{authornamehash}{fe6dbad9d70c486bfd51e8111af72213}
-      \strng{authorfullhash}{ae0eac3849f019f06f397bd4db3765e3}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Space Weather Space Clim.}
-      \field{title}{Solar particle event detected by ALTEA on board the International Space Station - The March 7th, 2012 X5.4 flare}
-      \field{volume}{4}
-      \field{year}{2014}
-      \field{pages}{A19}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1051/swsc/2014015
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2014015
-      \endverb
     \endentry
     \entry{passDetectors}{article}{}
       \name{author}{6}{}{%
@@ -397,11 +234,10 @@
       \strng{fullhash}{5a54ee0ae44a97765342a9688fa81e83}
       \strng{authornamehash}{5a54ee0ae44a97765342a9688fa81e83}
       \strng{authorfullhash}{5a54ee0ae44a97765342a9688fa81e83}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{To estimate the radiation risk of astronauts during space missions, it is necessary to measure dose characteristics in various compartments of the spacecraft; this knowledge can be further used for estimating the health hazard in planned missions. This contribution presents results obtained during several missions on board the International Space Station (ISS) during 2005-09. A combination of thermoluminescent and plastic nuclear track detectors was used to measure the absorbed dose and dose equivalent. These passive detectors have several advantages, especially small dimensions, which enabled their placement at various locations in different compartments inside the ISS or inside the phantom. Variation of dosimetric quantities with the phase of the solar cycle and the position inside the ISS is discussed.;To estimate the radiation risk of astronauts during space missions, it is necessary to measure dose characteristics in various compartments of the spacecraft; this knowledge can be further used for estimating the health hazard in planned missions. This contribution presents results obtained during several missions on board the International Space Station (ISS) during 2005-09. A combination of thermoluminescent and plastic nuclear track detectors was used to measure the absorbed dose and dose equivalent. These passive detectors have several advantages, especially small dimensions, which enabled their placement at various locations in different compartments inside the ISS or inside the phantom. Variation of dosimetric quantities with the phase of the solar cycle and the position inside the ISS is discussed.;}
       \field{issn}{0144-8420}
       \field{journaltitle}{Radiation Protection Dosimetry}
       \field{number}{1-4}
@@ -410,7 +246,6 @@
       \field{year}{2011}
       \field{pages}{605\bibrangedash 610}
       \range{pages}{6}
-      \keyw{DOSIMETRY; NUCLEAR SCIENCE & TECHNOLOGY; PUBLIC,ENVIRONMENTAL & OCCUPATIONAL HEALTH; ENVIRONMENTAL SCIENCES; THERMOLUMINESCENT; TRACK-ETCH; RADIOLOGY,NUCLEAR MEDICINE & MEDICAL IMAGING; CHARGED-PARTICLES; Radiation Monitoring - instrumentation; Radiation Protection - methods; Radiometry - methods; Space Flight - methods; Radiation Monitoring - methods}
     \endentry
     \entry{etchDetectors}{thesis}{}
       \name{author}{1}{}{%
@@ -430,14 +265,60 @@
       \strng{fullhash}{d2d342ef5bcb46e95f15b3fdf7522401}
       \strng{authornamehash}{d2d342ef5bcb46e95f15b3fdf7522401}
       \strng{authorfullhash}{d2d342ef5bcb46e95f15b3fdf7522401}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Study and development of track etch detectors for dosimetric purposes: dissertation thesis}
       \field{type}{phdthesis}
       \field{year}{2010}
       \keyw{spektroskopie; jaderná chemie; dielektrické materiály; detektory částic}
+    \endentry
+    \entry{activeDetectors}{article}{}
+      \name{author}{4}{}{%
+        {{hash=055d32cb2a7edb56092c3c1197ebd5b8}{%
+           family={Narici},
+           familyi={N\bibinitperiod},
+           given={Livio},
+           giveni={L\bibinitperiod}}}%
+        {{hash=780caf01b078955aaa96acfb1751153a}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9a6973f9c310216a6feac43dfc230854}{%
+           family={Matthiä},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=255c1653c5de46978ef184795bb68c9d}{%
+           family={Reitz},
+           familyi={R\bibinitperiod},
+           given={Günther},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \strng{fullhash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \strng{authornamehash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \strng{authorfullhash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A reliable radiation risk assessment in space is a mandatory step for the development of countermeasures and long duration mission planning in human spaceflight. Research in radiobiology provides information about possible risks linked to radiation. In addition, for a meaningful risk evaluation, the radiation exposure has to be assessed to a sufficient level of accuracy. Consequently, both the radiation models predicting the risks and the measurements used to validate such models must have an equivalent precision. Corresponding measurements can be performed both with passive and active devices. The former are easier to handle, cheaper, lighter and smaller but they measure neither the time dependence of the radiation environment nor some of the details useful for a comprehensive radiation risk assessment. Active detectors provide most of these details and have been extensively used in the International Space Station (ISS). To easily access such an amount of data, a single point access is becoming essential. This review presents an ongoing work on the development of a tool which allows obtaining information about all relevant measurements performed with active detectors providing reliable inputs for radiation model validation.}
+      \field{issn}{2234-943X}
+      \field{journaltitle}{Frontiers in Oncology}
+      \field{title}{Radiation Measurements Performed with Active Detectors Relevant for Human Space Exploration}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{273}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fonc.2015.00273
+      \endverb
+      \verb{url}
+      \verb http://journal.frontiersin.org/article/10.3389/fonc.2015.00273
+      \endverb
     \endentry
     \entry{scaleHeight_wiki}{online}{}
       \name{author}{1}{}{%
@@ -454,8 +335,8 @@
       \strng{fullhash}{6d66dc10fb884468631576d1f8eecb9d}
       \strng{authornamehash}{6d66dc10fb884468631576d1f8eecb9d}
       \strng{authorfullhash}{6d66dc10fb884468631576d1f8eecb9d}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{27}
@@ -486,8 +367,8 @@
       \strng{fullhash}{8b4e9555defc5d3b378afdc57dd5b529}
       \strng{authornamehash}{8b4e9555defc5d3b378afdc57dd5b529}
       \strng{authorfullhash}{8b4e9555defc5d3b378afdc57dd5b529}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{19}
@@ -528,8 +409,8 @@
       \strng{fullhash}{0338f15fd6c47ac615dcaf96b3c82a4e}
       \strng{authornamehash}{0338f15fd6c47ac615dcaf96b3c82a4e}
       \strng{authorfullhash}{0338f15fd6c47ac615dcaf96b3c82a4e}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{2}
@@ -560,8 +441,8 @@
       \strng{fullhash}{6d66dc10fb884468631576d1f8eecb9d}
       \strng{authornamehash}{6d66dc10fb884468631576d1f8eecb9d}
       \strng{authorfullhash}{6d66dc10fb884468631576d1f8eecb9d}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{7}
@@ -590,8 +471,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{17}
@@ -617,8 +498,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{19}
@@ -644,8 +525,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{14}
@@ -673,8 +554,8 @@
       \strng{fullhash}{219b921da6a8fdfd4a8121857fbb05fe}
       \strng{authornamehash}{219b921da6a8fdfd4a8121857fbb05fe}
       \strng{authorfullhash}{219b921da6a8fdfd4a8121857fbb05fe}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{8}
@@ -700,8 +581,8 @@
       \strng{fullhash}{9c789b682239df0efda87e3a737fb849}
       \strng{authornamehash}{9c789b682239df0efda87e3a737fb849}
       \strng{authorfullhash}{9c789b682239df0efda87e3a737fb849}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{20}
@@ -727,8 +608,8 @@
       \strng{fullhash}{9c789b682239df0efda87e3a737fb849}
       \strng{authornamehash}{9c789b682239df0efda87e3a737fb849}
       \strng{authorfullhash}{9c789b682239df0efda87e3a737fb849}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -759,8 +640,8 @@
       \strng{fullhash}{8194b362c55a56521ad99b6fd345b95f}
       \strng{authornamehash}{8194b362c55a56521ad99b6fd345b95f}
       \strng{authorfullhash}{8194b362c55a56521ad99b6fd345b95f}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{31}
@@ -774,6 +655,187 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb https://www.nasa.gov/mission_pages/station/structure/elements/columbus.html
+      \endverb
+    \endentry
+    \entry{TLD_RR}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3e5c268cb862b00d28efe8d84428a2f}{%
+           family={Spurný},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=541eb01fa15c1db4e4402dba13fd253f}{%
+           family={Jadrníčková},
+           familyi={J\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4dbc4572149fc200b89072f938a74388}
+      \strng{fullhash}{4dbc4572149fc200b89072f938a74388}
+      \strng{authornamehash}{4dbc4572149fc200b89072f938a74388}
+      \strng{authorfullhash}{4dbc4572149fc200b89072f938a74388}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1350-4487}
+      \field{journaltitle}{Radiation Measurements}
+      \field{note}{Proceedings of the 15th Solid State Dosimetry (SSD15)}
+      \field{number}{2–6}
+      \field{title}{Dependence of thermoluminescent detectors relative response on the linear energy transfer; some examples of use}
+      \field{volume}{43}
+      \field{year}{2008}
+      \field{pages}{944\bibrangedash 947}
+      \range{pages}{4}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.radmeas.2007.11.041
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1350448707005124
+      \endverb
+      \keyw{LET spectrometry}
+    \endentry
+    \entry{cesky}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d2d342ef5bcb46e95f15b3fdf7522401}{%
+           family={Pachnerová\bibnamedelima Brabcová},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=81ddf62775814ece75d7c140994b57cb}{%
+           family={Ambrožová},
+           familyi={A\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ab02224c5e08b8283dfdfbe3e7286400}{%
+           family={Davídková},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5fa342ce7a98ad7dad5ac3c8fadac4d4}{%
+           family={Nagasaki},
+           familyi={N\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e63beb30c53e19d72c0b97a7e8c66b2e}{%
+           family={Červenková},
+           familyi={Č\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1c954aeac87668d5b88e387ee19a0512}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {czech}%
+      }
+      \strng{namehash}{3a4b5d90e1e01ffb060706778019a6c0}
+      \strng{fullhash}{3a4b5d90e1e01ffb060706778019a6c0}
+      \strng{authornamehash}{3a4b5d90e1e01ffb060706778019a6c0}
+      \strng{authorfullhash}{3a4b5d90e1e01ffb060706778019a6c0}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1210-7085}
+      \field{journaltitle}{Bezpečnosť jadrovej energie}
+      \field{number}{3/4}
+      \field{title}{Spektra lineárního přenosu energie kosmického záření získaná detektory stop v pevné fázi metodou per partes}
+      \field{volume}{25}
+      \field{year}{2017}
+      \field{pages}{110\bibrangedash 113}
+      \range{pages}{4}
+    \endentry
+    \entry{ssntd}{article}{}
+      \name{author}{1}{}{%
+        {{hash=29f97f435736c324b59aba374113a604}{%
+           family={Pálfalvi},
+           familyi={P\bibinitperiod},
+           given={J.K.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{29f97f435736c324b59aba374113a604}
+      \strng{fullhash}{29f97f435736c324b59aba374113a604}
+      \strng{authornamehash}{29f97f435736c324b59aba374113a604}
+      \strng{authorfullhash}{29f97f435736c324b59aba374113a604}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1350-4487}
+      \field{journaltitle}{Radiation Measurements}
+      \field{note}{Proceedings of the 24th International Conferenceon Nuclear Tracks in Solids}
+      \field{number}{9–10}
+      \field{title}{Fluence and dose of mixed space radiation by SSNTDs achievements and constraints}
+      \field{volume}{44}
+      \field{year}{2009}
+      \field{pages}{724\bibrangedash 728}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.radmeas.2009.10.045
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1350448709002212
+      \endverb
+      \keyw{Proton detection}
+    \endentry
+    \entry{dosis_oulu}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9b4206a960ba5644bbadbb1d70d2bf6b}{%
+           family={Usoskin},
+           familyi={U\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {NASA}%
+      }
+      \strng{namehash}{9b4206a960ba5644bbadbb1d70d2bf6b}
+      \strng{fullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
+      \strng{authornamehash}{9b4206a960ba5644bbadbb1d70d2bf6b}
+      \strng{authorfullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cosmic Ray Station of the University of Oulu}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2017}
+      \field{year}{}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://cosmicrays.oulu.fi
+      \endverb
+    \endentry
+    \entry{dosis_HSP1000}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4a622fce7243f84951eeed46d4e66f6b}{%
+           family={AVČR},
+           familyi={A\bibinitperiod},
+           given={ODZ\bibnamedelima ÚJF},
+           giveni={O\bibinitperiod\bibinitdelim Ú\bibinitperiod}}}%
+      }
+      \list{organization}{0}{%
+      }
+      \strng{namehash}{4a622fce7243f84951eeed46d4e66f6b}
+      \strng{fullhash}{4a622fce7243f84951eeed46d4e66f6b}
+      \strng{authornamehash}{4a622fce7243f84951eeed46d4e66f6b}
+      \strng{authorfullhash}{4a622fce7243f84951eeed46d4e66f6b}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mikroskop HSP-1000}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2017}
+      \field{year}{}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://cesky.odz.ujf.cas.cz/home/vybaveni/mikroskop-hsp-1ooo
       \endverb
     \endentry
   \endsortlist

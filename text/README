@@ -7,13 +7,15 @@ kosmickeZareni
 -v dosis2 je spousta dobrych veci do vysledku (obr. atd)
 
 POZNÁMKY
+ISS.tex
+-> poloha ISS -> mozna k tomu neco napsat (mam k tomu zdroj)
+
 experimentDosis.tex
 -> No significant differences of the neutron signal between PDP locations were observed. (dosis, s. 10, druhý sloupec)
 
 -> dát tam ty dva obrázky z dosis2? (z aktivní části měření)
 
 detektory.tex
-
 ->"Among the disadvantages of TLDs is that they provide no LET information and consequently no information about the dose equivalent. In addition TLDs tend to record the dose for high-LET (P 10 keV/lm) radiation with less than 100% efficiency and, thus, systematically undermeasure the total dose. ... CR-39 PNTD is used to measure the LET spectrum above ~5 keV/um." (benton, s. 11, Passive detectors)
 
 ->"A material commonly used in SSNTDs (solid-state nuclear track detector) is polyallyl diglycol carbonate (PADC), also known as Tastrak, CR-39 and CR39" (https://en.wikipedia.org/wiki/Solid-state_nuclear_track_detector)
@@ -33,5 +35,4 @@ detektory.tex
 ->TLD: "gamma-equivalentneutron dose" (see also Berger et al. 2013) (dosis, s.10, druhý sloupec)
 
 diskuze a závěr
-
 ->zminit to, ze se potrebuje merit dlouhodobe kvuli parametrum jako slunecni cyklus a nadmorska vyska atd. a dale ze potrebujeme znat dobre pouzivane detektory atd (dosis, results and discussion)
