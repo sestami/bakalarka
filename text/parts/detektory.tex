@@ -1,10 +1,67 @@
 \chapter{Pasivní detektory používané k monitorování kosmického záření}\label{sec:detektory_detektory}
+Pasivní detektory nepotřebují napájení, jsou dobře skladné (malé rozměry, malá hmotnost) a bezpečné, což je činí vhodnými měřícími prostředky ve vesmíru. Mezi jejich hlavní zápory patří, že nedodávají data v reálném čase a že pro vyhodnocení musí být dopraveny na Zem do příslušné laboratoře \cite{benton}.
 
-%vyhodnocování OSLD probíhá pomocí referenčního zdroje (ten vztah asi nepsat) (dosis, s. 7)
+K monitorování kosmického záření se používají detektory založené opticky stimulované luminiscenci (OSLD), termoluminiscenční detektory (TLD) a detektory stop v pevné fázi (TED, nuclear track etched detectors/solid state nuclear detectors). OSLD se využívají pouze okrajově a tato práce o nich nepojednává.
+
+Výstupem z TLD je dávka, která se absorbovala v detektoru za celý čas měření. Oproti tomu pomocí TED je možné změřit $\mathit{LET}$ spektrum v rozsahu, který je rozebrán dále v textu; $\mathit{LET}$ je lineární přenos energie. Kombinací dat z TLD a z TED lze určit celkový dávkový ekvivalent \cite{benton}.
+\section{Termoluminiscenční detektory}\label{sec:detektory_TLD}
+Vyhodnocování TLD je založeno na jevu termoluminiscence: při zahřátí na teplotu, která je vlastní pro daný materiál a vyhodnocovací cyklus, se vyzáří světlo, jehož množství je přímo úměrné množství absorbované energie v detektoru. Důležitým pojmem je vyhřívací křivka TLD, což je závislost světelného toku (respektive elektrického signálu z fotonásobiče) na teplotě. Odezva TLD se určí právě z této křivky (např. jako plocha pod křivkou, plocha pod píkem, výška píku \cite{dosis}) a na základě kalibrační křivky lze dopočítat absorbovanou dávku. Kalibrační křivka se získává ozařováním TLD zdroji se známým dávkovým příkonem. Vzhledem k velké energetické a druhové rozmanitosti kosmického záření je třeba ozařovat dávkami v dostatečném rozsahu. 
+
+TLD měří spolehlivě částice s $\mathit{LET}$ nižším než cca 10 keV/$\mu$m (tato hodnota se liší pro různé materiály), pro vyšší hodnoty $\mathit{LET}$ se účinnost TLD snižuje \cite{passDetectors}. Pro lepší popis tohoto jevu se zavádí veličina relativní odezva detektoru $\mathit{RR}$ (relative response)
+\begin{equation}
+  \mathit{RR}=\frac{\left(TL_{\text{odezva}}/D_{\text{tkáň}}\right)_Y}{\left(TL_{\text{odezva}}/D_{\text{tkáň}}\right)_{\gamma}},
+  \label{eq:detektory_TLD_RR}
+\end{equation}
+kde $(TL_{\text{odezva}})_Y$, resp. $(TL_{\text{odezva}})_{\gamma}$ je odezva TLD po ozáření dávkou $(D_{\text{tkáň}})_Y$, resp. $(D_{\text{tkáň}})_{\gamma}$, přičemž tyto dávky jsou si číselně rovny. Jinak řečeno $\mathit{RR}$ je definována jako poměr odezev po ozáření stejnou dávkou v tkáni způsobenou částicemi $Y$ a referenčním zářením $\gamma$ \cite{TLD_RR}. 
+
+Na vývoj $\RR$ se podíváme u dvou TLD používaných Oddělením dozimetrie záření ÚJF AV ČR (v dalším textu je používána anglická zkratka NPI). Jedná se o detektory Al$_2$O$_3$:C a CaSO$_4$:Dy, které se jmenují podle výrobních materiálů. Tyto detektory byly, resp. jsou používány v experimentech DOSIS a DOSIS3D. V tab. \ref{tab:detektory_TLD_RR} jsou hodnoty $\RR$ těchto detektorů pro částice s různým $\LET$ získané při experimentálním ozařování \cite{TLD_RR}. Lze pozorovat, že s rostoucím $\LET$ relativní odezva u obou detektorů klesá, u Al$_2$O$_3$:C mnohem rychleji než u CaSO$_4$:Dy; pro názornost jsou data z tabulky znázorněny i v grafu, viz \ref{fig:detektory_TLD_RR}. Pro zpřesnění měření je potřeba provést korekci TL odezev, více informací v
+\cite{TLD_RR}.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{llll}
+	\toprule
+	Částice&$\LET$ [keV/$\mu$m]&Al$_2$O$_3$:C & CaSO$_4$:Dy\\
+	\midrule
+	He&$2,16$ &$0,77 \pm0,05$&$1,01\pm 0,09$\\
+	O &$20,00$ &$0,47 \pm0,04$&$0,95\pm 0,06$\\
+	Ar&$92,00$ &$0,32 \pm0,02$&$0,59\pm 0,04$\\
+	Fe&$411,00 $ &$0,25 \pm0,02$&$0,44\pm 0,03$\\
+\bottomrule
+  \end{tabular}
+  \caption{Relativní odezvy $\RR$ dvou TL detektorů používaných NPI pro částice s různým $\LET$. Data byla získána při experimentálním ozařování detektorů částicemi se známým $\LET$ \cite{TLD_RR}.}
+  \label{tab:detektory_TLD_RR}
+\end{table}
+\begin{figure}[h]
+  \centering
+  \input{images/TLD_RR}
+  \caption{Data z tab. \ref{tab:detektory_TLD_RR} vynesená do grafu, tj. relativní odezva dvou detektorů používaných NPI pro částice s různým $\LET$.}
+  \label{fig:detektory_TLD_RR}
+\end{figure}
+%možnost dát obrázek, avšak moc to nejde (z gnuplotu), zkusit https://tex.stackexchange.com/questions/135308/how-can-we-import-the-gnuplot-output-in-latex
+\section{Detektory stop v pevné fázi}
+
+\begin{equation}
+  V=\frac{\sqrt{\left( 1-B^2 \right)^2}+4A^2}{1-B^2},
+  \label{eq:pomerLepRychlosti}
+\end{equation}
+kde
+\begin{align*}
+  A&=\frac{a}{2V_Bt},\\
+  B&=\frac{b}{2V_Bt}
+\end{align*}
+
+\begin{equation}
+  k_{\theta}=\frac{V^2}{V^2-1}
+  \label{}
+\end{equation}
+
+
+
+%vyhodnocování OSLD probíhá pomocí referenčního zdroje (ten vztah asi nepsat) (dosis, s. 7); OSLD detektory se tato práce nezabývá, takže spíš ne
 
 %napsat z ceho jsou vyrobene (nebo spis co presne jsou) TLD pouzivane NPI (prasek, krystal atd.)
 
-%HSP1000 -> jediny v Evrope!!!!!!!!!!! (viz stranky ODZ UJF AVCR)
+%HSP1000 -> jediny v Evrope!!!!!!!!!!! (viz stranky ODZ UJF AVCR) -> to uz je v praktickaCast
 
 
 %Nevýhodou pasivních detektorů je skutečnost, že po každém měření musely být dopraveny zpět na Zem do příslušné laboratoře a teprve tam byly vyhodnoceny; avšak oproti aktivním detektorům nemusejí být napájeny proudem, což je v prostředí ISS velmi praktické. %toto asi až to další kapitoly o detektorech
