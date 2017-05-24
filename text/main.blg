@@ -1,18 +1,18 @@
 [1] Config.pm:354> INFO - This is Biber 2.7
-[1] Config.pm:357> INFO - Logfile is 'main.blg'
-[93] biber:303> INFO - === Fri May 19, 2017, 17:58:29
-[124] Biber.pm:359> INFO - Reading 'main.bcf'
-[256] Biber.pm:832> INFO - Using all citekeys in bib section 0
-[283] Biber.pm:3670> INFO - Processing section 0
-[304] Biber.pm:3840> INFO - Looking for bibtex format file 'citace.bib' for section 0
-[308] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[319] bibtex.pm:1292> INFO - Found BibTeX data source 'citace.bib'
-[398] Utils.pm:164> WARN - BibTeX subsystem: /tmp/qI6uTV4Sft/citace.bib_22117.utf8, line 78, warning: 815 characters of junk seen at toplevel
-[398] Utils.pm:164> WARN - BibTeX subsystem: /tmp/qI6uTV4Sft/citace.bib_22117.utf8, line 175, warning: 20 characters of junk seen at toplevel
-[399] Utils.pm:164> WARN - BibTeX subsystem: /tmp/qI6uTV4Sft/citace.bib_22117.utf8, line 192, warning: 20 characters of junk seen at toplevel
-[438] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
-[438] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[438] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs_CZ'
-[462] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[469] bbl.pm:712> INFO - Output to main.bbl
-[469] Biber.pm:109> INFO - WARNINGS: 3
+[2] Config.pm:357> INFO - Logfile is 'main.blg'
+[72] biber:303> INFO - === Wed May 24, 2017, 15:36:25
+[102] Biber.pm:359> INFO - Reading 'main.bcf'
+[241] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[267] Biber.pm:3670> INFO - Processing section 0
+[288] Biber.pm:3840> INFO - Looking for bibtex format file 'citace.bib' for section 0
+[292] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[303] bibtex.pm:1292> INFO - Found BibTeX data source 'citace.bib'
+[390] Utils.pm:164> WARN - BibTeX subsystem: /tmp/ozz_g1MOiF/citace.bib_14639.utf8, line 78, warning: 815 characters of junk seen at toplevel
+[390] Utils.pm:164> WARN - BibTeX subsystem: /tmp/ozz_g1MOiF/citace.bib_14639.utf8, line 175, warning: 20 characters of junk seen at toplevel
+[390] Utils.pm:164> WARN - BibTeX subsystem: /tmp/ozz_g1MOiF/citace.bib_14639.utf8, line 192, warning: 20 characters of junk seen at toplevel
+[430] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[431] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[431] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs_CZ'
+[459] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[467] bbl.pm:712> INFO - Output to main.bbl
+[467] Biber.pm:109> INFO - WARNINGS: 3

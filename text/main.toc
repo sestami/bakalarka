@@ -17,20 +17,21 @@
 \contentsline {chapter}{\numberline {2}Pasivn\IeC {\'\i } detektory pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e} k monitorov\IeC {\'a}n\IeC {\'\i } kosmick\IeC {\'e}ho z\IeC {\'a}\IeC {\v r}en\IeC {\'\i }}{16}{chapter.2}
 \contentsline {section}{\numberline {2.1}Termoluminiscen\IeC {\v c}n\IeC {\'\i } detektory}{16}{section.2.1}
 \contentsline {section}{\numberline {2.2}Detektory stop v pevn\IeC {\'e} f\IeC {\'a}zi}{17}{section.2.2}
-\contentsline {chapter}{\numberline {3}Mezin\IeC {\'a}rodn\IeC {\'\i } kosmick\IeC {\'a} stanice}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Modul Columbus}{20}{section.3.1}
-\contentsline {chapter}{\numberline {4}Experimenty DOSIS a DOSIS 3D}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Rozm\IeC {\'\i }st\IeC {\v e}n\IeC {\'\i } pasivn\IeC {\'\i }ch detektor\IeC {\r u}}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pr\IeC {\r u}b\IeC {\v e}h experiment\IeC {\r u}}{23}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}V\IeC {\'y}voj nadmo\IeC {\v r}sk\IeC {\'e} v\IeC {\'y}\IeC {\v s}ky a slune\IeC {\v c}n\IeC {\'\i }ho cyklu}{25}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e} detektory}{26}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Termoluminiscen\IeC {\v c}n\IeC {\'\i } detektory}{27}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Opticky stimulovan\IeC {\'e} luminiscen\IeC {\v c}n\IeC {\'\i } detektory}{28}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Detektory stop v pevn\IeC {\'e} f\IeC {\'a}zi}{28}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Aktivn\IeC {\'\i } detektory DOSTEL}{28}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Detektory pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e} NPI}{29}{subsection.4.3.5}
-\contentsline {section}{\numberline {4.4}V\IeC {\'y}sledky}{30}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Srovn\IeC {\'a}n\IeC {\'\i } dat pasivn\IeC {\'\i }ch detektor\IeC {\r u} v r\IeC {\'a}mci jedn\IeC {\'e} sady}{31}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Srovn\IeC {\'a}n\IeC {\'\i } dat z osmi sad pro jeden pasivn\IeC {\'\i } detektor}{33}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Srovn\IeC {\'a}n\IeC {\'\i } dat pasivn\IeC {\'\i }ch a aktivn\IeC {\'\i }ch detektor\IeC {\r u}}{34}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Vyhodnocen\IeC {\'\i } t\IeC {\v r}\IeC {\'\i } detektor\IeC {\r u} stop v pevn\IeC {\'e} f\IeC {\'a}zi}{33}{chapter.5}
+\contentsline {subsection}{\numberline {2.2.1}Vyhodnocov\IeC {\'a}n\IeC {\'\i }}{19}{subsection.2.2.1}
+\contentsline {chapter}{\numberline {3}Mezin\IeC {\'a}rodn\IeC {\'\i } kosmick\IeC {\'a} stanice}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Modul Columbus}{22}{section.3.1}
+\contentsline {chapter}{\numberline {4}Experimenty DOSIS a DOSIS 3D}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Rozm\IeC {\'\i }st\IeC {\v e}n\IeC {\'\i } pasivn\IeC {\'\i }ch detektor\IeC {\r u}}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pr\IeC {\r u}b\IeC {\v e}h experiment\IeC {\r u}}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}V\IeC {\'y}voj nadmo\IeC {\v r}sk\IeC {\'e} v\IeC {\'y}\IeC {\v s}ky a slune\IeC {\v c}n\IeC {\'\i }ho cyklu}{27}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e} detektory}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Termoluminiscen\IeC {\v c}n\IeC {\'\i } detektory}{29}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Opticky stimulovan\IeC {\'e} luminiscen\IeC {\v c}n\IeC {\'\i } detektory}{30}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Detektory stop v pevn\IeC {\'e} f\IeC {\'a}zi}{30}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Aktivn\IeC {\'\i } detektory DOSTEL}{30}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Detektory pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e} NPI}{31}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}V\IeC {\'y}sledky}{32}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Srovn\IeC {\'a}n\IeC {\'\i } dat pasivn\IeC {\'\i }ch detektor\IeC {\r u} v r\IeC {\'a}mci jedn\IeC {\'e} sady}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Srovn\IeC {\'a}n\IeC {\'\i } dat z osmi sad pro jeden pasivn\IeC {\'\i } detektor}{35}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Srovn\IeC {\'a}n\IeC {\'\i } dat pasivn\IeC {\'\i }ch a aktivn\IeC {\'\i }ch detektor\IeC {\r u}}{36}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}Vyhodnocen\IeC {\'\i } t\IeC {\v r}\IeC {\'\i } detektor\IeC {\r u} stop v pevn\IeC {\'e} f\IeC {\'a}zi}{37}{chapter.5}

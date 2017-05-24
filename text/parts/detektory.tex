@@ -1,7 +1,7 @@
 \chapter{Pasivní detektory používané k monitorování kosmického záření}\label{sec:detektory_detektory}
 Pasivní detektory nepotřebují napájení, jsou dobře skladné (malé rozměry, malá hmotnost) a bezpečné, což je činí vhodnými měřícími prostředky ve vesmíru. Mezi jejich hlavní zápory patří, že nedodávají data v reálném čase a že pro vyhodnocení musí být dopraveny na Zem do příslušné laboratoře \cite{benton}.
 
-K monitorování kosmického záření se používají detektory založené opticky stimulované luminiscenci (OSLD), termoluminiscenční detektory (TLD) a detektory stop v pevné fázi (TED, nuclear track etched detectors/solid state nuclear detectors). OSLD se využívají pouze okrajově a tato práce o nich nepojednává.
+K monitorování kosmického záření se používají detektory založené opticky stimulované luminiscenci (OSLD), termoluminiscenční detektory (TLD) a detektory stop v pevné fázi (TED, nuclear track etched detectors/solid state nuclear track detectors). OSLD se využívají pouze okrajově a tato práce o nich nepojednává.
 
 Výstupem z TLD je dávka, která se absorbovala v detektoru za celý čas měření. Oproti tomu pomocí TED je možné změřit $\mathit{LET}$ spektrum v rozsahu, který je rozebrán dále v textu; $\mathit{LET}$ je lineární přenos energie. Kombinací dat z TLD a z TED lze určit celkový dávkový ekvivalent \cite{benton}.
 \section{Termoluminiscenční detektory}\label{sec:detektory_TLD}
@@ -9,7 +9,7 @@ Vyhodnocování TLD je založeno na jevu termoluminiscence: při zahřátí na t
 
 TLD měří spolehlivě částice s $\mathit{LET}$ nižším než cca 10 keV/$\mu$m (tato hodnota se liší pro různé materiály), pro vyšší hodnoty $\mathit{LET}$ se účinnost TLD snižuje \cite{passDetectors}. Pro lepší popis tohoto jevu se zavádí veličina relativní odezva detektoru $\mathit{RR}$ (relative response)
 \begin{equation}
-  \mathit{RR}=\frac{\left(TL_{\text{odezva}}/D_{\text{tkáň}}\right)_Y}{\left(TL_{\text{odezva}}/D_{\text{tkáň}}\right)_{\gamma}},
+  \mathit{RR}=\frac{\left(TL_{\text{odezva}}/D_{\text{tkáň}}\right)_Y}{\left(TL_{\text{odezva}}/D_{\text{tkáň}}\right)_{\gamma}}\,,
   \label{eq:detektory_TLD_RR}
 \end{equation}
 kde $(TL_{\text{odezva}})_Y$, resp. $(TL_{\text{odezva}})_{\gamma}$ je odezva TLD po ozáření dávkou $(D_{\text{tkáň}})_Y$, resp. $(D_{\text{tkáň}})_{\gamma}$, přičemž tyto dávky jsou si číselně rovny. Jinak řečeno $\mathit{RR}$ je definována jako poměr odezev po ozáření stejnou dávkou v tkáni způsobenou částicemi $Y$ a referenčním zářením $\gamma$ \cite{TLD_RR}. 
@@ -39,22 +39,91 @@ Na vývoj $\RR$ se podíváme u dvou TLD používaných Oddělením dozimetrie z
 \end{figure}
 %možnost dát obrázek, avšak moc to nejde (z gnuplotu), zkusit https://tex.stackexchange.com/questions/135308/how-can-we-import-the-gnuplot-output-in-latex
 \section{Detektory stop v pevné fázi}
+V některých pevných látkách vznikají při ozáření stabilní mikropoškození, tzv. stopy, která mohou být vhodným způsobem zvětšena. Následně lze zvětšené stopy spočítat např. pomocí mikroskopu, přičemž počet stop je úměrný počtu částic, které s materiálem interagovaly. Používají-li se tyto látky jako detektory ionizujícího záření, pak je nazýváme detektory stop v pevné fázi (TED). Z velikosti stop lze určit i $\LET$ a $D$ (dávka) odpovídající částice a tím i dávkový ekvivalent $H$. Mezi materiály s touto schopností patří různá skla, minerální krystaly, plasty, z novějších pak i některé kovy, intermetalické sloučeniny a supravodivé oxidy; tento jev byl poprvé pozorován v roce 1958 u krystalů LiF \cite{objevTED}. 
 
+TED jsou schopné měřit pouze částice s $\LET$ vyšším než je určitá prahová hodnota, která je různá pro odlišné materiály. Zároveň v oblasti velkých $\LET$ již nelze přesně lineární přenos energie určit, což znamená, že nemůžeme určit dávku a dávkový příkon. Detektor zde slouží maximálně jako čítač impulzů. Tento jev bude podrobněji probrán v následujícím oddílu.
+
+Latentní stopy (tj. stopy, které ještě nebyly zvětšeny) jsou nejčastěji zvětšovány chemickým leptáním. Tato metoda vychází z faktu, že poškozené části materiálu se leptají rychleji než nepoškozené.
+
+Tvorba latentních stop není doposud plně pochopena. U anorganických materiálů se jej snaží vysvětlit např. mechanismus popsaný v \cite{spikeModel}. U organických materiálů je proces tvorby stop rozdělen do tří fází: fyzikální, fyzikální-chemická a chemická. Při první fázi ztrácí částice v materiálu energii (excitacemi a ionizacemi elektronů z obalu terčíků, vyražením terčíku z polymerové vazby, brzdným záření v případě velké rychlosti částice). Při druhé fázi dochází k interakcím částic vzniklých v první fázi, které vyúsťují ke vzniku latentních stop; latentní stopa se skládá z jádra o průměru cca 10 nm a obalu <+???+> o průměru odpovídající dosahu delta elektronů, viz obr. \ref{fig:detektory_latentTrack}. Poslední fáze představuje leptání, při němž jsou stopy neznámým způsobem zafixovány a zvětšeny.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.38\textwidth]{latentTrack.png}
+  \caption{Latentní stopa v organickém materiálu se skládá z jádra (CORE) a z obalu (HALO).}
+  \label{fig:detektory_latentTrack}
+\end{figure}
+
+Důležitou roli při tvorbě stop v plastech hraje kyslík. Bylo dokázáno, že při jeho absenci jsou stopy menší \cite{kyslikTED}.  
+
+Nejpoužívanějším materiálem je poly allyl diglykoluhličitan <++?++>, který bývá často také nazýván CR-39 (podle původního výrobního jména). Jako detektor stop v pevné fázi se začal používat ke konci 70. let 20. století \cite{thesisKPBrabcova}; ve vesmírné dozimetrii byl poprvé použit při prvním letu amerických raketoplánů Space Shuttle v roce 1981 \cite{benton}. Původní CR-39 schopen detekovat částice s $\LET$ vyšším než 5 cca keV/$\mu$m \cite{benton}. V současné době je vyráběn pod různými jmény a s různými úpravami; také do něho bývají přidány další přísady, které mají zlepšit jeho vlastnosti. Naneštěstí některé úpravy ovlivňují i účinnost detekce částic s menším $\LET$, což jinými slovy znamená zvýšení detekčního prahu. V tab. \ref{tab:detektory_PADC_types} je srovnání
+$\LET$ rozsahu různých CR-39 materiálů, které jsou nebo byly někdy v minulosti používané NPI.
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{llll}
+	\toprule
+	Materiál&Tloušťka [mm]&$\LET$ práh [keV/$\mu$m]&$\LET$ nasycení [keV/$\mu$m]\\
+	\midrule
+	Page&0,5&10&440\\
+	Tastrak&0,5&20&450\\
+	USF4&0,6&8&460\\
+	TD1&0,8&9&340\\
+	Baryotrak&0,9&30&$>$700\\
+	\bottomrule
+  \end{tabular}
+  \caption{Charakteristiky různých materiálů CR-39, které jsou nebo byly používané NPI. $\LET$ nasycení udává hodnotu, při které přestává mít smysl měřit lineární přenos energie. \cite{thesisKPBrabcova}}
+  \label{tab:detektory_PADC_types}
+\end{table}
+
+Informace z tohoto oddílu byly brány z \cite{thesisKPBrabcova}.
+%citovani v tomto oddile zvlastni
+\subsection{Vyhodnocování}
+\cite{ssntd}
 \begin{equation}
-  V=\frac{\sqrt{\left( 1-B^2 \right)^2}+4A^2}{1-B^2},
+  V=\frac{\sqrt{\left( 1-B^2 \right)^2}+4A^2}{1-B^2}\,,
   \label{eq:pomerLepRychlosti}
 \end{equation}
 kde
 \begin{align*}
-  A&=\frac{a}{2V_Bt},\\
+  A&=\frac{a}{2V_Bt}\,,\\
   B&=\frac{b}{2V_Bt}
 \end{align*}
 
+%\begin{equation}
+  %h=V_bt,
+  %\label{eq:thicknessOfMaterial}
+%\end{equation}
+
 \begin{equation}
   k_{\theta}=\frac{V^2}{V^2-1}
-  \label{}
+  \label{eq:kritickyUhel}
 \end{equation}
 
+
+\cite{ssntd}
+\begin{align}
+  \LET &= -99,8424+125,00172  V-15,28166  V^2+2,04636  V^3\quad\text{(6 hod)},\label{eq:kalibracniKrivkaSestHod}\\
+  \LET &= -96,35071+114,90343  V-7,77194  V^2+1,27248  V^3\quad\text{(15 hod)},\label{eq:kalibracniKrivkaPatnactHod}
+\end{align}
+
+\begin{align}
+  D&=\sum_i\text{konst}\cdot N_i^{\text{kor}}\cdot \LET_i\cdot d\LET\,,\label{eq:Davka}\\
+  H&=\sum_i\text{konst}\cdot N_i^{\text{kor}}\cdot \LET_i\cdot Q(\LET_i)\cdot d\LET\,,\label{eq:EkvDavka}
+\end{align}
+kde $N_i^{\text{kor}}=N_ik_{\theta}$; $N_i$ je počet částic v $i$-tém $\LET$ intervalu; $d\LET$ je šířka intervalu a $Q$ je jakostní faktor určený podle tab. \ref{tab:detektory_Q} <++?++>.
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ll}
+	\toprule
+	$\LET$ [keV/$\mu$m]&$Q(\LET)$ \\
+	\midrule
+$<$10&1\\
+$[10;100]$&$0,32\LET-2,2$\\
+$>$100&300/$\sqrt{\LET}$\\
+	\bottomrule
+  \end{tabular}
+  \caption{ICRP 60, 1991}
+  \label{tab:detektory_Q}
+\end{table}
 
 
 %vyhodnocování OSLD probíhá pomocí referenčního zdroje (ten vztah asi nepsat) (dosis, s. 7); OSLD detektory se tato práce nezabývá, takže spíš ne
