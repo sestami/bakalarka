@@ -6,6 +6,8 @@ kosmickeZareni
 -zjistit, jak se ctou ty TLD materialy od NPI
 -v dosis2 je spousta dobrych veci do vysledku (obr. atd)
 -propojit informace z detektory.tex s experimentDosis.tex
+-v detektory.tex divně obrázky a tabulky
+-porovnat jednotlivé PADC materiály (detektory.tex)
 
 POZNÁMKY
 ISS.tex
@@ -34,6 +36,9 @@ detektory.tex
 ->TLD: rozdíl mezi 6LiF:Mg, Ti a 7Li:Mg, Ti (pomalé neutrony)
 
 ->TLD: "gamma-equivalentneutron dose" (see also Berger et al. 2013) (dosis, s.10, druhý sloupec)
+
+->nějaké výsledky jsou v passDetectors, celkem pěkné (ale dost podobné Dosis)
+
 
 diskuze a závěr
 ->zminit to, ze se potrebuje merit dlouhodobe kvuli parametrum jako slunecni cyklus a nadmorska vyska atd. a dale ze potrebujeme znat dobre pouzivane detektory atd (dosis, results and discussion)

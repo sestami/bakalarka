@@ -267,6 +267,38 @@
       \verb 10.1016/S1350-4487(03)00099-4
       \endverb
     \endentry
+    \entry{CR39_wiki}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c4f7fca1822667ca0ff646e1c0a381b}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod},
+           given={The\bibnamedelimb Free\bibnamedelima Encyclopedia},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Wikipedia, The Free Encyclopedia}%
+      }
+      \strng{namehash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \strng{fullhash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \strng{authornamehash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \strng{authorfullhash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{2}
+      \field{title}{CR-39}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/CR-39
+      \endverb
+    \endentry
     \entry{thesisKPBrabcova}{thesis}{}
       \name{author}{1}{}{%
         {{hash=d2d342ef5bcb46e95f15b3fdf7522401}{%
@@ -306,8 +338,8 @@
       \strng{fullhash}{29f97f435736c324b59aba374113a604}
       \strng{authornamehash}{29f97f435736c324b59aba374113a604}
       \strng{authorfullhash}{29f97f435736c324b59aba374113a604}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1350-4487}
@@ -391,8 +423,8 @@
       \strng{fullhash}{adfc8f563d69f6eccd53b1ef6a1017dc}
       \strng{authornamehash}{4a19d34e0c1176315e1e3af34e71364c}
       \strng{authorfullhash}{adfc8f563d69f6eccd53b1ef6a1017dc}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -420,8 +452,8 @@
       \strng{fullhash}{03a4e350feb9bc1d60398e8aca31b04b}
       \strng{authornamehash}{03a4e350feb9bc1d60398e8aca31b04b}
       \strng{authorfullhash}{03a4e350feb9bc1d60398e8aca31b04b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0939-3889}
@@ -488,19 +520,19 @@
     \endentry
     \entry{scaleHeight_wiki}{online}{}
       \name{author}{1}{}{%
-        {{hash=6d66dc10fb884468631576d1f8eecb9d}{%
+        {{hash=9c4f7fca1822667ca0ff646e1c0a381b}{%
            family={Wikipedia},
            familyi={W\bibinitperiod},
-           given={Otevřená\bibnamedelima encyklopedie},
-           giveni={O\bibinitperiod\bibinitdelim e\bibinitperiod}}}%
+           given={The\bibnamedelimb Free\bibnamedelima Encyclopedia},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \list{organization}{1}{%
         {Wikipedia, The Free Encyclopedia}%
       }
-      \strng{namehash}{6d66dc10fb884468631576d1f8eecb9d}
-      \strng{fullhash}{6d66dc10fb884468631576d1f8eecb9d}
-      \strng{authornamehash}{6d66dc10fb884468631576d1f8eecb9d}
-      \strng{authorfullhash}{6d66dc10fb884468631576d1f8eecb9d}
+      \strng{namehash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \strng{fullhash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \strng{authornamehash}{9c4f7fca1822667ca0ff646e1c0a381b}
+      \strng{authorfullhash}{9c4f7fca1822667ca0ff646e1c0a381b}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
@@ -575,8 +607,8 @@
       \strng{fullhash}{0338f15fd6c47ac615dcaf96b3c82a4e}
       \strng{authornamehash}{0338f15fd6c47ac615dcaf96b3c82a4e}
       \strng{authorfullhash}{0338f15fd6c47ac615dcaf96b3c82a4e}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{2}
@@ -594,8 +626,8 @@
     \endentry
     \entry{ISS_wiki}{online}{}
       \name{author}{1}{}{%
-        {{hash=6d66dc10fb884468631576d1f8eecb9d}{%
-           family={Wikipedia},
+        {{hash=66519f28c68ad0e6b3f285e9cb5e2d78}{%
+           family={Wikipedie},
            familyi={W\bibinitperiod},
            given={Otevřená\bibnamedelima encyklopedie},
            giveni={O\bibinitperiod\bibinitdelim e\bibinitperiod}}}%
@@ -603,12 +635,12 @@
       \list{organization}{1}{%
         {Wikipedia, The Free Encyclopedia}%
       }
-      \strng{namehash}{6d66dc10fb884468631576d1f8eecb9d}
-      \strng{fullhash}{6d66dc10fb884468631576d1f8eecb9d}
-      \strng{authornamehash}{6d66dc10fb884468631576d1f8eecb9d}
-      \strng{authorfullhash}{6d66dc10fb884468631576d1f8eecb9d}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \strng{namehash}{66519f28c68ad0e6b3f285e9cb5e2d78}
+      \strng{fullhash}{66519f28c68ad0e6b3f285e9cb5e2d78}
+      \strng{authornamehash}{66519f28c68ad0e6b3f285e9cb5e2d78}
+      \strng{authorfullhash}{66519f28c68ad0e6b3f285e9cb5e2d78}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{7}
@@ -637,8 +669,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{17}
@@ -664,8 +696,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{19}
@@ -691,8 +723,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{14}
@@ -720,8 +752,8 @@
       \strng{fullhash}{219b921da6a8fdfd4a8121857fbb05fe}
       \strng{authornamehash}{219b921da6a8fdfd4a8121857fbb05fe}
       \strng{authorfullhash}{219b921da6a8fdfd4a8121857fbb05fe}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{8}
@@ -863,8 +895,8 @@
       \strng{fullhash}{3a4b5d90e1e01ffb060706778019a6c0}
       \strng{authornamehash}{3a4b5d90e1e01ffb060706778019a6c0}
       \strng{authorfullhash}{3a4b5d90e1e01ffb060706778019a6c0}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1210-7085}
@@ -891,8 +923,8 @@
       \strng{fullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
       \strng{authornamehash}{9b4206a960ba5644bbadbb1d70d2bf6b}
       \strng{authorfullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cosmic Ray Station of the University of Oulu}
