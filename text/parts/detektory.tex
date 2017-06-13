@@ -21,7 +21,7 @@ Na vývoj $\RR$ se podíváme u dvou TLD používaných Oddělením dozimetrie z
 \begin{figure}[H]
   \centering
   \input{images/TLD_RR}
-  \caption{Relativní odezva dvou detektorů používaných NPI pro částice s různým $\LET$. Data pocházejí z~\cite{dataTLD_RR}}
+  \caption{Relativní odezva dvou detektorů používaných NPI pro částice s různým $\LET$. Data pocházejí z~\cite{dataTLD_RR}.}
   \label{fig:detektory_TLD_RR}
 \end{figure}
 \section{Detektory stop v pevné fázi}
@@ -54,7 +54,7 @@ Důležitou charakteristikou leptání je tzv. poměr leptacích rychlostí, def
 \end{equation}
 kde $V_M$ je rychlost leptání nepoškozeného materiálu a $V_S$ rychlost leptání poškozeného materiálu, tj. stopy. Z provedených experimentů se ukazuje, že $V_S$ je konstantní u stop vytvořených částicemi s velkým dosahem, avšak např. u stop vytvořených sekundárními částicemi konstantní není~\cite{ssntd}. My jej však budeme obecně brát konstantní, protože tímto způsobem je vyhodnocována většina TED. Z poměru leptacích rychlostí lze z experimentálně zjištěného vztahu určit $\LET$ částice, jež stopu vytvořila. Nejprve si tedy ukážeme, jak zjistit $V$.
 
-Po leptání detektoru jsou stopy analyzovány. K tomu se např. používá mikroskop s kamerou, která nasnímá povrch detektoru. Zvětšení je takové, aby stopy byly snadno rozpoznatelné. Poté mohou být snímky dále zpracovány v příslušném programu, který stopy bere jako elipsy; osy všech elips (hlavní osa $a$, vedlejší osa $b$) jsou výstupem programu. 
+Po leptání detektoru jsou stopy analyzovány. K tomu se např. používá mikroskop s kamerou, která nasnímá povrch detektoru. Zvětšení je takové, aby stopy byly snadno rozpoznatelné; stopy jsou znázorněny jako tmavé elipsoidní objekty, viz obr. \ref{fig:detektory_stopy}. Snímky mohou být dále zpracovány v příslušném programu; osy všech elips/stop (hlavní osa $a$, vedlejší osa $b$) jsou výstupem programu. 
 %Ve vyhodnocovacím softwaru jsou pak stopy brány jako elipsy, výstupem softwaru jsou velikosti hlavní a vedlejší osy. 
 Poměr leptacích rychlostí může být určen z hodnot $a,b$ pro každou stopu ze vztahu
 \begin{equation}
@@ -66,15 +66,21 @@ kde
   A&=\frac{a}{2V_Mt}\,,\\
   B&=\frac{b}{2V_Mt}
 \end{align*}
-a $t$ je doba, po kterou se leptalo, tj. $d=V_Mt$ je tloušťka odleptané vrstvy nepoškozeného materiálu; vztahy byly převzaty z~\cite{ssntd}. Existuje více metod zjištění $d$. Je možné přímo měřit hodnoty tlouštěk materiálu před a po leptání a poté je odečíst. Mnohem přesnější je např. skoková metoda, kdy je část detektoru pokryta pryskyřicí, díky čemuž není tato část odleptána a posléze je možné měřit rozdíl mezi touto a odleptanou částí; další metody jsou popsány v~\cite{thesisKPBrabcova}.    
+a $t$ je doba, po kterou se leptalo, tj. $d=V_Mt$ je tloušťka odleptané vrstvy nepoškozeného materiálu; vztahy byly převzaty z~\cite{ssntd}. Existuje více metod zjištění $d$. Je možné přímo měřit hodnoty tlouštěk materiálu před a po leptání a poté je odečíst. Mnohem přesnější je např. metoda štěpných fragmentů; tato a další metody jsou popsány v~\cite{thesisKPBrabcova}.    
 %\begin{equation}
   %h=V_bt,
   %\label{eq:thicknessOfMaterial}
 %\end{equation}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{praktickaCast_stopyOK.jpg}
+  \caption{Část plochy detektoru zaznamenaná mikroskopem, stopy jsou tmavé elipsoidní objekty.}
+  \label{fig:detektory_stopy}
+\end{figure}
 
-Kalibrační křivka, neboli vztah mezi $V$ a $\LET$, je určena experimentálním ozařováním příslušného TED. Pro proklad naměřených dat se většinou používá polynom třetího stupně. Je důležité poznamenat, že od určitých hodnot je $\LET$ konstantní, tedy že by mělo docházet k nasycení kalibrační křivky, a proto v případě polynomu 3. stupně nelze křivku extrapolovat do vzdálenějších hodnot od naměřených bodů. 
+Kalibrační křivka, neboli vztah mezi $V$ a $\LET$, je určena experimentálním ozařováním příslušného TED. Pro proklad naměřených dat lze použít nejrůznější funkce, příkladem je polynom třetího stupně, který má výhodu jednoduchosti. Je důležité poznamenat, že od určitých hodnot $\LET$ nejsou k dispozici kalibrační body, a proto nelze používat kalibrační křivku od těchto hodnot.
 
-Veličina $\theta_k=1/V$ je nazývaná kritický úhel a vyjadřuje minimální úhel dopadu částice na detektor, při němž je stopa stále ještě po leptání zřetelná, tj. není leptáním odstraněna. Počet detekovaných částic na plochu $N$ je třeba opravit na částice, které dopadly pod menším úhlem než  $\theta_k$; to se provede vynásobením koeficientem 
+Existuje minimální úhel dopadu částice na detektor, při němž je stopa stále ještě po leptání zřetelná, tj. není leptáním odstraněna. Tento úhel se nazývá kritický úhel a je definován vztahem $\theta_k=1/V$. Počet detekovaných částic na plochu $N$ je třeba opravit na částice, které dopadly pod menším úhlem než $\theta_k$; za předpokladu izotropního rozložení dopadajících částic (což lze ve vesmíru brát jako splněné) to je možné provést vynásobením koeficientem 
 \begin{equation}
   k_{\theta}=\frac{V^2}{V^2-1},
   \label{eq:kritickyUhel}
@@ -90,7 +96,7 @@ kde $\frac{dN^{\text{kor}}}{d\LET}$ je opravený počet částic na plochu mají
 
 \begin{table}[H]
   \centering
-  \caption{Hodnoty jakostního faktoru $Q$ v závislosti na $\LET$. ICRP 60, 1991 <++?++>}
+  \caption{Hodnoty jakostního faktoru $Q$ v závislosti na $\LET$ (ICRP 60, 1991).}
   \label{tab:detektory_Q}
   \begin{tabular}{ll}
 	\toprule

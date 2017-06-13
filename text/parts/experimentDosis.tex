@@ -1,10 +1,10 @@
 \chapter{Experimenty DOSIS a DOSIS 3D}
 Informace v této kapitole byly čerpány převážně ze zdrojů \cite{dosis,dosis2}.
 
-Experiment DOSIS (Dose Distribution Inside the ISS, distribuce dávky uvnitř ISS) probíhal v letech 2009-2011, experiment DOSIS3D probíhá od roku 2012. Jejich cílem je vyšetření prostorové distribuce dávky v modulu ISS Columbus a získání dat, která by vedla k vytvoření 3D modelu rozložení dávek/dávkového ekvivalentu.
+Experiment DOSIS (Dose Distribution Inside the ISS, distribuce dávky uvnitř ISS) probíhal v letech 2009-2011, experiment DOSIS3D probíhá od roku 2012. Jejich cílem je stanovení prostorové distribuce dávky v modulu ISS Columbus a získání dat, která by vedla k vytvoření 3D modelu rozložení dávek/dávkového ekvivalentu.
 %a DOSIS 3D probíhají roku 2009 za účelem vyšetření prostorové distribuce dávky v modulu ISS Columbus. Kýženým cílem bylo získání dat, která by vedla k vytvoření 3D modelu této distribuce.
 
-Na experimentech se podílí řada institucí z různých zemí, jejich přehled je v tab.~\ref{tab:dosis_instituce}. Hlavním koordinátorem je DLR. MTA EK byla v průběhu experimentu přejmenována na AERI, v této práci je využívána původní zkratka. %formulací si nejsem jist
+Na experimentech se podílí řada institucí z různých zemí, jejich přehled je v tab.~\ref{tab:dosis_instituce}. Hlavním koordinátorem je DLR. 
 \begin{table}[H]
   \centering
 \renewcommand{\baselinestretch}{0.8}
@@ -36,7 +36,7 @@ Měření byla, respektive jsou prováděna pasivními a aktivními detektory, k
 
 \section{Rozmístění pasivních detektorů}
 V rámci experimentu DOSIS, resp. DOSIS3D je v modulu Columbus rozmístěno jedenáct PDP (Passive Detector Packages, balíčky pasivních detektorů), které obsahují termoluminiscenční detektory (TLD), detektory využívající optickou stimulaci (OSLD) a detektory stop v pevné fázi (TED). Na obr. \ref{fig:columbus_rozmisteni} vidíme rozmístění PDPs; pět z nich je umístěno na čelní stěně, dalších šest na zadní stěně. Jedenáctý balíček označený symbolem X, též označovaný jako Triple PDP (trojitý PDP), je umístěn blízko aktivních detektorů a pokrývá větší plochu než ostatní PDPs. Osm PDPs je umístěno ve skříňových modulech (viz oddíl \ref{sec:ISS_columbus}); více informací o umístění pasivních detektorů je k dostání v \cite{dosis}. %další obrázek???
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth]{columbus_rozmisteni.jpg}
   \caption{Rozmístění jedenácti balíčků s pasivními detektory v modulu Columbus; jedenáctý je označen symbolem X a v jeho blízkosti jsou umístěny i aktivní detektory. Obrázek dále obsahuje šipku ukazující směr letu. \cite{dosis}}
@@ -44,21 +44,15 @@ V rámci experimentu DOSIS, resp. DOSIS3D je v modulu Columbus rozmístěno jede
 \end{figure}
 
 \section{Průběh experimentů}%mozna DOPLNIT:DOSTEL-1 meril kratsi dobu nez DOSTEL-2!!!!!!!!!!!!!
-Experiment DOSIS probíhal mezi lety 2009 a 2011. Doba trvání experimentu DOSIS3D byla původně stanovena na rozmezí let 2012-2016, avšak v roce 2016 byla prodloužena a experiment stále běží. V rámci těchto experimentů bylo v modulu Columbus zatím k dnešnímu datu (13. 5. 2017) postupně upevněno 10 sad pasivních detektorů (DOSIS -- dvě sady, DOSIS3D -- devět sad) a na květen/červen 2017 se plánuje upevnění jedenácté. Každá sada obsahovala obsahovala výše zmíněných 11 PDPs. V tab.~\ref{tab:dosis_timeline} je vidět časový vývoj v obměně prvních osmi sad a aktivních detektorů (ty byly u obou experimentů pouze dva, DOSTEL-1 a DOSTEL-2), tab.~\ref{tab:dosis_timeline_passive} pak obsahuje podrobnější informace o pasivních detektorech (dopravení na ISS, instalaci, doba používání, ukončení měření, návrat na Zem, nadmořská výška); sady 7, 8, 9 experimentu DOSIS3D jsou stále
-vyhodnocovány, proto u nich není v tabulce údaj o nadmořské výšce; sada 10 není zatím vyhodnocena vůbec. 
+Experiment DOSIS probíhal mezi lety 2009 a 2011. Doba trvání experimentu DOSIS3D byla původně stanovena na rozmezí let 2012-2016, avšak v roce 2016 byla prodloužena a experiment stále běží. V rámci těchto experimentů bylo v modulu Columbus zatím k dnešnímu datu (13. 5. 2017) postupně upevněno 10 sad pasivních detektorů (DOSIS -- dvě sady, DOSIS3D -- devět sad) a na květen/červen 2017 se plánuje upevnění jedenácté. Každá sada obsahovala obsahovala výše zmíněných 11 PDPs. Tab.~\ref{tab:dosis_timeline_passive} obsahuje informace o obměně sad pasivních detektorů (dopravení na ISS, instalaci, doba používání, ukončení měření,
+návrat na Zem, nadmořská výška ISS); u sad 7, 8, 9 experimentu DOSIS3D nejsou doposud k dispozici údaje o nadmořské výšce; sada 10 je stále na ISS. 
 
 První z experimentů započal 15. července 2009 startem raketoplánu Endeavor, na jehož palubě byla
 první sada pasivních detektorů spolu s aktivními detektory \mbox{DOSTEL-1,2}. Jeho část skládající se z měření pasivními detektory skončila 26. května 2010 návratem druhé sady. Experiment DOSIS3D započal 15. května 2012 startem lodi Soyuz 30S. 
-\begin{table}[H]
-  \centering
-  \caption{Vývoj experimentů DOSIS a DOSIS3D v čase. Číslo na svislé ose označuje $n$-tou sadu pasivních detektorů, písmeno A značí aktivní detektor. \cite{dosis}}
-  \label{tab:dosis_timeline}
-  \includegraphics[width=\textwidth]{dosis_timeline}
-\end{table}
-\begin{table}[H]
+\begin{table}[ht]
   \centering
 \footnotesize
-  \caption{Časový vývoj používaných sad pasivních detektorů. Tabulka dále obsahuje dobu, kterou daná sada strávila na misi (tj. od startu do návratu na Zem), v závorce je doba, po kterou pasivní detektory měřily; pokrytí je podíl těchto dvou dob. Poslední sloupec obsahuje rozmezí nadmořské výšky, ve které se ISS v daný časový úsek nacházela~\cite{dosis}. Sady 7, 8 a 9 experimentu DOSIS3D nebyly ještě zcela vyhodnoceny (květen 2017), sada 10 nebyla téhož experimentu nebyla vyhodnocena vůbec.}
+  \caption{Časový vývoj používaných sad pasivních detektorů. Tabulka dále obsahuje dobu, kterou daná sada strávila na misi (tj. od startu do návratu na Zem), v závorce je doba, po kterou pasivní detektory byly umístěny v dané pozici/místě; pokrytí je podíl těchto dvou dob. Poslední sloupec obsahuje rozmezí nadmořské výšky, ve které se ISS v daný časový úsek nacházela~\cite{dosis}. U sad 7,8,9 nejsou dosud k dispozici informace o nadmořské výšce. Na ISS se nyní nachází 10. sada experimentu DOSIS3D.}
   \label{tab:dosis_timeline_passive}
   \begin{tabularx}{\textwidth}{llllll}
 	\toprule
@@ -113,19 +107,18 @@ Z informací v oddílu \ref{sec:kosmickeZareni_solar} plyne, že za slunečního
 \end{figure}
 
 \section{Používané detektory}%AKTUALNOST TABULEK?????!!!!!!!!!!!!!!!
-Tento oddíl pojednává o používaných detektorech v experimentech DOSIS a DOSIS3D. Podrobnější informace o pasivních detektorech (např. jak se určuje absorbovaná dávka a dávkový ekvivalent z naměřených dat; srovnání jednotlivých typů pasivních detektorů) jsou v kapitole \ref{sec:detektory_detektory}. O aktivních detektorech tato práce nepojednává, podrobnější informace lze dohledat v \cite{activeDetectors,dosis2}.
+Tento oddíl pojednává o používaných detektorech v experimentech DOSIS a DOSIS3D. Obecné informace o pasivních detektorech (např. jak se určuje absorbovaná dávka a dávkový ekvivalent z naměřených dat; srovnání jednotlivých typů detektorů) jsou v kapitole \ref{sec:detektory_detektory}. Pododdíl \ref{experimentDosis_activeDetectors} obsahuje stručné informace o používaných aktivních detektorech, podrobnější informace lze dohledat v \cite{activeDetectors,dosis2}.
 
 %V případě pasivních detektorů jsou principy a fungování detektorů a potažmo i témata jako využívané kombinace detektorů pro měření absorbované dávky a dávkového ekvivalentu, srovnání pasivních detektorů mezi sebou a s aktivními detektory zpracována v kapitole \ref{sec:detektory_detektory}. V případě 
 
-V experimentech DOSIS a DOSIS3D jsou používány následující tři typy pasivních detektorů: termoluminiscenční detektory (TLD), opticky stimulované luminiscenční detektory (OSLD) a detektory stop v pevné fázi (TED). V aktivní složce měření je využívána detektorová jednotka DOSTEL. 
-
-Na konci tohoto oddílu je podrobný přehled detektorů, které používá NPI, tj. Ústav jaderné fyziky AVČR, oddělení dozimetrie záření.
+V experimentech DOSIS a DOSIS3D jsou používány následující tři typy pasivních detektorů: termoluminiscenční detektory (TLD), opticky stimulované luminiscenční detektory (OSLD) a detektory stop v pevné fázi (TED). V aktivní složce měření je využívána detektorová jednotka DOSTEL. NPI měří pomocí termoluminiscenčních detektorů a detektorů stop v pevné fázi. 
+%Na konci tohoto oddílu je podrobný přehled detektorů, které používá NPI, tj. Ústav jaderné fyziky AVČR, oddělení dozimetrie záření.
 \subsection{Termoluminiscenční detektory}\label{sec:dosis_TLD}
-Používané TL detektory jsou v tabulce~\ref{tab:dosis_pouzivaneTLD}. Ta obsahuje název instituce spolu s názvy a materiály TLD, které jsou danými institucemi používány. Avšak to pro důkladný popis daného TL detektoru nestačí. Je potřeba dodat následující parametry: čtecí systém (jímž jsou detektory vyhodnocovány), jak dlouho a při jaké teplotě probíhá annealing, rychlost zahřívání, zda-li se detektor před vyhodnocením předehřívá, rychlost chlazení, kalibrační metoda a zdroj, vyhodnocení vyhřívací křivky. Lomítko v názvu TLD (v tab. \ref{tab:dosis_pouzivaneTLD}) značí dva různé TLD lišící se pouze nuklidem v materiálu: TLD-600 a MTS-6 je označení pro $^6$LiF:Mg,Ti; TLD-700 a MTS-7 pro $^7$LiF:Mg,Ti; MCP-6 pro $^6$LiF:Mg,Cu,P; MCP-7 pro $^7$LiF:Mg,Cu,P. %, tato dvojice má jinak stejné parametry. Naopak je-li nějaký materiál uveden u dvou zcela odlišně pojmenovaných TLD, pak se tyto dva TLD liší alespoň v jednom parametru.
+Používané TL detektory jsou v tabulce~\ref{tab:dosis_pouzivaneTLD}. Ta obsahuje název instituce spolu s názvy a materiály TLD, které jsou danými institucemi používány. Avšak to pro srovnání výsledků z různých TL detektorů nestačí, důležitou roli hrají následující parametry: čtecí systém (jímž jsou detektory vyhodnocovány), jak dlouho a při jaké teplotě probíhá annealing, rychlost zahřívání, zda-li se detektor před vyhodnocením předehřívá, rychlost chlazení, kalibrační metoda a zdroj, vyhodnocení vyhřívací křivky. Lomítko v názvu TLD (v tab. \ref{tab:dosis_pouzivaneTLD}) značí dva různé TLD lišící se pouze nuklidem v materiálu: TLD-600 a MTS-6 je označení pro $^6$LiF:Mg,Ti; TLD-700 a MTS-7 pro $^7$LiF:Mg,Ti; MCP-6 pro $^6$LiF:Mg,Cu,P; MCP-7 pro $^7$LiF:Mg,Cu,P. %, tato dvojice má jinak stejné parametry. Naopak je-li nějaký materiál uveden u dvou zcela odlišně pojmenovaných TLD, pak se tyto dva TLD liší alespoň v jednom parametru.
 \begin{table}[H]
   \def\arraystretch{0.8}
   \centering
-  \caption{TL detektory používané různými institucemi.}
+  \caption{TL detektory používané různými institucemi. \cite{dosis}}
   \label{tab:dosis_pouzivaneTLD}
   \begin{tabular}{lll}
 	\toprule
@@ -148,15 +141,17 @@ NPI			 &Al$_2$O$_3$:C&Al$_2$O$_3$:C\\
 	\bottomrule
   \end{tabular}
 \end{table}
+
+NPI používá dva TL detektory, Al$_2$O$_3$:C a CaSO$_4$:Dy. Oba dva jsou vyhodnocovány pomocí čtecího systému RA’94 (THORN EMI 9789 QB)+TOLEDO 654 TLD Reader; rychlost zahřívání u obou je rovna 10 $^{\circ}$C/s; první není předehříván, druhý je předehříván na 150 $^{\circ}$C (22 s); annealing probíhá 20 minut za 700 $^{\circ}$C (Al$_2$O$_3$:C), respektive 10 minut za 380 $^{\circ}$C (CaSO$_4$:Dy); ochlazovací rychlost je vysoká u obou; kalibrování probíhá u obou pomocí $^{137}$Cs; u obou je vyhodnocována plocha pod vyhřívací křivkou. Oba dva mají průměr roven 5 mm a tloušťku rovnou 1 mm.
 \subsection{Opticky stimulované luminiscenční detektory}
-Detektory založené na opticky stimulované luminiscenci využívají následující instituce: OSU, SCK$\cdot$CEN, NASA/SRAG, NIRS. Jsou vyrobené z jednoho materiálu (Al$_2$O$_3$:C), avšak liší se v následujících parametrech: čtecí systém, příkon energie působící na na centimetr čtvereční detektoru, filtr, doba stimulace, kalibrační metoda a kalibrační zdroj, vyhodnocení OSL křivky. Všechny tyto parametry jsou pro detektory od jednotlivých institucí v tab. 6 v \cite{dosis}. 
+Detektory založené na opticky stimulované luminiscenci využívají následující instituce: OSU, SCK$\cdot$CEN, NASA/SRAG, NIRS. Jsou vyrobené z jednoho materiálu (Al$_2$O$_3$:C), avšak liší se v následujících parametrech: čtecí systém, příkon energie stimulujícího laseru působící na na centimetr čtvereční detektoru, filtr, doba stimulace, kalibrační metoda a kalibrační zdroj, vyhodnocení OSL křivky. Všechny tyto parametry jsou pro detektory od jednotlivých institucí v tab. 6 v \cite{dosis}. 
 %nedělat tabulku, vypsat instituce normálně; ze je to jeden materiál (Al$_2$O$_3$:C), ale různé parametry; jejich vyhodnocování probíhá pomocí referenčního zdroje (ten vztah asi nepsat); to je asi vše, bude to krátké
 \subsection{Detektory stop v pevné fázi}
-Všechny používané detektory stop v pevné fázi jsou CR-39. V tab. \ref{tab:dosis_pouzivaneTED} jsou uvedeny instituce, které TED využívají; tabulka také obsahuje výrobce daného TED. Důležitými parametry jsou: doba leptání; teplota, při níž leptání probíhá; koncentrace NaOH, jímž se leptalo; odleptaná vrstva; analyzovaná plocha.
+Všechny používané detektory stop v pevné fázi jsou CR-39. V tab. \ref{tab:dosis_pouzivaneTED} jsou uvedeny instituce, které TED využívají; tabulka také obsahuje výrobce daného TED. Avšak tato tabulka již není aktuální, jelikož většina institucí přešla v posledních letech na TASTRAK původně využívaný pouze MTA EK. Různorodost využívaných TED a jejich způsobů vyhodnocení totiž komplikovalo vzájemné porovnávání a interpretaci naměřených dat \cite{cesky}. Důležitými parametry jsou: doba leptání; teplota, při níž leptání probíhá; koncentrace NaOH, jímž se leptalo; odleptaná vrstva; analyzovaná plocha.
 \begin{table}[h]
   \def\arraystretch{0.8}
   \centering
-  \caption{Přehled institucí používající TED, u každé instituce jsou uvedeny výrobci příslušného detektoru.}
+  \caption{Přehled institucí používající TED, u každé instituce jsou uvedeny výrobci příslušného detektoru. V posledních letech většina institucí přešla k používání TASTRAKu od MTA EK. \cite{dosis}}
   \label{tab:dosis_pouzivaneTED}
   \begin{tabular}{ll}
 	\toprule
@@ -173,9 +168,11 @@ Všechny používané detektory stop v pevné fázi jsou CR-39. V tab. \ref{tab:
   \end{tabular}
 \end{table}
 
+Metodika vyhodnocování TED používaných NPI je v oddíle \ref{sec:praktickaCast_metodika}.
+
 %dát sem tu tabulku celou; CR-39; velmi záleží na hardwaru (mikroskop, kamera) a softwaru!!!
 %pozn.: principy, z čeho co je a proste vše podrobnější si nechat do další kapitoly
-\subsection{Aktivní detektory DOSTEL}
+\subsection{Aktivní detektory DOSTEL}\label{experimentDosis_activeDetectors}
 Detektorová jednotka DOSTEL se skládá z dvou křemíkových planárních detektorů s plochou  6,94 cm$^2$ a tloušťkou 315 $\mu$m. Tyto detektory jsou od sebe vzdálené 15 mm a jsou nastaveny ve stejné geometrii jako teleskop. Jednotka může pracovat buď v dávkovém módu (``dose mode''), nebo v teleskopickém/$\mathit{LET}$ módu. V prvním případě se měří četnost nárazů a dávkový příkon, v druhém $\mathit{LET}$ (při náhodném nárazu do obou detektorů se měří délka doletu částice). Z naměřených dat lze určit absorbovanou dávku a dávkový ekvivalent. DOSTEL dokáže zaznamenávat částice s $\mathit{LET}$ v rozsahu 0,5--400 kev/$\mu$m \cite{activeDetectors}. 
 
 V modulu Columbus jsou nainstalovány dvě jednotky DOSTEL v navzájem kolmém směru, což umožňuje získat informace o směrovosti pole záření v modulu. Navíc díky dlouhodobosti měření DOSTEL detektory je možné studovat změny v ozáření během jedenáctiletého slunečního cyklu.
@@ -188,18 +185,14 @@ Na obrázku \ref{fig:dosis_activeDetectors} je mimo jiné vidět DOSTEL. Informa
   \label{fig:dosis_activeDetectors}
 \end{figure}
 
-\subsection{Detektory používané NPI}
-NPI používá dva TL detektory, Al$_2$O$_3$:C a CaSO$_4$:Dy. Oba dva jsou vyhodnocovány pomocí čtecího systému RA’94 (THORN EMI 9789 QB)+TOLEDO 654 TLD Reader; rychlost zahřívání u obou je rovna 10 $^{\circ}$C/s; první není předehříván, druhý je předehříván na 150 $^{\circ}$C (22 s); annealing probíhá 20 minut za 700 $^{\circ}$C (Al$_2$O$_3$:C), respektive 10 minut za 380 $^{\circ}$C (CaSO$_4$:Dy); ochlazovací rychlost je vysoká u obou; kalibrování probíhá u obou pomocí $^{137}$Cs; u obou je vyhodnocována plocha pod vyhřívací křivkou. Oba dva mají průměr roven 5 mm a tloušťku rovnou 1 mm.
+%\subsection{Detektory používané NPI}
+%NPI používá dva TL detektory, Al$_2$O$_3$:C a CaSO$_4$:Dy. Oba dva jsou vyhodnocovány pomocí čtecího systému RA’94 (THORN EMI 9789 QB)+TOLEDO 654 TLD Reader; rychlost zahřívání u obou je rovna 10 $^{\circ}$C/s; první není předehříván, druhý je předehříván na 150 $^{\circ}$C (22 s); annealing probíhá 20 minut za 700 $^{\circ}$C (Al$_2$O$_3$:C), respektive 10 minut za 380 $^{\circ}$C (CaSO$_4$:Dy); ochlazovací rychlost je vysoká u obou; kalibrování probíhá u obou pomocí $^{137}$Cs; u obou je vyhodnocována plocha pod vyhřívací křivkou. Oba dva mají průměr roven 5 mm a tloušťku rovnou 1 mm.
 
 
-Z TED používá NPI HARZLAS TD-1 a od roku 2016 i TASTRAK. HARZLAS TD-1 je leptán 18 hodin za teploty 70 $^{\circ}$C v 5 N koncentrovaném roztoku NaOH; odleptaná vrstva je tlustá 15,3 $\mu$m. Celkově je analyzována plocha o velikosti 0,09 cm$^2$. Detektor je tlustý 0.9 mm. TASTRAK se leptá dvoufázově: první fáze trvá 6 hodin a jsou při ní zobrazeny stopy vytvořené částicemi s velkým $\mathit{LET}$; při druhé fázi, která trvá dalších 9 hodin, se zobrazí i stopy pocházejících od částic s nižším $\mathit{LET}$. Celkový čas leptání je tedy 15 hodin. Buď se postupuje postupným leptáním (6 hodin leptání, vyhodnocení, 9 hodin leptání, vyhodnocení), nebo se část detektoru leptá 6 hodin a část 15 hodin, tudíž
-detektor lze vyhodnotit najednou. Detektor se leptá při 70 $^{\circ}$C v 6,25 N koncentrovaném roztoku NaOH, odleptaná vrstva je tlustá 7,5/20,1 $\mu$m <++?++>; analyzuje se plocha o velikost 0,5 cm$^2$ (v obou případech). Po leptání následuje u obou detektorů nasnímání stop lineárním snímacím zařízením s vysokým rozlišením (které je součástí mikroskopu HSP-1000, \cite{dosis_HSP1000}), poté jsou snímky se stopami analyzovány programem HspFit.
+%Z TED používá NPI HARZLAS TD-1 a od roku 2016 i TASTRAK. HARZLAS TD-1 je leptán 18 hodin za teploty 70 $^{\circ}$C v 5 N koncentrovaném roztoku NaOH; odleptaná vrstva je kolem 15,3 $\mu$m. Většinou je analyzována plocha o velikosti 0,09 cm$^2$. Detektor je tlustý 0.9 mm. TASTRAK se leptá dvoufázově: první fáze trvá 6 hodin a jsou při ní zobrazeny stopy vytvořené částicemi s velkým $\mathit{LET}$; při druhé fázi, která trvá dalších 9 hodin, se zobrazí i stopy pocházejících od částic s nižším $\mathit{LET}$. Celkový čas leptání je tedy 15 hodin. Buď se postupuje postupným leptáním (6 hodin leptání, vyhodnocení, 9 hodin leptání, vyhodnocení), nebo se část detektoru leptá 6 hodin a část 15 hodin, tudíž
+%detektor lze vyhodnotit najednou. Detektor se leptá při 70 $^{\circ}$C v 6,25 N koncentrovaném roztoku NaOH, odleptaná vrstva je tlustá 7,5/20,1 $\mu$m; analyzuje se plocha o velikosti 0,5 cm$^2$ (v obou případech) z důvodu zajištění dostatečné statistiky. Po leptání následuje u obou detektorů nasnímání stop lineárním snímacím zařízením s vysokým rozlišením (které je součástí mikroskopu HSP-1000, \cite{dosis_HSP1000}), poté jsou snímky se stopami analyzovány programem HspFit.
 
-TASTRAK původně využívaný pouze MTA EK začíná být používán i ostatními organizacemi, jelikož různorodost využívaných TED a jejich způsobů vyhodnocení komplikuje vzájemné porovnávání a interpretaci naměřených dat \cite{cesky}. 
 %To. že nám (NPI) vyšla kalibrační krivka jinak než těm madarum, tak to psat do casti o detektorech
-
-Informace byly brány z \cite{dosis}.
-
 \section{Výsledky}
 Zde jsou uvedeny výsledky publikované v \cite{dosis}. Jedná se o data naměřená TL a OSL detektory z obou sad DOSIS a z prvních šesti sad DOSIS3D, tedy o data naměřená mezi lety 2009 a 2015. Pro větší názornost jsou zde uvedeny i obrázky z \cite{dosis2}, které byly získány z dat naměřených aktivními detektory. 
 
@@ -208,10 +201,8 @@ Na naměřená data lze pohlížet z několika hledisek. Nejprve je uvedeno srov
 Srovnáním dat od TL detektorů z DOSIS3D s daty získanými v ISS mimo modul Columbus od detektorů stejného materiálu plyne, že velmi závisí na lokálním stínění. Data se v závislosti na jeho tloušťce mohou lišit až dvojnásobně.  
 
 %Vzhledem k tomu, že tato práce je primárně zaměřena na detektory stop v pevné fázi, tak jsou informace v tomto oddíle značně povrchní. %MOZNA ZMENIT?!!!!
-Tato práce je zaměřena především na detektory stop v pevné fází, a proto jsou následující informace zestručněny. 
 \subsection{Srovnání dat pasivních detektorů v rámci jedné sady}
-V obr. \ref{fig:dosis_vysl_jednaSada} jsou uvedeny dávkové příkony naměřené detektory z 2. sady DOSIS3D v závislosti na pozici detektoru, tzn. na PDP. Jedná se o TL detektory z materiálů: $^6$LiF:Mg,Ti; $^7$LiF:Mg,Ti; CaF$_2$:Tm; $^{\text{Nat}}$LiF:Mg,Ti; $^6$LiF:Mg,Cu,P; $^7$LiF:Mg,Cu,P; Al$_2$O$_3$:C a CaSO$_4$:Dy a o všechny OSL detektory. Je vidět, že data ze všech detektorů sledují v podstatě stejný trend a že dávkové příkony z detektorů stejného materiálu vycházejí přibližně stejně. Avšak na druhou stranu jsou zde patrné rozdíly mezi naměřenými dávkovými příkony detektorů různých materiálů. Jedním z důvodů je rozdílná účinnost detekce těžkých nabitých částic každého TL/OSL materiálu (viz oddíl \ref{sec:detektory_TLD}); to je např. případ materiálů Al$_2$O$_3$:C a
-CaSO$_4$:Dy používaných NPI.
+V obr. \ref{fig:dosis_vysl_jednaSada} jsou uvedeny dávkové příkony naměřené detektory z 2. sady DOSIS3D v závislosti na pozici detektoru, tzn. na PDP. Jedná se o TL detektory z materiálů: $^6$LiF:Mg,Ti; $^7$LiF:Mg,Ti; CaF$_2$:Tm; $^{\text{Nat}}$LiF:Mg,Ti; $^6$LiF:Mg,Cu,P; $^7$LiF:Mg,Cu,P; Al$_2$O$_3$:C a CaSO$_4$:Dy a o všechny OSL detektory. Je vidět, že data ze všech detektorů sledují v podstatě stejný trend a že dávkové příkony z detektorů stejného materiálu vycházejí přibližně stejně. Avšak na druhou stranu jsou zde patrné rozdíly mezi naměřenými dávkovými příkony detektorů různých materiálů. Jedním z důvodů je rozdílná účinnost detekce těžkých nabitých částic každého TL/OSL materiálu (viz oddíl \ref{sec:detektory_TLD}).
 \begin{table}[H]
   \centering
   \def\arraystretch{0.8}
@@ -245,7 +236,7 @@ Výsledky z OSLD jsou celkem ve shodě vzhledem k rozmanitosti vyhodnocovacích 
   \label{fig:dosis_vysl_jednaSada}
 \end{figure}
 \subsection{Srovnání dat z osmi sad pro jeden druh pasivního detektoru}
-Srovnávala se data od TLD $^7$LiF:Mg,Ti ze všech PDP. Obr. \ref{fig:dosis_vysl_viceSad} zobrazuje zprůměrovaný rozsah dávkových příkonů ze všech PDP; průměrování probíhalo přes příkony určené několika organizacemi.
+Srovnávala se data od TLD $^7$LiF:Mg,Ti ze všech PDP. Obr. \ref{fig:dosis_vysl_viceSad} zobrazuje zprůměrovaný rozsah dávkových příkonů ze všech PDP; průměrování probíhalo pro každé PDP jednotlivě přes příkony určené několika organizacemi.
 %které byly určeny z dat $^7$LiF:Mg,Ti od několika organizací; 
 Například pro D3D2 (druhá sada DOSIS3D) je interval naměřených dávkových příkonů přibližně [250, 350] $\mu$Gy/den (lze srovnat s obr. \ref{fig:dosis_vysl_jednaSada}). Na ose $x$ je čas v letech. Obrázek dále obsahuje v horní části nadmořskou výšku ISS a četnost neutronů naměřených Oulu monitorem (viz oddíl \ref{sec:dosis_altitudeSlunecniCyklus}). Pokles dávkového příkonu z DOS1 na DOS2 (sady 1 a 2 experimentu DOSIS) byl způsoben vzrůstající sluneční aktivitou; prudký vzrůst z DOS2 na D3D1 je spojen s nárazovitým zvýšením nadmořské výšky ISS; poté se už nadmořská výška moc neměnila a pomalý pokles je tedy dán
 hlavně vzrůstající sluneční aktivitou. Je zajímavé, že při D3D6 detektory obdržely jen o trochu vyšší dávky než při DOS1.
@@ -256,11 +247,11 @@ hlavně vzrůstající sluneční aktivitou. Je zajímavé, že při D3D6 detekt
   \label{fig:dosis_vysl_viceSad}
 \end{figure}
 
-Absorbovaná dávka z detektorů, které byly umístěny u čelní stěny vzhledem k pohybu ISS (jedná se o PDP 3, 4, 8, 9, 10), je menší než absorbovaná dávka z detektorů umístěných u zadní stěny (PDP 1, 2, 5, 6, 7, X). To je možné vysvětlit anizotropií zachycených protonů v SAA (viz oddíl \ref{sec:kosmickeZareni_anizotropie}).
+Absorbovaná dávka z detektorů, které byly umístěny u čelní stěny vzhledem k pohybu ISS (jedná se o PDP 3, 4, 8, 9, 10), je menší než absorbovaná dávka z detektorů umístěných u zadní stěny (PDP 1, 2, 5, 6, 7, X)~\cite{dosis}. To je možné vysvětlit anizotropií zachycených protonů v SAA (viz oddíl \ref{sec:kosmickeZareni_anizotropie}).
 \subsection{Srovnání dat pasivních a aktivních detektorů}%řešit tu vodu (absorbed dose in water)???!!!!!!!!
 V tab. \ref{tab:dosis_vysl_srovnaniPassiveActive} jsou srovnány absorbované dávky určené pomocí $^7$LiF:Mg,Ti a pomocí aktivního detektoru DOSTEL-1. Data od $^7$LiF:Mg,Ti pocházejí z PDP X (viz obr.~\ref{fig:columbus_rozmisteni}), který je upevněn na boxu, v němž se nachází aktivní detektory (viz obr.~\ref{fig:dosis_activeDetectors}). Absorbované dávky aktivního detektoru byly určeny zprůměrováním dat přes časový interval odpovídající dané sadě (viz tab. \ref{tab:dosis_timeline_passive}). Hodnoty v tab. \ref{tab:dosis_vysl_srovnaniPassiveActive} představují přepočtené absorbované dávky ve vodě. Je vidět, že data z obou typů detektorů jsou ve shodě. 
 
-Při porovnávání dat z TLD a DOSTEL je třeba brát v úvahu několik věcí. Zaprvé účinnost detekce částic nad cca 10 keV/$\mu$m u TLD klesá, zatímco u DOSTEL je v podstatě stále stoprocentní. Dále pasivní detektory byly v PDP umístěny okolo 95~\% svého měřícího cyklu, zbytek času strávily cestováním na, resp. z ISS; nicméně toto pravděpodobně nezaneslo do měření nějakou větší chybu, protože při průletu atmosférou detektory obdrží zanedbatelnou dávku.
+Při porovnávání dat z TLD a DOSTEL je třeba brát v úvahu několik věcí. Zaprvé účinnost detekce částic nad cca 10 keV/$\mu$m u TLD klesá, zatímco u DOSTEL je v podstatě stále stoprocentní. Dále pasivní detektory byly v PDP umístěny okolo 95~\% svého měřícího cyklu, zbytek času strávily cestováním na, resp. z ISS; nicméně toto pravděpodobně nezaneslo do měření nějakou větší chybu, protože při průletu atmosférou detektory obdrží zanedbatelnou dávku díky krátkému času letu.
 \begin{table}[H]
   \centering
   \def\arraystretch{1}
