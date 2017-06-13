@@ -62,11 +62,12 @@ else:
 inFile = file(fileName,'r') #vstupni soubor
 outFile = file(fileName+'.results','w') #soubor pro vypis vsech spoctenych hodnot
 histFile = file(fileName+'.histogram','w') #soubor pro vypis histogramu
+davkaFile = file(fileName+'.davky','w') # soubor pro zapsani celkovych davek a davkovych ekvivalentu, resp. jejich prikonu
 
 # citac vynechanych radku
 inData = 0
 
-# promena pro uchovani; 
+# promenna pro uchovani; 
 L_list = []
 D_list = []
 H_list = []
@@ -119,24 +120,37 @@ outFile.close()
 Dsum = sum(D_list)
 Hsum = sum(H_list)
 
-histFile.write('D = '+str(Dsum)+'\n')
-histFile.write('H = '+str(Hsum)+'\n')
-histFile.write('\n')
+davkaFile.write('D = '+str(Dsum)+'\n')
+davkaFile.write('H = '+str(Hsum)+'\n')
+davkaFile.write('\n')
+
+davkaFile.close()
+#DODELAT PRIKONY
 
 # VYHOTOVENI LET SPEKTER
 print 'pocet stop skutecny: ' + str(len(L_list))
 
 histFile.write('#LET '+'cetnost\n')
 
-Lmin=floor(min(L_list)/10.0)*10
-# Lmax=max(L_list)
-Lmax=ceil(max(L_list)/10.0)*10
+osaX=[]
+with open('LETintervaly.txt', 'r') as f:
+    for line in f:
+        osaX.append(float(line.strip('\n')))
+
+stredyIntervalu=[]
+with open('LETstredIntervalu.txt', 'r') as f:
+    for line in f:
+        stredyIntervalu.append(float(line.strip('\n')))
+
+# Lmin=floor(min(L_list)/10.0)*10
+# # Lmax=max(L_list)
+# Lmax=ceil(max(L_list)/10.0)*10
 
 print 'minimalni LET: '+str(min(L_list))
 print 'maximalni LET: '+str(max(L_list))
 
-print 'minimalni LET zaokrouhlen: '+str(Lmin)
-print 'maximalni LET zaokrouhlen: '+str(Lmax)
+# print 'minimalni LET zaokrouhlen: '+str(Lmin)
+# print 'maximalni LET zaokrouhlen: '+str(Lmax)
 
 #NASTAVUJE SE POCET INTERVALU 
 # pocetBinu=100 
@@ -147,20 +161,20 @@ print 'maximalni LET zaokrouhlen: '+str(Lmax)
 # print 'posledni x-ova hodnota ziskana z sirkyIntervalu: ' + str(Lmin+pocetBinu*sirkaIntervalu) #toto ok
 
 #NASTAVUJE SE SIRKA INTERVALU
-sirkaIntervalu=10
-pocetBinu=int((Lmax-Lmin)/sirkaIntervalu)
-print 'pocetBinu: ' + str(pocetBinu)
-print 'posledni x-ova hodnota ziskana z sirkyIntervalu: ' + str(Lmin+pocetBinu*sirkaIntervalu) #toto ok
+# sirkaIntervalu=10
+# pocetBinu=int((Lmax-Lmin)/sirkaIntervalu)
+# print 'pocetBinu: ' + str(pocetBinu)
+# print 'posledni x-ova hodnota ziskana z sirkyIntervalu: ' + str(Lmin+pocetBinu*sirkaIntervalu) #toto ok
 
-osaX=[]
-for i in xrange(1,pocetBinu+1):
-    osaX.append(Lmin+sirkaIntervalu*i)
+# osaX=[]
+# for i in xrange(1,pocetBinu+1):
+    # osaX.append(Lmin+sirkaIntervalu*i)
 
 # osaX=numpy.linspace(Lmin,Lmax,pocetBinu)
 # sirkaIntervalu=(1000-1)/pocetBinu
 # osaX=numpy.logspace(0,3,pocetBinu)
 
-print 'delka pole osaX: ' + str(len(osaX)) # toto taky ok
+# print 'delka pole osaX: ' + str(len(osaX)) # toto taky ok
 # print 'osa x: ' + str(osaX)
 
 pocetNezaznamenanychStop=0
@@ -176,23 +190,23 @@ pocetNezaznamenanychStop=0
     # histFile.write(str(x)+' '+str(citac)+'\n')
 
 #PROCHAZENI V OPACNEM SMERU
-cetnost=[0]*pocetBinu
+cetnost=[0]*len(stredyIntervalu)
 for LET in L_list:
-    i=0
+    j=0 # j-ty bin
     nezaznamenani=0
-    for x in osaX:
-        if (LET>=(x-sirkaIntervalu/2) and LET<=(x+sirkaIntervalu/2)):
-            cetnost[i]+=1
+    for i in xrange(1,len(osaX)+1):
+        if (LET>=osaX[i-1] and LET<=osaX[i]):
+            cetnost[j]+=1
             nezaznamenani=0
             break
         else:
             nezaznamenani=1
-        i+=1
+        j+=1
     if nezaznamenani==1:
         pocetNezaznamenanychStop+=1
 
-for i in xrange(pocetBinu):
-    histFile.write(str(osaX[i])+' '+str(cetnost[i])+'\n')
+for i in xrange(len(stredyIntervalu)):
+    histFile.write(str(stredyIntervalu[i])+' '+str(cetnost[i])+'\n')
 
 
 histFile.close()
@@ -202,14 +216,14 @@ print 'pocet stop, ktere se nezaradily do zadneho intervalu: '+ str(pocetNezazna
 
 # vykresleni
 # plt.plot(osaX,cetnost)
-plt.step(osaX,cetnost,where='mid')
-plt.xlabel('$LET$ [keV/$\mu$m]',fontsize=15)
-plt.ylabel('$N$ [-]',fontsize=15)
-plt.title('PDP 1',fontsize=25)
-plt.xscale('log')
-plt.yscale('log')
-# plt.grid()
-# plt.show()
-plt.savefig('praktickaCast_spektrum1.eps',bbox_inches='tight')
+# plt.step(stredyIntervalu,cetnost,where='mid')
+# plt.xlabel('$LET$ [keV/$\mu$m]',fontsize=15)
+# plt.ylabel('$N$ [-]',fontsize=15)
+# plt.title('PDP 1',fontsize=25)
+# plt.xscale('log')
+# plt.yscale('log')
+# # plt.grid()
+# # plt.show()
+# plt.savefig('praktickaCast_spektrum1.eps',bbox_inches='tight')
 
 
