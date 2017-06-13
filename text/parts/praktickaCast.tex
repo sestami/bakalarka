@@ -21,7 +21,7 @@ Na obr.~\ref{fig:praktickaCast_mikroskop} je mikroskopický systém HSP-1000 (ne
   \label{fig:praktickaCast_hspfit}
 \end{figure}
 
-V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje v čisté stopy; v (b) ukazuje červená šipka poškození materiálu, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu, ale jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem (označení detektoru vyrytím X). 
+V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje v čisté stopy; v (b) ukazuje červená šipka poškození materiálu nepocházející od ozáření ionizujícím zářením, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem (označení detektoru vyrytím X). 
 \begin{figure}[h]
   \centering
   \begin{subfigure}{0.7\textwidth}
@@ -53,25 +53,25 @@ V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu 
   \label{fig:praktickaCast_stopyPoskozeni}
 \end{figure}
 
-Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tyto data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou dva soubory a jeden graf. První soubor obsahuje údaje o poloze stopy, os fitované elipsy, poměru leptacích rychlostí $V$, korekčním součiniteli $k_{\theta}$, lineárním přenosu energie $\LET$, dávce $D_i$ a dávkovém ekvivalentu $H_i$ každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru; dále obsahuje data potřebná k vytvoření diferenciálního $\LET$ spektra; z těchto dat je vytvořen výstupní graf. Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
-$\mu$m) a následně $\LET$ dané částice z $V$ pomocí kalibrační křivky pro TASTRAK leptaný 6 hodin. Tato i druhá kalibrační křivka pro TASTRAK leptaný 15 hodin jsou tvaru
+Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tato data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou dva soubory a jeden graf. První soubor obsahuje údaje o poloze stopy, os fitované elipsy, poměru leptacích rychlostí $V$, korekčním součiniteli $k_{\theta}$, lineárním přenosu energie $\LET$, dávce $D_i$ a dávkovém ekvivalentu $H_i$ každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru; dále obsahuje data potřebná k vytvoření diferenciálního $\LET$ spektra; z těchto dat je vytvořen výstupní graf. Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
+$\mu$m) a následně $\LET$ dané částice z $V$ pomocí kalibrační křivky pro TASTRAK leptaný 6 hodin \eqref{eq:kalibracniKrivkaSestHod}. Vztah \eqref{eq:kalibracniKrivkaPatnactHod} představuje kalibrační křivku pro TASTRAK, který byl leptán 15 hodin.
 \begin{align}
   \LET(V) &= -99,8424+125,00172  V-15,28166  V^2+2,04636  V^3\quad\text{(6 hod)},\label{eq:kalibracniKrivkaSestHod}\\
   \LET(V) &= -96,35071+114,90343  V-7,77194  V^2+1,27248  V^3\quad\text{(15 hod)},\label{eq:kalibracniKrivkaPatnactHod}
 \end{align}
-kde $\LET$ vychází v keV/$\mu$m; závislosti byly přebrány z \cite{ssntd}. Z $\LET$ částice je dále vypočítána dávka předaná danou částicí $D_i$ ze zjednodušeného vztahu \eqref{eq:Davka} 
+kde $\LET$ vychází v keV/$\mu$m; závislosti byly přebrány z \cite{ssntd}. Z $\LET$ částice je dále vypočítána dávka předaná danou částicí $D_i$ pomocí vztahu
 \begin{equation}
   D_i=\text{konst}\cdot\LET\cdot k_{\theta}\cdot\frac{2}{ProcArea}\,, 
   \label{eq:praktickaCast_davkaJednaCastice}
 \end{equation}
-kde $\text{konst}=1,602\cdot 10^{-6}$, $ProcArea$ <++?++>. Dávkový ekvivalent od dané částice $H_i$ je určen ze vztahu 
+který je upravenou verzí vztahu \eqref{eq:praktickaCast_davkaJednaCastice}; $\text{konst}=1,602\cdot 10^{-6}$, $ProcArea$ <++?++>. Dávkový ekvivalent od dané částice $H_i$ je určen ze vztahu 
 \begin{equation}
   H_i=D_i\cdot Q\,.
   \label{eq:praktickaCast_ekvDavkaJednaCastice}
 \end{equation}
-$Q$ je jakostní faktor určený podle ICRP 60 (tab. \ref{tab:detektory_Q}). Celková dávka $D$ a dávkový ekvivalent $H$ jsou $D_i$ a $H_i$ všech částic. 
+$Q$ je jakostní faktor určený podle ICRP 60 (tab. \ref{tab:detektory_Q}). Celková dávka $D$ a dávkový ekvivalent $H$ jsou součtem $D_i$ a $H_i$ ode všech částic. 
 
-V tab. \ref{tab:praktickaCast_davkyVysledky} jsou celkové dávky a dávkové ekvivalenty určené třemi vyhodnocenými detektory Na obr. \ref{fig:praktickaCast_LETspektra} jsou $\LET$ spektra získaná z vyhodnocených detektorů.
+Tab. \ref{tab:praktickaCast_davkyVysledky} obsahuje hledané celkové dávky a dávkové ekvivalenty; do vyhodnocení nebyly zahrnuty stopy s $\LET>1000$ (kvůli rozsahu kalibrační křivky). Na obr. \ref{fig:praktickaCast_LETspektra} jsou $\LET$ spektra získaná z vyhodnocených detektorů.
 %osmá sada
 \begin{table}[h]
   \centering
@@ -104,7 +104,7 @@ V tab. \ref{tab:praktickaCast_davkyVysledky} jsou celkové dávky a dávkové ek
 	\includegraphics[width=\textwidth]{praktickaCast_spektrum3.eps}
 	\caption{}
   \end{subfigure}
-  \caption{Diferenciální $\LET$ spektra vyhodnocených detektorů. Na svislé ose je počet impulzů spadnuvších do příslušného kanálu.}
+  \caption{Diferenciální $\LET$ spektra vyhodnocených detektorů. Na svislé ose je počet impulzů spadnuvších do příslušného kanálu. Šířka jednoho kanálu je 10 keV/$\mu$m.}
   \label{fig:praktickaCast_LETspektra}
 \end{figure}
 
