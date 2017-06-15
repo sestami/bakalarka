@@ -71,6 +71,7 @@ inData = 0
 L_list = []
 D_list = []
 H_list = []
+V_list = []
 D_high_list = []
 H_high_list = []
 
@@ -91,14 +92,13 @@ for str_line in inFile:
 			Q = 0.32*L-2.2
 		if (L>=100):
 			Q = 300 / sqrt(L)
-
                 if (L<=1000):
 		    H = D * Q
                     outFile.write(data[0]+';'+data[1]+';'+data[2]+';'+data[4]+';'+data[5]+';'+str(V)+';'+str(k)+';'+str(L)+';'+str(D)+';'+str(H)+'\n')
                     L_list.append(L)
                     D_list.append(D)
                     H_list.append(H)
-		
+		    V_list.append(V)
 
 	# vynechava radky s metadaty
 	if (inData == 1): 
@@ -117,20 +117,25 @@ for str_line in inFile:
 outFile.close()
 
 # ZAPSANI DAVKY A DAVKOVEHO EKVIVALENTU
+time=180 #dni
+
 Dsum = sum(D_list)
 Hsum = sum(H_list)
 
-davkaFile.write('D = '+str(Dsum)+'\n')
-davkaFile.write('H = '+str(Hsum)+'\n')
-davkaFile.write('\n')
+Drate=(Dsum*1000)/time
+Hrate=(Hsum*1000)/time
+
+davkaFile.write('D (mGy) = '+str(Dsum)+'\n')
+davkaFile.write('H (mSv) = '+str(Hsum)+'\n')
+davkaFile.write('Drate (uGy/day) = '+str(Drate)+'\n')
+davkaFile.write('Hrate (uSv/day) = '+str(Hrate)+'\n')
 
 davkaFile.close()
-#DODELAT PRIKONY
 
 # VYHOTOVENI LET SPEKTER
 print 'pocet stop skutecny: ' + str(len(L_list))
 
-histFile.write('#LET '+'cetnost\n')
+histFile.write('#LET '+'cetnost '+'davka '+'davkovyEkvivalent '+'fluece\n')
 
 osaX=[]
 with open('LETintervaly.txt', 'r') as f:
@@ -191,22 +196,41 @@ pocetNezaznamenanychStop=0
 
 #PROCHAZENI V OPACNEM SMERU
 cetnost=[0]*len(stredyIntervalu)
-for LET in L_list:
-    j=0 # j-ty bin
+davka=[0]*len(stredyIntervalu)
+ekvDavka=[0]*len(stredyIntervalu)
+
+#informace pro fluenceSpektrum
+Vsum=[0]*len(stredyIntervalu)
+
+for i in xrange(len(L_list)):
+    # k=0 # k-ty bin
     nezaznamenani=0
-    for i in xrange(1,len(osaX)+1):
-        if (LET>=osaX[i-1] and LET<=osaX[i]):
-            cetnost[j]+=1
+    for j in xrange(1,len(osaX)+1):
+        if (L_list[i]>=osaX[j-1] and L_list[i]<=osaX[j]):
+            cetnost[j-1]+=1
+            davka[j-1]+=D_list[i]*1000
+            ekvDavka[j-1]+=H_list[i]*1000
+            Vsum[j-1]+=V_list[i]
+
             nezaznamenani=0
             break
         else:
             nezaznamenani=1
-        j+=1
+        # k+=1
     if nezaznamenani==1:
         pocetNezaznamenanychStop+=1
 
+
+Vprumer=[0]*len(stredyIntervalu)
+cosTheta=[0]*len(stredyIntervalu)
+fluence=[0]*len(stredyIntervalu)
+for i in xrange(len(cetnost)):
+    Vprumer[i]=Vsum[i]/cetnost[i]
+    cosTheta[i]=(Vprumer[i]**2-1)/Vprumer[i]**2
+    fluence[i]=cetnost[i]/(2*pi*cosTheta[i]*ProcArea) #ProcArea asi v um^2
+
 for i in xrange(len(stredyIntervalu)):
-    histFile.write(str(stredyIntervalu[i])+' '+str(cetnost[i])+'\n')
+    histFile.write(str(stredyIntervalu[i])+' '+str(cetnost[i])+' '+str(davka[i])+' '+str(ekvDavka[i])+' '+str(fluence[i])+'\n')
 
 
 histFile.close()
@@ -214,6 +238,11 @@ histFile.close()
 print 'pocet stop jako suma N z osy y: '+ str(sum(cetnost))
 print 'pocet stop, ktere se nezaradily do zadneho intervalu: '+ str(pocetNezaznamenanychStop)
 
+print '\ncelkova davka originalne: '+ str(Dsum)
+print 'celkova davka ze spektra: '+ str(sum(davka)/1000)
+
+print '\ncelkovy davkovy ekvivalent originalne: '+ str(Hsum)
+print 'celkovy davokovy ekvivalent ze spektra: '+ str(sum(ekvDavka)/1000)
 # vykresleni
 # plt.plot(osaX,cetnost)
 # plt.step(stredyIntervalu,cetnost,where='mid')
@@ -225,5 +254,4 @@ print 'pocet stop, ktere se nezaradily do zadneho intervalu: '+ str(pocetNezazna
 # # plt.grid()
 # # plt.show()
 # plt.savefig('praktickaCast_spektrum1.eps',bbox_inches='tight')
-
 

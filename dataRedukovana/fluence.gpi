@@ -1,0 +1,31 @@
+reset
+#set key right below
+set key spacing 4 box 3
+#set format xy "$%g$"
+#set format y '%.1f'
+#set linestyle 1 lt 2 lw 3
+#set key box linestyle 1
+#set xtics rotate by 45 offset -0.8, -2.5
+#set grid mxtics ytics   # draw lines for each ytics and mytics
+set grid xtics ytics mxtics mytics# lc rgb 'gray70' lw 1 lt 1, lc rgb 'gray80' lt 1 lw 1
+set key width 2 font ",20"  
+#set mxtics 
+titulek1="PDP1" 
+titulek2="PDP2"
+titulek3="PDP3"
+#set samples 10000
+set pointsize 2
+set xlabel "$\\mathit{LET}$ [keV/$\\mu$m]" #offset 0, -2
+set ylabel "Fluence [$\\mu$m$^{-2}$sr$^{-1}$]"
+set logscale xy
+set autoscale
+plot 'Img1.nap.histogram' using 1:5 with histeps lt rgb "black" title titulek1, 'Img2.nap.histogram' using 1:5 with histeps lt rgb "red" title titulek2, 'Img3.nap.histogram' using 1:5 with histeps lt rgb "blue" title titulek3,
+set terminal epslatex color size 14cm, 9cm
+set output 'LETspektrumFluence.tex'
+#set terminal png 
+#set output 'LETspektrumFluence.png'
+replot
+set output
+#pause -1 "msg"
+
+
