@@ -12,3 +12,15 @@
 -> HspFit -> červený fit vs fialový fit -> co je co?
 -> jak se ctou TLD materialy od NPI?
 -> experimentDosis.tex -> tloušťka odleptané vrstvy po 15 hod?
+
+TO DO
+kosmickeZareni
+
+-obměnit citace (kap. kosmickeZareni) (částečně OK, ale ne úplně !!!)
+-připsat něco ke Stínění stanice (OK)
+-zjistit, jak se ctou ty TLD materialy od NPI
+-v dosis2 je spousta dobrych veci do vysledku (obr. atd)
+-propojit informace z detektory.tex s experimentDosis.tex
+-v detektory.tex divně obrázky a tabulky
+-porovnat jednotlivé PADC materiály (detektory.tex)
+-ageing, fading u detektorů?

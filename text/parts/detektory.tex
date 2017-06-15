@@ -1,11 +1,14 @@
 \chapter{Pasivní detektory používané k monitorování kosmického záření}\label{sec:detektory_detektory}
-Pasivní detektory nepotřebují napájení, jsou dobře skladné (malé rozměry, malá hmotnost) a bezpečné, což je činí vhodnými měřícími prostředky ve vesmíru. Mezi jejich hlavní zápory patří, že nedodávají data v reálném čase a že pro vyhodnocení musí být dopraveny na Zem do příslušné laboratoře~\cite{benton}.
+Pasivní detektory nepotřebují napájení, jsou dobře skladné (malé rozměry, malá hmotnost) a bezpečné, což je činí vhodnými měřícími prostředky ve vesmíru. Mezi jejich hlavní zápory patří, že nedodávají data v reálném čase a že pro vyhodnocení musí být zpravidla dopraveny na Zem do příslušné laboratoře~\cite{benton}.
 
-K monitorování kosmického záření se používají detektory založené opticky stimulované luminiscenci (OSLD), termoluminiscenční detektory (TLD) a detektory stop v pevné fázi (TED, nuclear track etched detectors/solid state nuclear track detectors). OSLD se využívají pouze okrajově a tato práce o nich nepojednává.
+K monitorování kosmického záření se používají detektory založené na opticky stimulované luminiscenci (OSLD), termoluminiscenční detektory (TLD) a detektory stop v pevné fázi (TED, nuclear track etched detectors/solid state nuclear track detectors). OSLD se využívají pouze okrajově a tato práce o nich nepojednává.
 
-Výstupem z TLD je dávka, která se absorbovala v detektoru za celý čas měření. Oproti tomu pomocí TED je možné změřit $\mathit{LET}$ spektrum v rozsahu, který je rozebrán dále v textu; $\mathit{LET}$ je lineární přenos energie. Kombinací dat z TLD a z TED lze určit celkový dávkový ekvivalent~\cite{benton}.
+Výstupem z TLD je dávka, která se absorbovala v detektoru za celý čas měření. Oproti tomu pomocí TED je možné změřit $\mathit{LET}$ spektrum v rozsahu, který je rozebrán dále v textu; $\mathit{LET}$ je lineární přenos energie. Kombinací dat z TLD a z TED lze určit celkový dávkový ekvivalent~\cite{benton}, avšak nezjistí se kvalita záření (většinou).
 \section{Termoluminiscenční detektory}\label{sec:detektory_TLD}
-Vyhodnocování TLD je založeno na jevu termoluminiscence: při zahřátí na teplotu, která je vlastní pro daný materiál a vyhodnocovací cyklus, se vyzáří světlo, jehož množství je přímo úměrné množství absorbované energie v detektoru. Důležitým pojmem je vyhřívací křivka TLD, což je závislost světelného toku (respektive elektrického signálu z fotonásobiče) na teplotě. Odezva TLD se určí právě z této křivky (např. jako plocha pod křivkou, plocha pod píkem, výška píku~\cite{dosis}) a na základě kalibrační křivky lze dopočítat absorbovanou dávku. Kalibrační křivka se získává ozařováním TLD zdroji se známým dávkovým příkonem. Vzhledem k velké energetické a druhové rozmanitosti kosmického záření je třeba ozařovat dávkami v dostatečném rozsahu. 
+Termoluminiscence je jev vyskytující se u některých pevných látek. Jeho podstata spočívá v tom, že je-li látka ozářena, pak při zahřívání vyzařuje světlo, jehož množství je přímo úměrné energii, která byla při ozáření v látce deponována. Zjednodušeně lze jev vysvětlit následovně: ionizující záření při interakci s látkou mimo jiné vytrhává elektrony z valenčního pásu, čímž vznikají iontové páry (záporný elektron a kladná díra) a vytržené elektrony přecházejí do vodivostního pásu; část vytržených elektronů anihiluje s děrami (což uvolňuje tepelnou energii), avšak některé z nich se zachytí na tzv. elektronových pastech (nehomogenity v látce atp.); aby se elektron z pasti dostal, tak mu musí být dodána energie k překonání vazby, což se děje při zahřívání látky; uvolněný elektron následně
+anihiluje s dírou, přičemž energie je vyzářena ve formě elektromagnetického záření (přibližně ve viditelném spektru) nebo je předána tzv. luminiscenčnímu centru, které energii taktéž přemění na světlo. Luminiscenční centra jsou tvořena stopovými příměsemi prvků (např. Mn, Dy, Tm, Cu, C, \ldots). Světelný signál je zesílen fotonásobičem a poté vyhodnocen.
+
+Pro vyhodnocení TL signálu je důležitým pojmem vyhřívací křivka TLD, což je závislost světelného toku (respektive elektrického signálu z fotonásobiče) na teplotě. Odezva TLD se určí právě z této křivky (např. jako plocha pod křivkou, plocha pod píkem, výška píku~\cite{dosis}) a na základě kalibrace ve známém zdroji lze určit absorbovanou dávku.
 
 TLD měří spolehlivě částice s $\mathit{LET}$ nižším než cca 10 keV/$\mu$m (tato hodnota se liší pro různé materiály), pro vyšší hodnoty $\mathit{LET}$ se účinnost TLD snižuje~\cite{passDetectors}. Pro lepší popis tohoto jevu se zavádí veličina relativní odezva detektoru $\mathit{RR}$ (relative response)
 \begin{equation}
@@ -14,38 +17,23 @@ TLD měří spolehlivě částice s $\mathit{LET}$ nižším než cca 10 keV/$\m
 \end{equation}
 kde $(TL_{\text{odezva}})_Y$, resp. $(TL_{\text{odezva}})_{\gamma}$ je odezva TLD po ozáření dávkou $(D_{\text{tkáň}})_Y$, resp. $(D_{\text{tkáň}})_{\gamma}$, přičemž tyto dávky jsou si číselně rovny. Jinak řečeno $\mathit{RR}$ je definována jako poměr odezev po ozáření stejnou dávkou v tkáni (z níž je TLD vyroben) způsobenou částicemi $Y$ a referenčním zářením $\gamma$~\cite{TLD_RR}. 
 
-\begin{table}[h]
-  \centering
-  \caption{Relativní odezvy $\RR$ dvou TL detektorů používaných NPI pro částice s různým $\LET$. Data byla získána při experimentálním ozařování detektorů částicemi se známým $\LET$ \cite{TLD_RR}.}
-  \label{tab:detektory_TLD_RR}
-  \begin{tabular}{llll}
-	\toprule
-	Částice&$\LET$ [keV/$\mu$m]&Al$_2$O$_3$:C & CaSO$_4$:Dy\\
-	\midrule
-	He&$2,16$ &$0,77 \pm0,05$&$1,01\pm 0,09$\\
-	O &$20,00$ &$0,47 \pm0,04$&$0,95\pm 0,06$\\
-	Ar&$92,00$ &$0,32 \pm0,02$&$0,59\pm 0,04$\\
-	Fe&$411,00 $ &$0,25 \pm0,02$&$0,44\pm 0,03$\\
-\bottomrule
-  \end{tabular}
-\end{table}
+Na vývoj $\RR$ se podíváme u dvou TLD používaných Oddělením dozimetrie záření ÚJF AV ČR (v dalším textu je používána anglická zkratka NPI, Nuclear Physics Institute). Jedná se o detektory Al$_2$O$_3$:C a CaSO$_4$:Dy. Tyto detektory byly, resp. jsou používány v experimentech DOSIS a DOSIS3D. V obr. \ref{fig:detektory_TLD_RR} jsou hodnoty $\RR$ těchto detektorů pro částice s různým $\LET$ získané při experimentálním ozařování~\cite{dataTLD_RR}. Lze pozorovat, že s rostoucím $\LET$ relativní odezva u obou detektorů klesá, u Al$_2$O$_3$:C mnohem rychleji než u CaSO$_4$:Dy. Pro zpřesnění měření v polích částic s různým $\LET$ je potřeba provést korekci TL odezev, jinak dochází k podhodnocení dávky; více informací v~\cite{TLD_RR}.
 \begin{figure}[H]
   \centering
   \input{images/TLD_RR}
-  \caption{Data z tab. \ref{tab:detektory_TLD_RR} vynesená do grafu, tj. relativní odezva dvou detektorů používaných NPI pro částice s různým $\LET$.}
+  \caption{Relativní odezva dvou detektorů používaných NPI pro částice s různým $\LET$. Data pocházejí z~\cite{dataTLD_RR}.}
   \label{fig:detektory_TLD_RR}
 \end{figure}
-Na vývoj $\RR$ se podíváme u dvou TLD používaných Oddělením dozimetrie záření ÚJF AV ČR (v dalším textu je používána anglická zkratka NPI, Nuclear Physics Institute). Jedná se o detektory Al$_2$O$_3$:C a CaSO$_4$:Dy, které se jmenují podle výrobních materiálů. Tyto detektory byly, resp. jsou používány v experimentech DOSIS a DOSIS3D. V tab. \ref{tab:detektory_TLD_RR} jsou hodnoty $\RR$ těchto detektorů pro částice s různým $\LET$ získané při experimentálním ozařování~\cite{TLD_RR}. Lze pozorovat, že s rostoucím $\LET$ relativní odezva u obou detektorů klesá, u Al$_2$O$_3$:C mnohem rychleji než u CaSO$_4$:Dy; pro názornost jsou data z tabulky znázorněny i v grafu, viz obr. \ref{fig:detektory_TLD_RR}. Pro zpřesnění měření je potřeba provést korekci TL odezev, více
-informací v~\cite{TLD_RR}.
-%možnost dát obrázek, avšak moc to nejde (z gnuplotu), zkusit https://tex.stackexchange.com/questions/135308/how-can-we-import-the-gnuplot-output-in-latex
 \section{Detektory stop v pevné fázi}
-V některých pevných látkách vznikají při ozáření stabilní mikropoškození, tzv. stopy, která mohou být vhodným způsobem zvětšena. Následně lze zvětšené stopy spočítat např. pomocí mikroskopu, přičemž počet stop je úměrný počtu částic, které s materiálem interagovaly. Používají-li se tyto látky jako detektory ionizujícího záření, pak je nazýváme detektory stop v pevné fázi (TED). Z velikosti stop lze určit $\LET$ a $D$ (dávka) odpovídající částice a tím i dávkový ekvivalent $H$. Mezi materiály s touto schopností patří různá skla, minerální krystaly, plasty, z novějších pak i některé kovy, intermetalické sloučeniny a supravodivé oxidy; tento jev byl poprvé pozorován v roce 1958 u krystalů LiF \cite{objevTED}. 
+V některých pevných látkách vznikají při ozáření stabilní mikropoškození, tzv. latentní stopy, které mohou být vhodným způsobem zvětšeny. Následně lze zvětšené stopy spočítat např. pomocí mikroskopu, přičemž počet stop je úměrný počtu částic, které s materiálem interagovaly. Používají-li se tyto látky jako detektory ionizujícího záření, pak je nazýváme detektory stop v pevné fázi (TED). Z velikosti stop lze určit $\LET$ a $D$ (dávka) odpovídající částice a tím i dávkový ekvivalent $H$. Mezi materiály s touto schopností patří různá skla, minerální krystaly, plasty, nedávno byla tato vlastnost objevena i u některých kovů, intermetalických sloučenin a supravodivých oxidů; tento jev byl poprvé pozorován v roce 1958 u krystalů LiF \cite{objevTED}. Jako TED
+se používají hlavně plasty, skla a minerální krystaly.
 
-TED jsou schopné měřit pouze částice s $\LET$ vyšším než je určitá prahová hodnota, která je různá pro odlišné materiály. Zároveň v oblasti velkých $\LET$ již nelze přesně lineární přenos energie určit, což znamená, že nemůžeme vypočítat dávku a dávkový příkon. Detektor zde slouží maximálně jako čítač impulzů. %Tento jev bude podrobněji probrán v následujícím oddílu.
+TED jsou schopné měřit pouze částice s $\LET$ vyšším než je určitá prahová hodnota, která je různá pro odlišné materiály, ale pohybuje se kolem 10 kev/$\mu$m~\cite{ambrozova_dvaExperimenty}. Rozsah měřitelných $\LET$ je omezený i shora, tato hodnota také zavisí na materiálu.  
 
-Latentní stopy (tj. stopy, které ještě nebyly zvětšeny) jsou nejčastěji zvětšovány chemickým leptáním. Tato metoda vychází z faktu, že poškozené části materiálu se leptají rychleji než nepoškozené. Někdy se používá dvoustupňové (per partes) leptání, které má tu výhodu, že po první fázi jsou zřetelné stopy vytvořené částicemi s krátkým dosahem a s velkým $\LET$, které by při jednostupňovém leptání byly odstraněny, a po druhé fázi naopak lze identifikovat stopy vytvořené částicemi s malým $\LET$, čímž se významně zvýší rozsah detekovatelných částic \cite{cesky}. 
+Latentní stopy jsou nejčastěji zvětšovány chemickým leptáním. Tato metoda vychází z faktu, že poškozené části materiálu se leptají rychleji než nepoškozené. Někdy se používá dvoustupňové (per partes) leptání, které má tu výhodu, že po první fázi jsou zřetelné stopy vytvořené částicemi s krátkým dosahem a s velkým $\LET$, které by při jednostupňovém dlouhém leptání byly odstraněny, a po druhé fázi naopak lze identifikovat stopy vytvořené částicemi s malým $\LET$, čímž se významně zvýší rozsah detekovatelných částic \cite{cesky}. 
 
-Tvorba latentních stop není doposud plně pochopena. U anorganických materiálů se jej snaží vysvětlit např. mechanismus popsaný v \cite{spikeModel}. U organických materiálů je proces tvorby stop rozdělen do tří fází: fyzikální, fyzikální-chemická a chemická. Při první fázi ztrácí částice v materiálu energii (excitacemi a ionizacemi elektronů z obalu terčíků, vyražením terčíku z polymerové vazby, brzdným záření v případě velké rychlosti částice). Při druhé fázi dochází k interakcím částic vzniklých v první fázi, které vyúsťují ke vzniku latentních stop; latentní stopa se skládá z jádra o průměru cca 10 nm a obalu <+???+> o průměru odpovídající dosahu delta elektronů, viz obr. \ref{fig:detektory_latentTrack}. Poslední fáze představuje leptání, při němž jsou stopy neznámým způsobem zafixovány a zvětšeny.
+Tvorba latentních stop není doposud plně pochopena. U anorganických materiálů se jej snaží vysvětlit např. mechanismus popsaný v \cite{spikeModel}. U organických materiálů je proces tvorby stop rozdělen do tří fází: fáze fyzikální, fáze fyzikální-chemická a fáze chemická. Při první fázi ztrácí částice v materiálu energii (excitacemi a ionizacemi elektronů z obalu terčíků, vyražením terčíku z polymerové vazby, brzdným záření v případě velké rychlosti částice). Při druhé fázi dochází k interakcím částic vzniklých v první fázi, které vyúsťují ke vzniku latentních stop; latentní stopa se skládá z jádra o průměru cca 10 nm a vnější oblasti o průměru odpovídající dosahu delta elektronů, viz obr. \ref{fig:detektory_latentTrack}. Poslední fáze představuje leptání, při němž jsou stopy zafixovány
+a zvětšeny.~\cite{thesisKPBrabcova} 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.38\textwidth]{detektory_latentTrack.png}
@@ -53,39 +41,20 @@ Tvorba latentních stop není doposud plně pochopena. U anorganických materiá
   \label{fig:detektory_latentTrack}
 \end{figure}
 
-Důležitou roli při tvorbě stop v plastech hraje kyslík. Bylo dokázáno, že při jeho absenci jsou stopy menší \cite{kyslikTED}.  
+Řada vnějších parametrů hraje roli při tvorbě stop v plastech. Například absence kyslíku v okolním prostředí a vyšší teploty způsobují, že vznikající stopy jsou menší a detektor má sníženou citlivost~\cite{ambrozova_dvaExperimenty}.
 
-\begin{table}[ht]
-  \centering
-  \caption{Charakteristiky různých materiálů CR-39, které jsou nebo byly používané NPI. $\LET$ nasycení udává hodnotu, při které přestává mít smysl měřit lineární přenos energie. \cite{thesisKPBrabcova}}
-  \label{tab:detektory_PADC_types}
-  \begin{tabular}{llll}
-	\toprule
-	Materiál&Tloušťka [mm]&$\LET$ práh [keV/$\mu$m]&$\LET$ nasycení [keV/$\mu$m]\\
-	\midrule
-	Page&0,5&10&440\\
-	TASTRAK&0,5&20&450\\
-	USF4&0,6&8&460\\
-	HARZLAS TD-1&0,8&9&340\\
-	Baryotrak&0,9&30&$>$700\\ 
-	\bottomrule
-  \end{tabular}
-\end{table}
-Nejpoužívanějším TED materiálem je poly allyl diglykoluhličitan <++?++>, který bývá často také nazýván CR-39 (zkratka původního výrobního jména Columbia Resin \#39 \cite{CR39_wiki}). Jako detektor stop v pevné fázi se začal používat ke konci 70. let 20. století \cite{thesisKPBrabcova}; ve vesmírné dozimetrii byl poprvé použit při prvním letu amerických raketoplánů Space Shuttle v roce 1981 \cite{benton}. Původní CR-39 schopen detekovat částice s $\LET$ vyšším než 5 cca keV/$\mu$m \cite{benton}. V současné době je vyráběn pod různými jmény a s různými úpravami; také do něho bývají přidány další přísady, které mají zlepšit jeho vlastnosti. Naneštěstí některé úpravy ovlivňují i účinnost detekce částic s menším $\LET$, což jinými slovy znamená zvýšení detekčního prahu. V tab. \ref{tab:detektory_PADC_types} je srovnání
-$\LET$ rozsahu různých CR-39 materiálů, které jsou nebo byly někdy v minulosti používané NPI.
+Nejpoužívanějším TED materiálem je poly allyl diglykolkarbonát, který bývá často také nazýván CR-39 (zkratka původního výrobního jména Columbia Resin \#39 \cite{CR39_wiki}). Jako detektor stop v pevné fázi se začal používat ke konci 70. let 20. století \cite{thesisKPBrabcova}; ve vesmírné dozimetrii byl poprvé použit při prvním letu amerických raketoplánů Space Shuttle v roce 1981 \cite{benton}. Původní CR-39 byl schopen detekovat částice s $\LET$ vyšším než cca 5 keV/$\mu$m \cite{benton}. V současné době je vyráběn pod různými jmény a s různými úpravami; také do něho bývají přidány další přísady, které mají zlepšit jeho vlastnosti. Některé úpravy ovlivňují i účinnost detekce částic s menším $\LET$, což jinými slovy znamená zvýšení detekčního prahu.~\cite{thesisKPBrabcova} 
 %psát o ageing a fading???
-
-Informace z tohoto oddílu byly brány z \cite{thesisKPBrabcova}.
 %citovani v tomto oddile zvlastni
 \subsection{Vyhodnocování}
 Důležitou charakteristikou leptání je tzv. poměr leptacích rychlostí, definovaný vztahem
 \begin{equation}
-  V=\frac{V_M}{V_S}\,,
+  V=\frac{V_S}{V_M}\,,
   \label{eq:pomerLepRychlostiDEF}
 \end{equation}
 kde $V_M$ je rychlost leptání nepoškozeného materiálu a $V_S$ rychlost leptání poškozeného materiálu, tj. stopy. Z provedených experimentů se ukazuje, že $V_S$ je konstantní u stop vytvořených částicemi s velkým dosahem, avšak např. u stop vytvořených sekundárními částicemi konstantní není~\cite{ssntd}. My jej však budeme obecně brát konstantní, protože tímto způsobem je vyhodnocována většina TED. Z poměru leptacích rychlostí lze z experimentálně zjištěného vztahu určit $\LET$ částice, jež stopu vytvořila. Nejprve si tedy ukážeme, jak zjistit $V$.
 
-Po leptání detektoru jsou stopy analyzovány. K tomu se např. používá mikroskop s kamerou, která nasnímá povrch detektoru. Zvětšení je takové, aby stopy byly snadno rozpoznatelné. Poté mohou být snímky dále zpracovány v příslušném programu, který stopy bere jako elipsy; osy všech elips (hlavní osa $a$, vedlejší osa $b$) jsou výstupem programu. 
+Po leptání detektoru jsou stopy analyzovány. K tomu se např. používá mikroskop s kamerou, která nasnímá povrch detektoru. Zvětšení je takové, aby stopy byly snadno rozpoznatelné; stopy jsou znázorněny jako tmavé elipsoidní objekty, viz obr. \ref{fig:detektory_stopy}. Snímky mohou být dále zpracovány v příslušném programu; osy všech elips/stop (hlavní osa $a$, vedlejší osa $b$) jsou výstupem programu. 
 %Ve vyhodnocovacím softwaru jsou pak stopy brány jako elipsy, výstupem softwaru jsou velikosti hlavní a vedlejší osy. 
 Poměr leptacích rychlostí může být určen z hodnot $a,b$ pro každou stopu ze vztahu
 \begin{equation}
@@ -97,15 +66,21 @@ kde
   A&=\frac{a}{2V_Mt}\,,\\
   B&=\frac{b}{2V_Mt}
 \end{align*}
-a $t$ je doba, po kterou se leptalo, tj. $d=V_Mt$ je tloušťka odleptané vrstvy nepoškozeného materiálu; vztahy byly převzaty z~\cite{ssntd}. Existuje více metod zjištění $d$. Je možné přímo měřit hodnoty tlouštěk materiálu před a po leptání a poté je odečíst. Mnohem přesnější je např. skoková metoda, kdy je část detektoru pokryta pryskyřicí, díky čemuž není tato část odleptána a posléze je možné měřit rozdíl mezi touto a odleptanou částí; další metody jsou popsány v~\cite{thesisKPBrabcova}.    
+a $t$ je doba, po kterou se leptalo, tj. $d=V_Mt$ je tloušťka odleptané vrstvy nepoškozeného materiálu; vztahy byly převzaty z~\cite{ssntd}. Existuje více metod zjištění $d$. Je možné přímo měřit hodnoty tlouštěk materiálu před a po leptání a poté je odečíst. Mnohem přesnější je např. metoda štěpných fragmentů; tato a další metody jsou popsány v~\cite{thesisKPBrabcova}.    
 %\begin{equation}
   %h=V_bt,
   %\label{eq:thicknessOfMaterial}
 %\end{equation}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{praktickaCast_stopyOK.jpg}
+  \caption{Část plochy detektoru zaznamenaná mikroskopem, stopy jsou tmavé elipsoidní objekty.}
+  \label{fig:detektory_stopy}
+\end{figure}
 
-Kalibrační křivka, neboli vztah mezi $V$ a $\LET$, je určena experimentálním ozařováním příslušného TED. Pro proklad naměřených dat se většinou používá polynom třetího stupně. Je důležité poznamenat, že od určitých hodnot je $\LET$ konstantní, tedy že by mělo docházet k nasycení kalibrační křivky, a proto v případě polynomu 3. stupně nelze křivku extrapolovat do vzdálenějších hodnot od naměřených bodů. 
+Kalibrační křivka, neboli vztah mezi $V$ a $\LET$, je určena experimentálním ozařováním příslušného TED. Pro proklad naměřených dat lze použít nejrůznější funkce, příkladem je polynom třetího stupně, který má výhodu jednoduchosti. Je důležité poznamenat, že od určitých hodnot $\LET$ nejsou k dispozici kalibrační body, a proto nelze používat kalibrační křivku od těchto hodnot.
 
-Veličina $\theta_k=1/V$ je nazývaná kritický úhel a vyjadřuje minimální úhel dopadu částice na detektor, při němž je stopa stále ještě po leptání zřetelná, tj. není leptáním odstraněna. Počet detekovaných částic na plochu $N$ je třeba opravit na částice, které dopadly pod menším úhlem než  $\theta_k$; to se provede vynásobením koeficientem 
+Existuje minimální úhel dopadu částice na detektor, při němž je stopa stále ještě po leptání zřetelná, tj. není leptáním odstraněna. Tento úhel se nazývá kritický úhel a je definován vztahem $\theta_k=1/V$. Počet detekovaných částic na plochu $N$ je třeba opravit na částice, které dopadly pod menším úhlem než $\theta_k$; za předpokladu izotropního rozložení dopadajících částic (což lze ve vesmíru brát jako splněné) to je možné provést vynásobením koeficientem 
 \begin{equation}
   k_{\theta}=\frac{V^2}{V^2-1},
   \label{eq:kritickyUhel}
@@ -121,7 +96,7 @@ kde $\frac{dN^{\text{kor}}}{d\LET}$ je opravený počet částic na plochu mají
 
 \begin{table}[H]
   \centering
-  \caption{Hodnoty jakostního faktoru $Q$ v závislosti na $\LET$. ICRP 60, 1991 <++?++>}
+  \caption{Hodnoty jakostního faktoru $Q$ v závislosti na $\LET$ (ICRP 60, 1991).}
   \label{tab:detektory_Q}
   \begin{tabular}{ll}
 	\toprule
