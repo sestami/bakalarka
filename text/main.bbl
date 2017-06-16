@@ -268,6 +268,79 @@
       \endverb
       \keyw{LET spectrometry}
     \endentry
+    \entry{dataTLD_RR}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=81ddf62775814ece75d7c140994b57cb}{%
+           family={Ambrožová},
+           familyi={A\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e05b61b3cd2a1428aa65ee3a6c116c17}{%
+           family={Shurshakov},
+           familyi={S\bibinitperiod},
+           given={V.\bibnamedelimi A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3e0fa47f836472555e43e107b70a10c7}{%
+           family={Tolochek},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=6bb577c231f46ac4ae3d37a929c36b5b}{%
+           family={Brabcová},
+           familyi={B\bibinitperiod},
+           given={K.\bibnamedelimi Pachnerová},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a0c7fb159c01757acc4cf9cd3f748b1f}{%
+           family={Kubančák},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=32a1238c72b8dc27402aeec759cda453}{%
+           family={Vlček},
+           familyi={V\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d3e5c268cb862b00d28efe8d84428a2f}{%
+           family={Spurný},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=98ec7b3c8bec0063842ef93b25cddc38}{%
+           family={Grigoriev},
+           familyi={G\bibinitperiod},
+           given={A.I.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fa91718bb12c21d29f484d24701fb8f9}{%
+           family={Zeleny},
+           familyi={Z\bibinitperiod},
+           given={L.M.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Moskva}%
+      }
+      \strng{namehash}{ca9fa8ddff004c247be0b51617f339ed}
+      \strng{fullhash}{ca9fa8ddff004c247be0b51617f339ed}
+      \strng{authornamehash}{ca9fa8ddff004c247be0b51617f339ed}
+      \strng{authorfullhash}{ca9fa8ddff004c247be0b51617f339ed}
+      \strng{editornamehash}{aa4620e3e3ad1bc29b28448569515065}
+      \strng{editorfullhash}{aa4620e3e3ad1bc29b28448569515065}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Space Weather Effects on Humans: in Space and on Earth}
+      \field{title}{Monitoring onboard of iss with passive detectors -- 5 years experience}
+      \field{volume}{1}
+      \field{year}{2013}
+      \field{pages}{284\bibrangedash 291}
+      \range{pages}{8}
+      \verb{url}
+      \verb http://www.iki.rssi.ru/books/2013breus1.pdf
+      \endverb
+    \endentry
     \entry{objevTED}{article}{}
       \name{author}{1}{}{%
         {{hash=7a84c02c45575e3f077eec65ca60c79b}{%
@@ -293,6 +366,67 @@
       \verb{doi}
       \verb 10.1038/182375a0
       \endverb
+    \endentry
+    \entry{ambrozova_dvaExperimenty}{article}{}
+      \name{author}{7}{}{%
+        {{hash=cb236f0e959b8ee66d7c4e98c3a71f55}{%
+           family={Ambrožová},
+           familyi={A\bibinitperiod},
+           given={Iva},
+           giveni={I\bibinitperiod}}}%
+        {{hash=dc197fd0b999aae01771eb72eb5e36aa}{%
+           family={Brabcová},
+           familyi={B\bibinitperiod},
+           given={Kateřina\bibnamedelima Pachnerová},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=f197bc21daf4b80819419ac2506d82a4}{%
+           family={Kubančák},
+           familyi={K\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=920c96491163c877bf637f73289d1dcb}{%
+           family={Šlegl},
+           familyi={Š\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fef366225500be2c90c6ad31b82bb83c}{%
+           family={Tolochek},
+           familyi={T\bibinitperiod},
+           given={Raisa\bibnamedelima V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=761ca9cb3494f7ccc9c4a93ea3ea4712}{%
+           family={Ivanova},
+           familyi={I\bibinitperiod},
+           given={Olga\bibnamedelima A.},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=54baaf78ea5c14f0961387328e6b0b6e}{%
+           family={Shurshakov},
+           familyi={S\bibinitperiod},
+           given={Vyacheslav\bibnamedelima A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3001452c5f93b89f9b344d7067abbc58}
+      \strng{fullhash}{3001452c5f93b89f9b344d7067abbc58}
+      \strng{authornamehash}{3001452c5f93b89f9b344d7067abbc58}
+      \strng{authorfullhash}{3001452c5f93b89f9b344d7067abbc58}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1350-4487}
+      \field{journaltitle}{Radiation Measurements}
+      \field{title}{Cosmic radiation monitoring at low-Earth orbit by means of thermoluminescence and plastic nuclear track detectors}
+      \field{year}{2016}
+      \field{pages}{-}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.radmeas.2016.12.004
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1350448716304401
+      \endverb
+      \keyw{Plastic nuclear track detector}
+      \warn{\item Range field 'pages' in entry 'ambrozova_dvaExperimenty' is malformed, falling back to literal}
     \endentry
     \entry{cesky}{article}{}
       \name{author}{6}{}{%
@@ -416,32 +550,6 @@
       \field{type}{phdthesis}
       \field{year}{2010}
       \keyw{spektroskopie; jaderná chemie; dielektrické materiály; detektory částic}
-    \endentry
-    \entry{kyslikTED}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e9747dffe4242ff46b65aab3e0b29e8a}{%
-           family={Yamauchi},
-           familyi={Y\bibinitperiod},
-           given={Tomoya},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{e9747dffe4242ff46b65aab3e0b29e8a}
-      \strng{fullhash}{e9747dffe4242ff46b65aab3e0b29e8a}
-      \strng{authornamehash}{e9747dffe4242ff46b65aab3e0b29e8a}
-      \strng{authorfullhash}{e9747dffe4242ff46b65aab3e0b29e8a}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Radiation Measurements}
-      \field{title}{Studies on the nuclear tracks in CR-39 plastics}
-      \field{volume}{36(1-6)}
-      \field{year}{2003}
-      \field{pages}{73\bibrangedash 81}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1016/S1350-4487(03)00099-4
-      \endverb
     \endentry
     \entry{CR39_wiki}{online}{}
       \name{author}{1}{}{%
@@ -956,8 +1064,8 @@
       \strng{fullhash}{4a622fce7243f84951eeed46d4e66f6b}
       \strng{authornamehash}{4a622fce7243f84951eeed46d4e66f6b}
       \strng{authorfullhash}{4a622fce7243f84951eeed46d4e66f6b}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Mikroskop HSP-1000}
@@ -968,33 +1076,6 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb http://cesky.odz.ujf.cas.cz/home/vybaveni/mikroskop-hsp-1ooo
-      \endverb
-    \endentry
-    \entry{columbus_attaching}{online}{}
-      \name{author}{1}{}{%
-        {{hash=9c789b682239df0efda87e3a737fb849}{%
-           family={Esa},
-           familyi={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c789b682239df0efda87e3a737fb849}
-      \strng{fullhash}{9c789b682239df0efda87e3a737fb849}
-      \strng{authornamehash}{9c789b682239df0efda87e3a737fb849}
-      \strng{authorfullhash}{9c789b682239df0efda87e3a737fb849}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{20}
-      \field{month}{2}
-      \field{title}{A view of the European Columbus laboratory attached to the International Space Station}
-      \field{urlday}{21}
-      \field{urlmonth}{4}
-      \field{urlyear}{2017}
-      \field{year}{2008}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{url}
-      \verb http://www.esa.int/spaceinimages/Images/2008/02/A_view_of_the_European_Columbus_laboratory_attached_to_the_International_Space_Station
       \endverb
     \endentry
     \entry{nejistoty}{article}{}
@@ -1042,140 +1123,6 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0168900213002866
       \endverb
       \keyw{Space dosimetry}
-    \endentry
-    \entry{dataTLD_RR}{inproceedings}{}
-      \name{author}{7}{}{%
-        {{hash=81ddf62775814ece75d7c140994b57cb}{%
-           family={Ambrožová},
-           familyi={A\bibinitperiod},
-           given={I.},
-           giveni={I\bibinitperiod}}}%
-        {{hash=e05b61b3cd2a1428aa65ee3a6c116c17}{%
-           family={Shurshakov},
-           familyi={S\bibinitperiod},
-           given={V.\bibnamedelimi A.},
-           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=3e0fa47f836472555e43e107b70a10c7}{%
-           family={Tolochek},
-           familyi={T\bibinitperiod},
-           given={R.\bibnamedelimi V.},
-           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=6bb577c231f46ac4ae3d37a929c36b5b}{%
-           family={Brabcová},
-           familyi={B\bibinitperiod},
-           given={K.\bibnamedelimi Pachnerová},
-           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=a0c7fb159c01757acc4cf9cd3f748b1f}{%
-           family={Kubančák},
-           familyi={K\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=32a1238c72b8dc27402aeec759cda453}{%
-           family={Vlček},
-           familyi={V\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-        {{hash=d3e5c268cb862b00d28efe8d84428a2f}{%
-           family={Spurný},
-           familyi={S\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-      }
-      \name{editor}{2}{}{%
-        {{hash=98ec7b3c8bec0063842ef93b25cddc38}{%
-           family={Grigoriev},
-           familyi={G\bibinitperiod},
-           given={A.I.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=fa91718bb12c21d29f484d24701fb8f9}{%
-           family={Zeleny},
-           familyi={Z\bibinitperiod},
-           given={L.M.},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Moskva}%
-      }
-      \strng{namehash}{ca9fa8ddff004c247be0b51617f339ed}
-      \strng{fullhash}{ca9fa8ddff004c247be0b51617f339ed}
-      \strng{authornamehash}{ca9fa8ddff004c247be0b51617f339ed}
-      \strng{authorfullhash}{ca9fa8ddff004c247be0b51617f339ed}
-      \strng{editornamehash}{aa4620e3e3ad1bc29b28448569515065}
-      \strng{editorfullhash}{aa4620e3e3ad1bc29b28448569515065}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Space Weather Effects on Humans: in Space and on Earth}
-      \field{title}{Monitoring onboard of iss with passive detectors -- 5 years experience}
-      \field{volume}{1}
-      \field{year}{2013}
-      \field{pages}{284\bibrangedash 291}
-      \range{pages}{8}
-      \verb{url}
-      \verb http://www.iki.rssi.ru/books/2013breus1.pdf
-      \endverb
-    \endentry
-    \entry{ambrozova_dvaExperimenty}{article}{}
-      \name{author}{7}{}{%
-        {{hash=cb236f0e959b8ee66d7c4e98c3a71f55}{%
-           family={Ambrožová},
-           familyi={A\bibinitperiod},
-           given={Iva},
-           giveni={I\bibinitperiod}}}%
-        {{hash=dc197fd0b999aae01771eb72eb5e36aa}{%
-           family={Brabcová},
-           familyi={B\bibinitperiod},
-           given={Kateřina\bibnamedelima Pachnerová},
-           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=f197bc21daf4b80819419ac2506d82a4}{%
-           family={Kubančák},
-           familyi={K\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=920c96491163c877bf637f73289d1dcb}{%
-           family={Šlegl},
-           familyi={Š\bibinitperiod},
-           given={Jakub},
-           giveni={J\bibinitperiod}}}%
-        {{hash=fef366225500be2c90c6ad31b82bb83c}{%
-           family={Tolochek},
-           familyi={T\bibinitperiod},
-           given={Raisa\bibnamedelima V.},
-           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=761ca9cb3494f7ccc9c4a93ea3ea4712}{%
-           family={Ivanova},
-           familyi={I\bibinitperiod},
-           given={Olga\bibnamedelima A.},
-           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=54baaf78ea5c14f0961387328e6b0b6e}{%
-           family={Shurshakov},
-           familyi={S\bibinitperiod},
-           given={Vyacheslav\bibnamedelima A.},
-           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3001452c5f93b89f9b344d7067abbc58}
-      \strng{fullhash}{3001452c5f93b89f9b344d7067abbc58}
-      \strng{authornamehash}{3001452c5f93b89f9b344d7067abbc58}
-      \strng{authorfullhash}{3001452c5f93b89f9b344d7067abbc58}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1350-4487}
-      \field{journaltitle}{Radiation Measurements}
-      \field{title}{Cosmic radiation monitoring at low-Earth orbit by means of thermoluminescence and plastic nuclear track detectors}
-      \field{year}{2016}
-      \field{pages}{-}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.radmeas.2016.12.004
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S1350448716304401
-      \endverb
-      \keyw{Plastic nuclear track detector}
-      \warn{\item Range field 'pages' in entry 'ambrozova_dvaExperimenty' is malformed, falling back to literal}
     \endentry
   \endsortlist
 \endrefsection

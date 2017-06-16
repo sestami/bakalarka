@@ -31,7 +31,7 @@ Zatímco HARZLAS TD-1 detekuje částice s $\LET$ vyšším než 7 keV/$\mu$m, T
   \vspace{-10pt}
 %\end{figure}
 \end{wrapfigure}
-V praktické části bakalářské práce byly vyhodnoceny tři detektory stop osmé sady experimentu DOSIS3D. Detektory byly umístěny v prvním, druhém a třetím PDP. Jedná se o detektory z materiálu Tastrak, které byly leptány 6 hodin, tj. zobrazené stopy jsou původem od částic s krátkým dosahem a vyšším LET.
+V praktické části bakalářské práce jsem vyhodnotil tři detektory stop osmé sady experimentu DOSIS3D. Detektory byly umístěny v prvním, druhém a třetím PDP. Jedná se o detektory z materiálu TASTRAK, které byly leptány 6 hodin, tj. zobrazené stopy jsou původem od částic s krátkým dosahem a vyšším LET.
 
 Na obr.~\ref{fig:praktickaCast_mikroskop} je mikroskopický systém HSP-1000 (neúplný, chybí počítač, který systém řídí) pomocí něhož byl povrch detektorů nasnímán v dostatečném přiblížení.
 
@@ -42,47 +42,7 @@ Vyhodnocovat jsem započal analýzou stop v programu HspFit. Tento program sám 
   \caption{Okno programu HspFit; zeleně jsou označeny fity vygenerované počítačem a fialově fity vytvořené uživatelem.~\cite{dosis_HSP1000}}
   \label{fig:praktickaCast_hspfit}
 \end{figure}
-
-V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje čisté stopy; v (b) ukazuje červená šipka poškození materiálu nepocházející od ozáření ionizujícím zářením, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem (označení detektoru vyrytím X). 
-
-Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tato data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou tři soubory. První soubor obsahuje údaje o poloze stopy, os fitované elipsy, poměru leptacích rychlostí $V$, korekčním součiniteli $k_{\theta}$, lineárním přenosu energie $\LET$, dávce a dávkovém ekvivalentu každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru i s jejich příkony. Třetí soubor obsahuje data potřebná k vytvoření diferenciálních $\LET$ spekter; z těchto dat jsem pomocí programu Gnuplot vytvořil grafy \ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence}, \ref{fig:praktickaCast_LETdavka}
-a \ref{fig:praktickaCast_LETdavkEkvivalent}. Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
-$\mu$m) a následně $\LET$ dané částice z $V$ pomocí kalibrační křivky pro TASTRAK leptaný 6 hodin \eqref{eq:kalibracniKrivkaSestHod}.
-\begin{align}
-  \LET(V) &= -99,8424+125,00172  V-15,28166  V^2+2,04636  V^3\,,\label{eq:kalibracniKrivkaSestHod}
-  %\LET(V) &= -96,35071+114,90343  V-7,77194  V^2+1,27248  V^3\quad\text{(15 hod)},\label{eq:kalibracniKrivkaPatnactHod}
-\end{align}
-kde $\LET$ vychází v keV/$\mu$m; závislost byla přebrána z \cite{ssntd}. Kalibrační křivka je také k nahlédnutí na obr. \ref{fig:praktickaCast_kalibracniKrivky}.
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=0.7\textwidth]{praktickaCast_kalibracniKrivky.jpg}
-  \caption{Kalibrační křivky pro TASTRAK leptaný 6, resp. 15 hodin. Obrázek obsahuje i kalibrační body. Kalibrační křivky pocházejí od MTA EK, \cite{ssntd}.}
-  \label{fig:praktickaCast_kalibracniKrivky}
-\end{figure}
-Z $\LET$ všech částic jsou dále vypočítány dávka a dávkový ekvivalent dle vztahů \eqref{eq:Davka} a \eqref{eq:EkvDavka}. Díky známému času doby měření můžeme určit příkony těchto veličin, tj. $\dot{D}, \dot{H}$.
-
-%Tab. \ref{tab:praktickaCast_davkyVysledky} obsahuje hledané celkové dávky a dávkové ekvivalenty; do vyhodnocení nebyly zahrnuty stopy s $\LET>1000$ (kvůli rozsahu kalibrační křivky). Na obr. \ref{fig:praktickaCast_LETspektra} jsou $\LET$ spektra získaná z vyhodnocených detektorů.
-
-Původní Python skript, který jsem obdržel od vedoucí práce, neposkytoval data pro $\LET$ spektra a nevypočítával $\dot{D},\dot{H}$. Pro tyto účely jsem ho musel dopsat. 
-%osmá sada
-\begin{table}[h]
-  \centering
-  \caption{Celkové dávky $D$ a dávkové ekvivalenty $H$ určené vyhodnocovanými detektory.}
-  \label{tab:praktickaCast_davkyVysledky}
-  \begin{tabular}{lll}
-	\toprule
-	PDP&$D$ [mGy]&$H$ [mSv]\\
-	\midrule
-	%1&5,31501450067&88,2754298605\\
-	%2&5,068573344&92,5692674847\\
-	%3&4,31129592097&75,4191405129\\
-	1&$5\pm1$&$90\pm20$\\
-	2&$5\pm1$&$90\pm20$\\
-	3&$4\pm1$&$90\pm20$\\
-	\bottomrule
-  \end{tabular}
-\end{table}
-\begin{figure}[h]
+\begin{figure}[p]
   \centering
   \begin{subfigure}{0.7\textwidth}
 	\includegraphics[width=\textwidth]{praktickaCast_stopyOK.jpg}
@@ -99,7 +59,7 @@ Původní Python skript, který jsem obdržel od vedoucí práce, neposkytoval d
   \caption{Příklad naskenovaných snímků jednoho detektoru. V (a) jsou vidět normální stopy, v (b) a (c) naopak červené šipky ukazují na poškození materiálu, která nevznikla působením ionizujícího záření.}
   \label{fig:praktickaCast_stopy}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \begin{subfigure}{0.7\textwidth}
 	\includegraphics[width=\textwidth]{praktickaCast_stopyPoskozeni1.jpg}
@@ -112,32 +72,132 @@ Původní Python skript, který jsem obdržel od vedoucí práce, neposkytoval d
   \caption{Naskenované snímky zobrazující poškozené části plochy detektoru vyrytím značky X.}
   \label{fig:praktickaCast_stopyPoskozeni}
 \end{figure}
-\begin{figure}[h]
+
+V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje čisté stopy; v (b) ukazuje červená šipka poškození materiálu nepocházející od ozáření ionizujícím zářením, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem (označení detektoru vyrytím X). 
+
+Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tato data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou tři soubory. První soubor obsahuje údaje o poloze stopy, os fitované elipsy, poměru leptacích rychlostí~$V$, korekčním součiniteli~$k_{\theta}$, lineárním přenosu energie~$\LET$, dávce a dávkovém ekvivalentu každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru i s jejich příkony. Třetí soubor obsahuje data potřebná k vytvoření diferenciálních~$\LET$ spekter; z těchto dat jsem pomocí programu Gnuplot vytvořil~$\LET$ spektra (obr.~\ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence},
+\ref{fig:praktickaCast_LETdavka} a \ref{fig:praktickaCast_LETdavkEkvivalent} v příloze). Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
+$\mu$m) a následně~$\LET$ dané částice z $V$ pomocí kalibrační křivky pro TASTRAK leptaný 6 hodin
+\begin{align}
+  \LET(V) &= -99,8424+125,00172  V-15,28166  V^2+2,04636  V^3\,,\label{eq:kalibracniKrivkaSestHod}
+  %\LET(V) &= -96,35071+114,90343  V-7,77194  V^2+1,27248  V^3\quad\text{(15 hod)},\label{eq:kalibracniKrivkaPatnactHod}
+\end{align}
+kde $\LET$ vychází v keV/$\mu$m; závislost byla přebrána z \cite{ssntd}. Kalibrační křivka je také k nahlédnutí na obr. \ref{fig:praktickaCast_kalibracniKrivky}.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{praktickaCast_kalibracniKrivky.jpg}
+  \caption{Kalibrační křivky pro TASTRAK leptaný 6, resp. 15 hodin. Obrázek obsahuje i kalibrační body. Kalibrační křivky pocházejí od MTA EK, \cite{ssntd}.}
+  \label{fig:praktickaCast_kalibracniKrivky}
+\end{figure}
+Z $\LET$ všech částic jsou dále vypočítány dávka a dávkový ekvivalent dle vztahů \eqref{eq:Davka} a \eqref{eq:EkvDavka}. Díky známému času doby měření můžeme určit příkony těchto veličin, tj. $\dot{D}, \dot{H}$.
+
+%Tab. \ref{tab:praktickaCast_davkyVysledky} obsahuje hledané celkové dávky a dávkové ekvivalenty; do vyhodnocení nebyly zahrnuty stopy s $\LET>1000$ (kvůli rozsahu kalibrační křivky). Na obr. \ref{fig:praktickaCast_LETspektra} jsou $\LET$ spektra získaná z vyhodnocených detektorů.
+
+Původní Python skript, který jsem obdržel od vedoucí práce, neposkytoval data pro $\LET$ spektra a nevypočítával $\dot{D},\dot{H}$. Pro tyto účely jsem ho musel dopsat. 
+ 
+V tab. \ref{tab:praktickaCast_analyzovanaPlocha} je velikost analyzované plochy a počet analyzovaných stop všech tří detektorů.
+\begin{table}[H]
+  \centering
+  \caption{Velikost analyzované plochy a počet analyzovaných stop všech tří detektorů.}
+  \label{tab:praktickaCast_analyzovanaPlocha}
+  \begin{tabular}{lll}
+	\toprule
+	PDP&Analyzovaná plocha [mm$^2$]& Počet analyzovaných stop [-]\\
+	\midrule
+	1&13,35&1387\\
+	2&14,03&1267\\
+	3&13,66&1084\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+\begin{table}[h]
+  \centering
+  \caption{Celkové dávky $D$, dávkové ekvivalenty $H$ a příkony $\dot{D},\dot{H}$ určené vyhodnocovanými detektory (doba měření=180 dní).}
+  \label{tab:praktickaCast_davkyVysledky}
+  \begin{tabular}{lllll}
+	\toprule
+	PDP&$D$ [mGy]&$H$ [mSv]&$\dot{D}$ [$\mu$Gy/den]&$\dot{H}$ [$\mu$Sv/den]\\
+	\midrule
+	%1&5,31501450067&88,2754298605\\
+	%2&5,068573344&92,5692674847\\
+	%3&4,31129592097&75,4191405129\\
+	1&$5\pm1$&$90\pm20$&$30\pm6$&$500\pm100$\\
+	2&$5\pm1$&$90\pm20$&$28\pm6$&$500\pm100$\\
+	3&$4\pm1$&$80\pm20$&$24\pm5$&$400\pm100$\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+Tab. \ref{tab:praktickaCast_davkyVysledky} obsahuje hledané celkové dávky a dávkové ekvivalenty i s jejich příkony (detektory byly umístěny na pozicích 180 dní); do vyhodnocení nebyly zahrnuty stopy s $\LET>1000$ (kvůli rozsahu kalibrační křivky). Určení nepřesností je probráno dále v textu.
+
+Na obrázcích \ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence}, \ref{fig:praktickaCast_LETdavka} a \ref{fig:praktickaCast_LETdavkEkvivalent} jsou mnou vytvořená diferenciální $\LET$ spektra pro různé veličiny; $\LET$ intervaly byly zvoleny tak, aby byly na logaritmické ose ekvidistantní. První spektrum zobrazuje počet stop (detekovaných částic) spadnuvších do jednotlivých $\LET$ intervalů. Třetí, resp. čtvrté spektrum zobrazuje, jakou dávkou, resp. dávkovým ekvivalentem přispěly částice v daném $\LET$ intervalu do celkově obdržené dávky, resp. dávkového ekvivalentu. Druhé spektrum znázorňuje diferenciální fluenci $\Phi$ částic s $\LET$ v daném intervalu; $\Phi$ je definována vztahem
+\begin{equation}
+  \Phi=\frac{d^2N}{dAd\Omega}\,,
+  \label{eq:praktickaCast_fluence}
+\end{equation}
+kde $dN$ je počet částic, které dopadly na kouli s příčným řezem o obsahu $dA$ pod prostorovým úhlem~$d\Omega$. K výpočtu $\Phi_i$ pro daný $\LET$ interval se používá vztah
+\begin{equation}
+  \Phi_i=\frac{N_i}{2\pi A\cos^2\theta_{k,i}}\,,
+  \label{eq:praktickaCast_fluenceVypocet}
+\end{equation}
+kde $N_i$ je počet stop s $\LET$ v příslušném intervalu, $A$ je detekční plocha, $\cos^2\theta_{k,i}=\frac{V^2_i-1}{V^2_i}$ a $V_i$ je průměrná leptací rychlost uvažovaných stop \cite{ssntd}.
+
+$\LET$ spektra jsou zatížena nepřesností, která pochází např. z nehomogenity materiálu detektoru a jeho tloušťky, rozdílů v koncentraci leptacího roztoku a v teplotách, nedokonalého smytí hydroxidu po leptání, výkonem vyhodnocovacího operátora~\cite{nejistoty}. Nechť $\Delta n$ je počet částic v jednom z $\LET$ intervalů. Lze uvažovat model \cite{nejistoty}, kdy nepřesnost určení $\Delta n$ pochází ze tří zdrojů:
+\begin{itemize}
+  \item nepřesnost $u_1(\Delta n)$ spojená s náhodností detekce částice, která má Poissonovo rozdělení, tj. $u_1=\sqrt{\Delta n}$;
+  \item nepřesnost $u_2(\Delta n)$ vyplyvající z nepřesnosti kalibrační křivky, tj. závislosti $\LET(V)$;
+  \item nepřesnost $u_3(\Delta n)$ spojená s odezvou detektoru.
+\end{itemize}
+Velikost $u_2$ jde zjistit pomocí známého vztahu pro výpočet nepřesností nepřímo měřených veličin
+\begin{equation}
+  u^2(f)=\left(\frac{\partial f}{\partial x}u(x)\right)^2+\left( \frac{\partial f}{\partial y}u(y) \right)^2+2\frac{\partial f}{\partial x}\frac{\partial f}{\partial y}u(x,y)\,,
+  \label{eq:praktickaCast_neprimaChyba}
+\end{equation}
+kde $f=f(x,y)$ a $u(x), u(y)$ jsou příslušné chyby, $u(x,y)$ je kovariance veličin $x,y$; tedy pro $u_2$
+\begin{equation}
+  u_2(\Delta n)\approx\frac{\Delta n}{\Delta\LET}u(\LET)\,,
+  \label{eq:praktickaCast_u2}
+\end{equation}
+kde $\Delta\LET$ je délka uvažovaného intervalu a $u(\LET)$ je nepřesnost určení lineárního přenosu energie z kalibrační křivky, která se zjistí také použitím vztahu \eqref{eq:praktickaCast_neprimaChyba} pro $\LET(V)$; diferenciály jsou z důvodu jednoduchosti a praktičnosti aproximovány na $\Delta n, \Delta\LET$. Poměr leptacích rychlostí závisí na $a,b,d$, tzn. na osách elipsy (stopy) a tloušťce odleptané vrstvy. Chyba $V$ se určí zase podle vztahu \eqref{eq:praktickaCast_neprimaChyba} pro $V(a,b,d)$. Kovariance $u(a,d)$ a $u(b,d)$ jsou brány jako nulové, jelikož se nedají snadno určit; vzhledem k zápornosti příslušných parciálních derivací tímto krokem $u(V)$ nadhodnocujeme. Určení $u(a), u(b), u(a,b), u(d)$ spolu s tzv. očekávanými hodnotami $a,b,d$ je podrobně
+rozebráno v~\cite{nejistoty}.
+
+Třetí složka nejistot $u_3$ se dá určit jen v některých situací, viz~\cite{nejistoty}.
+
+Chyba určení dávky $D_i$ od $N_i$ částic s lineárním přenosem energie $\LET_i$ se zjistí aplikací vztahu \eqref{eq:praktickaCast_neprimaChyba} pro $D_i(\LET_i,N_i)$, tedy 
+\begin{equation}
+  u(D_i)=\sqrt{\left(\frac{\partial D_i}{\partial\LET}u(\LET)\right)^2+\left(\frac{\partial D_i}{\partial N_i}u(N_i)\right)^2}\,,
+  \label{eq:praktickaCast_chybaDavka}
+\end{equation}
+kde vzhledem k Poissonovu rozdělení náhodné veličiny $N_i$ je $u(N_i)=\sqrt{N_i}$,~\cite{thesisKPBrabcova}; $u(\LET)$ se určí způsobem popsaným výše. Nepřesnost dávkového ekvivalentu se zjistí obdobně.
+
+Do $\LET$ spekter jsem nepřesnosti nezahrnul. Z výsledků článku~\cite{nejistoty} a z rad od vedoucí práce jsem relativní chybu dávky a dávkového ekvivalentu stanovil na 20 \% (absolutní odchylky viz tab.~\ref{tab:praktickaCast_davkyVysledky}).
+\begin{figure}[H]
   \centering
 	\centering
 	\input{images/LETspektrumCetnost}
-	\caption{}
+	\caption{$\LET$ spektra vyhodnocených detektorů, na vertikální ose je počet stop v intervalu.}
 	\label{fig:praktickaCast_LETcetnost}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
 	\centering
 	\input{images/LETspektrumFluence}
-	\caption{}
+	\caption{$\LET$ spektra detektorů pro fluenci.}
 	\label{fig:praktickaCast_LETfluence}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
 	\centering
 	\input{images/LETspektrumDavka}
-	\caption{}
+	\caption{$\LET$ spektra detektorů pro dávku.}
 	\label{fig:praktickaCast_LETdavka}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
 	\centering
 	\input{images/LETspektrumDavkEkvivalent}
-	\caption{}
+	\caption{$\LET$ spektra detektorů pro dávkový ekvivalent.}
 	\label{fig:praktickaCast_LETdavkEkvivalent}
 \end{figure}
-
+\newpage
+\section{Diskuze}
