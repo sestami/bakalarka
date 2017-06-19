@@ -18,6 +18,7 @@
 \contentsline {section}{\numberline {2.1}Termoluminiscen\IeC {\v c}n\IeC {\'\i } detektory}{17}{section.2.1}
 \contentsline {section}{\numberline {2.2}Detektory stop v pevn\IeC {\'e} f\IeC {\'a}zi}{19}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Vyhodnocov\IeC {\'a}n\IeC {\'\i }}{21}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Kombinace dat z TLD a TED}{23}{section.2.3}
 \contentsline {chapter}{\numberline {3}Mezin\IeC {\'a}rodn\IeC {\'\i } kosmick\IeC {\'a} stanice}{24}{chapter.3}
 \contentsline {section}{\numberline {3.1}Modul Columbus}{25}{section.3.1}
 \contentsline {chapter}{\numberline {4}Experimenty DOSIS a DOSIS 3D}{27}{chapter.4}
@@ -31,8 +32,9 @@
 \contentsline {subsection}{\numberline {4.3.4}Aktivn\IeC {\'\i } detektory DOSTEL}{33}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}V\IeC {\'y}sledky}{34}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Srovn\IeC {\'a}n\IeC {\'\i } dat pasivn\IeC {\'\i }ch detektor\IeC {\r u} v r\IeC {\'a}mci jedn\IeC {\'e} sady}{35}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Srovn\IeC {\'a}n\IeC {\'\i } dat z osmi sad pro jeden druh pasivn\IeC {\'\i }ho detektoru}{37}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Srovn\IeC {\'a}n\IeC {\'\i } dat z osmi sad pro jeden druh pasivn\IeC {\'\i }ho detektoru}{36}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Srovn\IeC {\'a}n\IeC {\'\i } dat pasivn\IeC {\'\i }ch a aktivn\IeC {\'\i }ch detektor\IeC {\r u}}{38}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Srovn\IeC {\'a}n\IeC {\'\i } s jin\IeC {\'y}mi experimenty}{39}{subsection.4.4.4}
 \contentsline {chapter}{\numberline {5}Vyhodnocen\IeC {\'\i } detektor\IeC {\r u} stop v pevn\IeC {\'e} f\IeC {\'a}zi (praktick\IeC {\'a} \IeC {\v c}\IeC {\'a}st)}{40}{chapter.5}
 \contentsline {section}{\numberline {5.1}Metodika}{40}{section.5.1}
 \contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{41}{section.5.2}
