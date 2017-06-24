@@ -1,9 +1,9 @@
 \chapter{Vyhodnocení detektorů stop v pevné fázi (praktická část)}
 \section{Metodika}\label{sec:praktickaCast_metodika}
-NPI používá HARZLAS TD-1 a od roku 2016 i TASTRAK. HARZLAS TD-1 je leptán 18 hodin za teploty 70 $^{\circ}$C v 5 N koncentrovaném roztoku NaOH; odleptaná vrstva je kolem 15,3 $\mu$m. Většinou je analyzována plocha o velikosti 0,09 cm$^2$. Detektor je tlustý 0.9 mm. TASTRAK se leptá dvoufázově: první fáze trvá 6 hodin a jsou při ní zobrazeny stopy vytvořené částicemi s velkým $\mathit{LET}$; při druhé fázi, která trvá dalších 9 hodin, se zobrazí i stopy pocházejících od částic s nižším $\mathit{LET}$. Celkový čas leptání je tedy 15 hodin. Buď se postupuje postupným leptáním (6 hodin leptání, vyhodnocení, 9 hodin leptání, vyhodnocení), nebo se část detektoru leptá 6 hodin a část 15 hodin, tudíž
-detektor lze vyhodnotit najednou. Detektor se leptá při 70 $^{\circ}$C v 6,25 N koncentrovaném roztoku NaOH, odleptaná vrstva je tlustá 7,5/20,1 $\mu$m; zpravidla se analyzuje plocha o velikosti 0,5 cm$^2$ (v obou případech) z důvodu zajištění dostatečné statistiky. Po leptání následuje u obou detektorů nasnímání stop lineárním snímacím zařízením s vysokým rozlišením (které je součástí mikroskopu HSP-1000,~\cite{dosis_HSP1000}), poté jsou snímky se stopami analyzovány programem HspFit.
+NPI používá materiál HARZLAS TD-1 (výrobce Nagase Landauer Ltd.) a od roku 2016 i TASTRAK (výrobce Track Analysis Systems Ltd.)~\cite{cesky}. HARZLAS TD-1 je leptán 18 hodin za teploty 70 $^{\circ}$C v 5 N koncentrovaném roztoku NaOH; odleptaná vrstva je kolem 15,3 $\mu$m. Velikost analyzované plochy se volí tak, aby bylo vyšetřeno alespoň tisíc stop (kvůli zajištění dostatečné statistiky). Detektor je tlustý 0.9 mm. TASTRAK se leptá dvoufázově: první fáze trvá 6 hodin a jsou při ní zobrazeny stopy vytvořené částicemi s velkým $\mathit{LET}$; při druhé fázi, která trvá dalších 9 hodin, se zobrazí i stopy pocházejících od částic s nižším $\mathit{LET}$. Celkový čas leptání je tedy 15 hodin. Buď se postupuje postupným leptáním (6 hodin leptání, vyhodnocení, 9 hodin leptání, vyhodnocení), nebo se část detektoru leptá 6 hodin a část 15 hodin, tudíž
+detektor lze vyhodnotit najednou. Detektor se leptá při 70 $^{\circ}$C v 6,25 N koncentrovaném roztoku NaOH, odleptaná vrstva je tlustá 7,5/20,1 $\mu$m; velikost analyzované plochy TASTRAKu se volí stejným kritériem jako u HARZLAS TD-1. Po leptání následuje u obou detektorů nasnímání stop lineárním snímacím zařízením s vysokým rozlišením (které je součástí mikroskopu HSP-1000,~\cite{dosis_HSP1000}), poté jsou snímky se stopami analyzovány programem HspFit.
 
-Zatímco HARZLAS TD-1 detekuje částice s $\LET$ vyšším než 7 keV/$\mu$m, TASTRAK má detekční práh 20 keV/$\mu$m. Na druhou stranu TASTRAK má vyšší rozsah měřitelných $\LET$ a díky leptání per partes detekuje s mnohem větší účinností částice s vyšším $\LET$ než HARZLAS TD-1~\cite{cesky}.
+Zatímco HARZLAS TD-1 detekuje částice s $\LET$ vyšším než 7 keV/$\mu$m, TASTRAK má detekční práh 20 keV/$\mu$m~\cite{cesky,thesisKPBrabcova}. Na druhou stranu TASTRAK má vyšší rozsah měřitelných $\LET$ a díky leptání per partes detekuje s mnohem větší účinností částice s vyšším $\LET$ než HARZLAS TD-1~\cite{cesky}.
 \newpage
 %V tab. \ref{tab:praktickaCast_rozsahyLET} jsou rozsahy měřitelných $\LET$, tj. částice s $\LET$ v tomto intervalu můžeme zahrnout do výpočtů dávky, $\LET$ spektra atd.
 %\begin{table}[H]
@@ -73,9 +73,9 @@ Vyhodnocovat jsem započal analýzou stop v programu HspFit. Tento program sám 
   \label{fig:praktickaCast_stopyPoskozeni}
 \end{figure}
 
-V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje čisté stopy; v (b) ukazuje červená šipka poškození materiálu nepocházející od ozáření ionizujícím zářením, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem (označení detektoru vyrytím X). 
+V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje čisté stopy; v (b) ukazuje červená šipka poškození materiálu nepocházející od ozáření ionizujícím zářením, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem vyrytím tří křížků. Ty představují referenční body. 
 
-Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tato data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou tři soubory. První soubor obsahuje údaje o poloze stopy, os fitované elipsy, poměru leptacích rychlostí~$V$, korekčním součiniteli~$k_{\theta}$, lineárním přenosu energie~$\LET$, dávce a dávkovém ekvivalentu každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru i s jejich příkony. Třetí soubor obsahuje data potřebná k vytvoření diferenciálních~$\LET$ spekter; z těchto dat jsem pomocí programu Gnuplot vytvořil~$\LET$ spektra (obr.~\ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence},
+Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tato data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou tři soubory. První soubor obsahuje údaje o poloze stopy, osách fitované elipsy, poměru leptacích rychlostí~$V$, korekčním součiniteli~$k_{\theta}$, lineárním přenosu energie~$\LET$, dávce a dávkovém ekvivalentu každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru i s jejich příkony. Třetí soubor obsahuje data potřebná k vytvoření diferenciálních~$\LET$ spekter; z těchto dat jsem pomocí programu Gnuplot vytvořil~$\LET$ spektra (obr.~\ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence},
 \ref{fig:praktickaCast_LETdavka} a \ref{fig:praktickaCast_LETdavkEkvivalent} v příloze). Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
 $\mu$m) a následně~$\LET$ dané částice z $V$ pomocí kalibrační křivky pro TASTRAK leptaný 6 hodin
 \begin{align}
@@ -112,23 +112,23 @@ V tab. \ref{tab:praktickaCast_analyzovanaPlocha} je velikost analyzované plochy
 \end{table}
 \begin{table}[h]
   \centering
-  \caption{Celkové dávky $D$, dávkové ekvivalenty $H$ a příkony $\dot{D},\dot{H}$ určené vyhodnocovanými detektory (doba měření=180 dní).}
+  \caption{Celkové dávky $D$, dávkové ekvivalenty $H$ a příkony $\dot{D},\dot{H}$ určené vyhodnocovanými detektory (doba měření=180 dní). $Q$ je průměrný jakostní faktor záření.}
   \label{tab:praktickaCast_davkyVysledky}
-  \begin{tabular}{lllll}
+  \begin{tabular}{llllll}
 	\toprule
-	PDP&$D$ [mGy]&$H$ [mSv]&$\dot{D}$ [$\mu$Gy/den]&$\dot{H}$ [$\mu$Sv/den]\\
+	PDP&$D$ [mGy]&$H$ [mSv]&$\dot{D}$ [$\mu$Gy/den]&$\dot{H}$ [$\mu$Sv/den]& $Q$ [-]\\
 	\midrule
 	%1&5,31501450067&88,2754298605\\
 	%2&5,068573344&92,5692674847\\
 	%3&4,31129592097&75,4191405129\\
-	1&$5\pm1$&$90\pm20$&$30\pm6$&$500\pm100$\\
-	2&$5\pm1$&$90\pm20$&$28\pm6$&$500\pm100$\\
-	3&$4\pm1$&$80\pm20$&$24\pm5$&$400\pm100$\\
+	1&$5\pm1$&$90\pm20$&$30\pm6$&$500\pm100$&$17\pm5$\\
+	2&$5\pm1$&$90\pm20$&$28\pm6$&$500\pm100$&$18\pm5$\\
+	3&$4\pm1$&$80\pm20$&$24\pm5$&$400\pm100$&$17\pm5$\\
 	\bottomrule
   \end{tabular}
 \end{table}
 
-Tab. \ref{tab:praktickaCast_davkyVysledky} obsahuje hledané celkové dávky a dávkové ekvivalenty i s jejich příkony (detektory byly umístěny na pozicích 180 dní); do vyhodnocení nebyly zahrnuty stopy s $\LET>1000$ (kvůli rozsahu kalibrační křivky). Určení nepřesností je probráno dále v textu.
+Tab. \ref{tab:praktickaCast_davkyVysledky} obsahuje hledané celkové dávky $D$ a dávkové ekvivalenty $H$ i s jejich příkony (detektory byly umístěny na pozicích 180 dní); do vyhodnocení nebyly zahrnuty stopy s $\LET>1000$ (kvůli rozsahu kalibrační křivky). Ze známosti $D$ a $H$ lze také určit kvalitu záření $Q=H/D$. Určení nepřesností je probráno dále v textu.
 
 Na obrázcích \ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence}, \ref{fig:praktickaCast_LETdavka} a \ref{fig:praktickaCast_LETdavkEkvivalent} jsou mnou vytvořená diferenciální $\LET$ spektra pro různé veličiny; $\LET$ intervaly byly zvoleny tak, aby byly na logaritmické ose ekvidistantní. První spektrum zobrazuje počet stop (detekovaných částic) spadnuvších do jednotlivých $\LET$ intervalů. Třetí, resp. čtvrté spektrum zobrazuje, jakou dávkou, resp. dávkovým ekvivalentem přispěly částice v daném $\LET$ intervalu do celkově obdržené dávky, resp. dávkového ekvivalentu. Druhé spektrum znázorňuje diferenciální fluenci $\Phi$ částic s $\LET$ v daném intervalu; $\Phi$ je definována vztahem
 \begin{equation}
@@ -153,7 +153,7 @@ Velikost $u_2$ jde zjistit pomocí známého vztahu pro výpočet nepřesností 
   u^2(f)=\left(\frac{\partial f}{\partial x}u(x)\right)^2+\left( \frac{\partial f}{\partial y}u(y) \right)^2+2\frac{\partial f}{\partial x}\frac{\partial f}{\partial y}u(x,y)\,,
   \label{eq:praktickaCast_neprimaChyba}
 \end{equation}
-kde $f=f(x,y)$ a $u(x), u(y)$ jsou příslušné chyby, $u(x,y)$ je kovariance veličin $x,y$; tedy pro $u_2$
+který je pro zjednodušení uveden pro funkci $f$ závislou pouze na dvou veličinách $x,y$, obecně jich může být více; $u(x), u(y)$ jsou chyby veličin $x,y$; $u(x,y)$ je jejich kovariance. Tedy pro $u_2$
 \begin{equation}
   u_2(\Delta n)\approx\frac{\Delta n}{\Delta\LET}u(\LET)\,,
   \label{eq:praktickaCast_u2}
@@ -161,7 +161,7 @@ kde $f=f(x,y)$ a $u(x), u(y)$ jsou příslušné chyby, $u(x,y)$ je kovariance v
 kde $\Delta\LET$ je délka uvažovaného intervalu a $u(\LET)$ je nepřesnost určení lineárního přenosu energie z kalibrační křivky, která se zjistí také použitím vztahu \eqref{eq:praktickaCast_neprimaChyba} pro $\LET(V)$; diferenciály jsou z důvodu jednoduchosti a praktičnosti aproximovány na $\Delta n, \Delta\LET$. Poměr leptacích rychlostí závisí na $a,b,d$, tzn. na osách elipsy (stopy) a tloušťce odleptané vrstvy. Chyba $V$ se určí zase podle vztahu \eqref{eq:praktickaCast_neprimaChyba} pro $V(a,b,d)$. Kovariance $u(a,d)$ a $u(b,d)$ jsou brány jako nulové, jelikož se nedají snadno určit; vzhledem k zápornosti příslušných parciálních derivací tímto krokem $u(V)$ nadhodnocujeme. Určení $u(a), u(b), u(a,b), u(d)$ spolu s tzv. očekávanými hodnotami $a,b,d$ je podrobně
 rozebráno v~\cite{nejistoty}.
 
-Třetí složka nejistot $u_3$ se dá určit jen v některých situací, viz~\cite{nejistoty}.
+Třetí složka nejistot $u_3$ se dá určit jen v některých situacích, viz~\cite{nejistoty}.
 
 Chyba určení dávky $D_i$ od $N_i$ částic s lineárním přenosem energie $\LET_i$ se zjistí aplikací vztahu \eqref{eq:praktickaCast_neprimaChyba} pro $D_i(\LET_i,N_i)$, tedy 
 \begin{equation}
@@ -170,7 +170,7 @@ Chyba určení dávky $D_i$ od $N_i$ částic s lineárním přenosem energie $\
 \end{equation}
 kde vzhledem k Poissonovu rozdělení náhodné veličiny $N_i$ je $u(N_i)=\sqrt{N_i}$,~\cite{thesisKPBrabcova}; $u(\LET_i)$ se určí způsobem popsaným výše. Nepřesnost dávkového ekvivalentu se zjistí obdobně.
 
-Do $\LET$ spekter jsem nepřesnosti nezahrnul. Z výsledků článku~\cite{nejistoty} a z rad od vedoucí práce jsem relativní chybu dávky a dávkového ekvivalentu stanovil na 20 \% (absolutní odchylky viz tab.~\ref{tab:praktickaCast_davkyVysledky}).
+Do $\LET$ spekter jsem nepřesnosti nezahrnul. Relativní chyba $D$ a $H$ je zhruba 20~\%~\cite{nejistoty}.
 \begin{figure}[H]
   \centering
 	\centering
