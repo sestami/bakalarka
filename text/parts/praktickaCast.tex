@@ -69,20 +69,20 @@ Vyhodnocovat jsem započal analýzou stop v programu HspFit. Tento program sám 
 	\includegraphics[width=\textwidth]{praktickaCast_stopyPoskozeni2.jpg}
 	\caption{}
   \end{subfigure}
-  \caption{Naskenované snímky zobrazující poškozené části plochy detektoru vyrytím značky X.}
+  \caption{Naskenované snímky zobrazující poškozené části plochy detektoru vyrytím křížků představující referenční body.}
   \label{fig:praktickaCast_stopyPoskozeni}
 \end{figure}
 
 V obr. \ref{fig:praktickaCast_stopy} jsou uvedeny jednotlivé snímky z povrchu náhodně vybraného detektoru. V (a) je snímek, který obsahuje čisté stopy; v (b) ukazuje červená šipka poškození materiálu nepocházející od ozáření ionizujícím zářením, které by mohl neznalý uživatel vyhodnotit jako vícero stop; v (c) taktéž ukazuje červená šipka poškození materiálu jiného charakteru. Obr.~\ref{fig:praktickaCast_stopyPoskozeni} pak ukazuje snímky, na nichž je naskenována plocha, která byla fyzicky znehodnocena člověkem vyrytím tří křížků. Ty představují referenční body. 
 
 Osy všech elips byly spolu s dalšími parametry fitů (např. sklon elipsy) uloženy v souboru s příponou .nap. Tato data byla zpracována skriptem napsaném v programovacím jazyce Python, jehož výstupem jsou tři soubory. První soubor obsahuje údaje o poloze stopy, osách fitované elipsy, poměru leptacích rychlostí~$V$, korekčním součiniteli~$k_{\theta}$, lineárním přenosu energie~$\LET$, dávce a dávkovém ekvivalentu každé stopy. Druhý soubor obsahuje celkovou dávku a dávkový ekvivalent, které se absorbovaly v detektoru i s jejich příkony. Třetí soubor obsahuje data potřebná k vytvoření diferenciálních~$\LET$ spekter; z těchto dat jsem pomocí programu Gnuplot vytvořil~$\LET$ spektra (obr.~\ref{fig:praktickaCast_LETcetnost}, \ref{fig:praktickaCast_LETfluence},
-\ref{fig:praktickaCast_LETdavka} a \ref{fig:praktickaCast_LETdavkEkvivalent} v příloze). Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
+\ref{fig:praktickaCast_LETdavka} a \ref{fig:praktickaCast_LETdavkEkvivalent}). Skript vypočítává pro každou částici $V$ z hodnot $a,b$ (vztah \eqref{eq:pomerLepRychlosti}, tloušťka odleptané vrstvy je $7,5$
 $\mu$m) a následně~$\LET$ dané částice z $V$ pomocí kalibrační křivky pro TASTRAK leptaný 6 hodin
 \begin{align}
   \LET(V) &= -99,8424+125,00172  V-15,28166  V^2+2,04636  V^3\,,\label{eq:kalibracniKrivkaSestHod}
   %\LET(V) &= -96,35071+114,90343  V-7,77194  V^2+1,27248  V^3\quad\text{(15 hod)},\label{eq:kalibracniKrivkaPatnactHod}
 \end{align}
-kde $\LET$ vychází v keV/$\mu$m; závislost byla přebrána z \cite{ssntd}. Kalibrační křivka je také k nahlédnutí na obr. \ref{fig:praktickaCast_kalibracniKrivky}.
+kde $\LET$ vychází v keV/$\mu$m; závislost byla přebrána z \cite{ssntd}. Kalibrační křivka je také k nahlédnutí na obr. \ref{fig:praktickaCast_kalibracniKrivky}. Kvůli jejímu rozsahu byly z dalšího vyhodnocování vyloučeny stopy s $\LET>1000$ keV/$\mu$.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.7\textwidth]{praktickaCast_kalibracniKrivky.jpg}
@@ -201,4 +201,27 @@ Do $\LET$ spekter jsem nepřesnosti nezahrnul. Relativní chyba $D$ a $H$ je zhr
 \end{figure}
 \newpage
 \section{Diskuze}
+Ze spekter vidíme, že byly registrovány částice s $\LET\in[15;1000]$ keV/$\mu$m; dolní hranice je dána detekčním prahem TASTRAKu a horní hranice byla uměle nastavena s přihlédnutím k rozsahu kalibrační křivky. Nejpočetnější složku tvoří dle spektra~\ref{fig:praktickaCast_LETcetnost} stopy s $\LET$ v rozsahu 30 až 200 keV/$\mu$m. Ty odpovídají nejspíš protonům, které pocházejí z SAA nebo z interakcí neutronů s materiálem detektoru, a $\alpha$ částicím. Protony mají v CR-39 maximální $\LET$ kolem 80-90~keV/$\mu$m, $\alpha$ částice kolem 200~keV/$\mu$m~\cite{SRIM}. Stopy s nižším $\LET$ odpovídají iontům z primárního kosmického záření, stopy s vyšším $\LET$ odraženým jádrům O, C atd. Ze stejného spektra je také vidět, že bylo detekováno relativně málo částic s malým $\LET$ (mezi 20 a 30
+keV/$\mu$m). To je způsobeno kratší dobou leptání detektorů, po které nebyla většina stop s malým $\LET$ ještě odhalena. 
 
+Na obr. \ref{fig:praktickaCast_LETcetnost} a v tab. \ref{tab:praktickaCast_analyzovanaPlocha} je vidět, že v prvním detektoru bylo analyzováno nejvíce stop a že tento nadbytek oproti ostatním detektorům tvoří stopy s nižším $\LET$. Toto může být způsobeno tím, že jsem při ručním analyzování stop prvního detektoru připustil do dalších výpočtů i tzv. přeleptané stopy. To jsou stopy od částic s krátkým dosahem (sekundárních částic), pro které byla doba leptání příliš dlouhá, takže započalo jejich odstraňování, ale ne tak ne tak dlouhá, aby byly odstraněny úplně. Přeleptané stopy neposkytují žádnou relevantní informaci.
+
+Spektra pro dávku a dávkový příkon názorně ukazují rozdíl mezi těmito dvěma veličinami. Tab.~\ref{tab:praktickaCast_relPrispevkyDavka} zobrazuje relativní příspěvky k $D$ a $H$ od částic s různým $\LET$.
+\begin{table}[ht]
+  \centering
+  \caption{Relativní příspěvky zaokrouhlené na jednotky k celkové dávce $D$, resp. k celkovému dávkovému ekvivalentu $H$ od částic z daného $\LET$ intervalu.}
+  \label{tab:praktickaCast_relPrispevkyDavka}
+  \begin{tabular}{lll}
+	\toprule
+	$\LET$ [keV/$\mu$m]& $D_{\text{rel}}$ [-]&$H_{\text{rel}}$ [-]\\
+	\midrule
+	$[22;33]$&9 \%&3 \%\\
+	$[110;200]$&20 \%&28 \%\\
+	$[546;812]$&8 \%&5 \%\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+Dávkové příkony určené z vyhodnocených TED (tab.~\ref{tab:praktickaCast_davkyVysledky}) jsou mnohem menší než dávkové příkony určené z TLD (viz. oddíl \ref{sec:dosis_vysledky}; lze předpokládat, že $\dot{D}$ z osmé sady budou vycházet alespoň řádově jako $\dot{D}$ v předchozích sadách). Je to tím, že převážná část absorbované dávky pochází od částic s $\LET$ menším než je detekční práh TASTRAKu. Tento rozdíl dávkových příkonů od TLD a TED byl naměřen i v jiných experimentech, např.~\cite{passDetectors,ambrozova_dvaExperimenty, japonsky}.
+
+Vyhodnocování bude pokračovat druhým leptáním, při kterém se zobrazí částice s menším $\LET$ delším dosahem. Bude leptána stejná plocha a díky referenčním bodům (obr.~\ref{fig:praktickaCast_stopyPoskozeni}) bude možné rozlišit jednotlivé stopy od sekundárních a primárních částic. Stopy od sekundárních částic, které byly zřetelné po prvním leptání, budou nyní odleptány, případně přeleptány, a naopak se zobrazí předtím neviděné stopy od primárních částic, které mají dlouhý dosah. Vypočtou se dávky a dávkové ekvivalenty nových stop a poté se připočtou k $D$ a $H$ určené už při prvním leptání. Nakonec se kombinací dat z TLD a TED postupem popsaným v oddíle~\ref{sec:detektory_kombinace} určí celkové dávkové příkony a dávkové ekvivalenty.

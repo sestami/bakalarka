@@ -60,7 +60,7 @@ Po leptání detektoru jsou stopy analyzovány. K tomu se např. používá mikr
 %Ve vyhodnocovacím softwaru jsou pak stopy brány jako elipsy, výstupem softwaru jsou velikosti hlavní a vedlejší osy. 
 Poměr leptacích rychlostí může být určen z hodnot $a,b$ pro každou stopu ze vztahu
 \begin{equation}
-  V=\frac{\sqrt{\left( 1-B^2 \right)^2}+4A^2}{1-B^2}\,,
+  V=\frac{\sqrt{\left( 1-B^2 \right)^2+4A^2}}{1-B^2}\,,
   \label{eq:pomerLepRychlosti}
 \end{equation}
 kde
@@ -110,7 +110,7 @@ $>$100&300/$\sqrt{\LET}$\\
 	\bottomrule
   \end{tabular}
 \end{table}
-\section{Kombinace dat z TLD a TED}
+\section{Kombinace dat z TLD a TED}\label{sec:detektory_kombinace}
 Citlivosti TLD a TED se celkem dobře doplňují, a tak lze tyto dva druhy pasivních detektorů využít ke změření celkové absorbované dávky a celkového dávkového ekvivalentu. Ze známosti relativní odezvy TL detektoru a z $\LET$ spektra získaným z dat změřených detektorem stop lze odečíst příspěvek částic s vysokým $\LET$ (tedy takových, pro které je $\RR<1$) od dávky změřené TLD. Zbylá dávka z TLD pocházející od částic s malým $\LET$ se pak pričte k dávce určené TED, která pochází od částic s vyšším $\LET$. Tímto způsobem je získána celková absorbovaná dávka. Celkový dávkový ekvivalent se stanoví součtem upravené dávky TLD (pro nízké $\LET$ platí $Q=1$, viz tab. \ref{tab:detektory_Q}) a dávkovým ekvivalentem TED.~\cite{dataTLD_RR}
 
 
