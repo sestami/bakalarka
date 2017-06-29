@@ -19,6 +19,62 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{japonsky}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4439b0ec62b282f1e2cef64f97e10aa2}{%
+           family={Nagamatsu},
+           familyi={N\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aeab280718dda2f066bd68c499b462b1}{%
+           family={Murakami},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=62e46113f8404a2372187ca3b2536885}{%
+           family={Kitajo},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9514376c39d8b944d850a638245a4682}{%
+           family={Shimada},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5784ec381bafc7134f731957d07e151d}{%
+           family={Kumagai},
+           familyi={K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0abb0e18818dd5f008dd14b50f4295ec}{%
+           family={Tawara},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e2f26b868692306fcedaac4bbbeea0d}
+      \strng{fullhash}{8e2f26b868692306fcedaac4bbbeea0d}
+      \strng{authornamehash}{8e2f26b868692306fcedaac4bbbeea0d}
+      \strng{authorfullhash}{8e2f26b868692306fcedaac4bbbeea0d}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1350-4487}
+      \field{journaltitle}{Radiation Measurements}
+      \field{title}{Area radiation monitoring on ISS Increments 17 to 22 using PADLES in the Japanese Experiment Module Kibo}
+      \field{volume}{59}
+      \field{year}{2013}
+      \field{pages}{84\bibrangedash 93}
+      \range{pages}{10}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.radmeas.2013.05.008
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1350448713002448
+      \endverb
+      \keyw{TLD}
+    \endentry
     \entry{benton}{article}{}
       \name{author}{2}{}{%
         {{hash=4657c93c3776e16543f1ca8f5478cbf1}{%
@@ -36,8 +92,8 @@
       \strng{fullhash}{139a30c93066c5b4c1b304005ad1bac5}
       \strng{authornamehash}{139a30c93066c5b4c1b304005ad1bac5}
       \strng{authorfullhash}{139a30c93066c5b4c1b304005ad1bac5}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0168-583X}
@@ -157,8 +213,8 @@
       \strng{fullhash}{03a4e350feb9bc1d60398e8aca31b04b}
       \strng{authornamehash}{03a4e350feb9bc1d60398e8aca31b04b}
       \strng{authorfullhash}{03a4e350feb9bc1d60398e8aca31b04b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0939-3889}
@@ -327,8 +383,8 @@
       \strng{authorfullhash}{ca9fa8ddff004c247be0b51617f339ed}
       \strng{editornamehash}{aa4620e3e3ad1bc29b28448569515065}
       \strng{editorfullhash}{aa4620e3e3ad1bc29b28448569515065}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Space Weather Effects on Humans: in Space and on Earth}
@@ -762,8 +818,8 @@
       \strng{fullhash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authornamehash}{afafc7a086f96baed3f76650e4fcdc5d}
       \strng{authorfullhash}{afafc7a086f96baed3f76650e4fcdc5d}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{6}
+      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{19}
@@ -894,6 +950,52 @@
       \verb http://www.esa.int/spaceinimages/Images/2008/02/ESA_astronaut_Hans_Schlegel_works_on_Columbus_exterior_during_the_second_spacewalk_of_the_STS-122_mission2
       \endverb
     \endentry
+    \entry{activeDetectors}{article}{}
+      \name{author}{4}{}{%
+        {{hash=055d32cb2a7edb56092c3c1197ebd5b8}{%
+           family={Narici},
+           familyi={N\bibinitperiod},
+           given={Livio},
+           giveni={L\bibinitperiod}}}%
+        {{hash=780caf01b078955aaa96acfb1751153a}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9a6973f9c310216a6feac43dfc230854}{%
+           family={Matthiä},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=255c1653c5de46978ef184795bb68c9d}{%
+           family={Reitz},
+           familyi={R\bibinitperiod},
+           given={Günther},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \strng{fullhash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \strng{authornamehash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \strng{authorfullhash}{712b8b182bcd68c8846cb7d2c67ae960}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A reliable radiation risk assessment in space is a mandatory step for the development of countermeasures and long duration mission planning in human spaceflight. Research in radiobiology provides information about possible risks linked to radiation. In addition, for a meaningful risk evaluation, the radiation exposure has to be assessed to a sufficient level of accuracy. Consequently, both the radiation models predicting the risks and the measurements used to validate such models must have an equivalent precision. Corresponding measurements can be performed both with passive and active devices. The former are easier to handle, cheaper, lighter and smaller but they measure neither the time dependence of the radiation environment nor some of the details useful for a comprehensive radiation risk assessment. Active detectors provide most of these details and have been extensively used in the International Space Station (ISS). To easily access such an amount of data, a single point access is becoming essential. This review presents an ongoing work on the development of a tool which allows obtaining information about all relevant measurements performed with active detectors providing reliable inputs for radiation model validation.}
+      \field{issn}{2234-943X}
+      \field{journaltitle}{Frontiers in Oncology}
+      \field{title}{Radiation Measurements Performed with Active Detectors Relevant for Human Space Exploration}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{273}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fonc.2015.00273
+      \endverb
+      \verb{url}
+      \verb http://journal.frontiersin.org/article/10.3389/fonc.2015.00273
+      \endverb
+    \endentry
     \entry{dosis2}{article}{}
       \name{author}{19}{}{%
         {{hash=44888fb81caab21b2a83ad59a762f503}{%
@@ -958,8 +1060,8 @@
       \strng{fullhash}{adfc8f563d69f6eccd53b1ef6a1017dc}
       \strng{authornamehash}{4a19d34e0c1176315e1e3af34e71364c}
       \strng{authorfullhash}{adfc8f563d69f6eccd53b1ef6a1017dc}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -973,6 +1075,102 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1051/swsc/2017005
+      \endverb
+    \endentry
+    \entry{pille}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2bb8ccf2fc5568d785700d065c6d7785}{%
+           family={Hirn},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Workshops on Radiation Monitoring for the International Space Station}%
+      }
+      \strng{namehash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \strng{fullhash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \strng{authornamehash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \strng{authorfullhash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{3}
+      \field{title}{Pille Measurements on ISS (May 2013 – March 2014)}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://wrmiss.org/workshops/nineteenth/Hirn.pdf
+      \endverb
+    \endentry
+    \entry{pille2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2bb8ccf2fc5568d785700d065c6d7785}{%
+           family={Hirn},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Workshops on Radiation Monitoring for the International Space Station}%
+      }
+      \strng{namehash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \strng{fullhash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \strng{authornamehash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \strng{authorfullhash}{2bb8ccf2fc5568d785700d065c6d7785}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{29}
+      \field{month}{7}
+      \field{title}{Pille Measurements on ISS (May 2014 – March 2015)}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://wrmiss.org/workshops/twentieth/Hirn_Pille.pdf
+      \endverb
+    \endentry
+    \entry{wrmiss_SPD}{online}{}
+      \name{author}{1}{}{%
+        {{hash=29f97f435736c324b59aba374113a604}{%
+           family={Pálfalvi},
+           familyi={P\bibinitperiod},
+           given={J.K.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Workshops on Radiation Monitoring for the International Space Station}%
+      }
+      \strng{namehash}{29f97f435736c324b59aba374113a604}
+      \strng{fullhash}{29f97f435736c324b59aba374113a604}
+      \strng{authornamehash}{29f97f435736c324b59aba374113a604}
+      \strng{authorfullhash}{29f97f435736c324b59aba374113a604}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{3}
+      \field{title}{Passive dosimetry in the Service (Zvezda) module: 2010-2014.}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://wrmiss.org/workshops/nineteenth/Palfalvi.pdf
       \endverb
     \endentry
     \entry{dosis_oulu}{online}{}
@@ -990,8 +1188,8 @@
       \strng{fullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
       \strng{authornamehash}{9b4206a960ba5644bbadbb1d70d2bf6b}
       \strng{authorfullhash}{9b4206a960ba5644bbadbb1d70d2bf6b}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Cosmic Ray Station of the University of Oulu}
@@ -1002,52 +1200,6 @@
       \field{urldateera}{ce}
       \verb{url}
       \verb http://cosmicrays.oulu.fi
-      \endverb
-    \endentry
-    \entry{activeDetectors}{article}{}
-      \name{author}{4}{}{%
-        {{hash=055d32cb2a7edb56092c3c1197ebd5b8}{%
-           family={Narici},
-           familyi={N\bibinitperiod},
-           given={Livio},
-           giveni={L\bibinitperiod}}}%
-        {{hash=780caf01b078955aaa96acfb1751153a}{%
-           family={Berger},
-           familyi={B\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=9a6973f9c310216a6feac43dfc230854}{%
-           family={Matthiä},
-           familyi={M\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=255c1653c5de46978ef184795bb68c9d}{%
-           family={Reitz},
-           familyi={R\bibinitperiod},
-           given={Günther},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \strng{fullhash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \strng{authornamehash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \strng{authorfullhash}{712b8b182bcd68c8846cb7d2c67ae960}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A reliable radiation risk assessment in space is a mandatory step for the development of countermeasures and long duration mission planning in human spaceflight. Research in radiobiology provides information about possible risks linked to radiation. In addition, for a meaningful risk evaluation, the radiation exposure has to be assessed to a sufficient level of accuracy. Consequently, both the radiation models predicting the risks and the measurements used to validate such models must have an equivalent precision. Corresponding measurements can be performed both with passive and active devices. The former are easier to handle, cheaper, lighter and smaller but they measure neither the time dependence of the radiation environment nor some of the details useful for a comprehensive radiation risk assessment. Active detectors provide most of these details and have been extensively used in the International Space Station (ISS). To easily access such an amount of data, a single point access is becoming essential. This review presents an ongoing work on the development of a tool which allows obtaining information about all relevant measurements performed with active detectors providing reliable inputs for radiation model validation.}
-      \field{issn}{2234-943X}
-      \field{journaltitle}{Frontiers in Oncology}
-      \field{title}{Radiation Measurements Performed with Active Detectors Relevant for Human Space Exploration}
-      \field{volume}{5}
-      \field{year}{2015}
-      \field{pages}{273}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3389/fonc.2015.00273
-      \endverb
-      \verb{url}
-      \verb http://journal.frontiersin.org/article/10.3389/fonc.2015.00273
       \endverb
     \endentry
     \entry{RAM}{online}{}
@@ -1171,6 +1323,33 @@
       \verb https://en.wikipedia.org/wiki/Russian_Research_Module
       \endverb
     \endentry
+    \entry{kibo}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fe1d03c037e8fd78d8fd3fc2d538e7e9}{%
+           family={JAXA},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe1d03c037e8fd78d8fd3fc2d538e7e9}
+      \strng{fullhash}{fe1d03c037e8fd78d8fd3fc2d538e7e9}
+      \strng{authornamehash}{fe1d03c037e8fd78d8fd3fc2d538e7e9}
+      \strng{authorfullhash}{fe1d03c037e8fd78d8fd3fc2d538e7e9}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{9}
+      \field{title}{Japanese Experiment Module (KIBO)}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://iss.jaxa.jp/en/kibo/
+      \endverb
+    \endentry
     \entry{dosis_HSP1000}{online}{}
       \name{author}{1}{}{%
         {{hash=4a622fce7243f84951eeed46d4e66f6b}{%
@@ -1244,6 +1423,32 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0168900213002866
       \endverb
       \keyw{Space dosimetry}
+    \endentry
+    \entry{SRIM}{online}{}
+      \name{author}{1}{}{%
+        {{hash=543dda923b505c428d59bfb4a6b5b099}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{543dda923b505c428d59bfb4a6b5b099}
+      \strng{fullhash}{543dda923b505c428d59bfb4a6b5b099}
+      \strng{authornamehash}{543dda923b505c428d59bfb4a6b5b099}
+      \strng{authorfullhash}{543dda923b505c428d59bfb4a6b5b099}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SRIM - The Stopping and Range of Ions in Matter}
+      \field{urlday}{25}
+      \field{urlmonth}{6}
+      \field{urlyear}{2017}
+      \field{year}{}
+      \field{urldateera}{ce}
+      \verb{url}
+      \verb http://www.srim.org/
+      \endverb
     \endentry
   \endsortlist
 \endrefsection
