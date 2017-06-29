@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.26)  25 JUN 2017 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.26)  28 JUN 2017 14:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,7 +179,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 ./titlepage.tex:7: Undefined control sequence.
 l.7     \includegraphics
-                        [width=0.3\textwidth]{cvut.jpg}
+                        [width=0.25\textwidth]{cvut.jpg}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -195,12 +195,13 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 3 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 ./titlepage.tex:7: Missing number, treated as zero.
 <to be read again> 
                    ]
-l.7     \includegraphics[width=0.3\textwidth]
-                                             {cvut.jpg}
+l.7     \includegraphics[width=0.25\textwidth]
+                                              {cvut.jpg}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -208,8 +209,8 @@ look up `weird error' in the index to The TeXbook.)
 ./titlepage.tex:7: Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.7     \includegraphics[width=0.3\textwidth]
-                                             {cvut.jpg}
+l.7     \includegraphics[width=0.25\textwidth]
+                                              {cvut.jpg}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -437,8 +438,65 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-./titlepage.tex:26: Undefined control sequence.
-l.26 \section
+./titlepage.tex:25: Undefined control sequence.
+l.25 \includepdf
+                [pages={1,2}]{parts/zadani.pdf}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
+[] 
+ []
+
+
+./titlepage.tex:26: LaTeX Error: The font size command \normalsize is not defin
+ed:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \newpage
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2]
+./titlepage.tex:28: Undefined control sequence.
+l.28 \section
              *{Prohlášení}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -588,12 +646,12 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 26--29
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--31
 []
  []
 
 
-./titlepage.tex:29: LaTeX Error: The font size command \normalsize is not defin
+./titlepage.tex:31: LaTeX Error: The font size command \normalsize is not defin
 ed:
                there is probably something wrong with the class file.
 
@@ -601,15 +659,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \newpage
+l.31 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2]
-./titlepage.tex:31: Undefined control sequence.
-l.31 \section
+[3]
+./titlepage.tex:33: Undefined control sequence.
+l.33 \section
              *{Poděkování}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -748,12 +806,12 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 31--33
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--35
 []
  []
 
 
-./titlepage.tex:33: LaTeX Error: The font size command \normalsize is not defin
+./titlepage.tex:35: LaTeX Error: The font size command \normalsize is not defin
 ed:
                there is probably something wrong with the class file.
 
@@ -761,39 +819,39 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \newpage
+l.35 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3]
+[4]
 
-./titlepage.tex:34: LaTeX Error: Environment tabularx undefined.
+./titlepage.tex:36: LaTeX Error: Environment tabularx undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 \begin{tabularx}
+l.36 \begin{tabularx}
                      {\textwidth}{>{\itshape}l X}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./titlepage.tex:34: Missing number, treated as zero.
+./titlepage.tex:36: Missing number, treated as zero.
 <to be read again> 
                    }
-l.34 \begin{tabularx}{\textwidth}
+l.36 \begin{tabularx}{\textwidth}
                                  {>{\itshape}l X}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./titlepage.tex:34: Illegal unit of measure (pt inserted).
+./titlepage.tex:36: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.34 \begin{tabularx}{\textwidth}
+l.36 \begin{tabularx}{\textwidth}
                                  {>{\itshape}l X}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -818,8 +876,8 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:35: Misplaced alignment tab character &.
-l.35   Název práce: &
+./titlepage.tex:37: Misplaced alignment tab character &.
+l.37   Název práce: &
                         \textbf{Prostorová distribuce dávky uvnitř Mezin�...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -846,8 +904,8 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:36: Misplaced alignment tab character &.
-l.36   Autor: &
+./titlepage.tex:38: Misplaced alignment tab character &.
+l.38   Autor: &
                 Michal Šesták\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -875,8 +933,8 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:37: Misplaced alignment tab character &.
-l.37   Obor: &
+./titlepage.tex:39: Misplaced alignment tab character &.
+l.39   Obor: &
                Dozimetrie a aplikace ionizujícího záření\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -938,8 +996,8 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:38: Misplaced alignment tab character &.
-l.38   Druh práce: &
+./titlepage.tex:40: Misplaced alignment tab character &.
+l.40   Druh práce: &
                       Bakalářská práce\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -982,8 +1040,8 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:39: Misplaced alignment tab character &.
-l.39   Vedoucí práce: &
+./titlepage.tex:41: Misplaced alignment tab character &.
+l.41   Vedoucí práce: &
                           Ing. Iva Ambrožová, Ph.D.\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1016,10 +1074,10 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no . in font nullfont!
-./titlepage.tex:40: Misplaced alignment tab character &.
+./titlepage.tex:42: Misplaced alignment tab character &.
 <recently read> &
                  
-l.40                &
+l.42                &
                       Oddělení dozimetrie záření, Ústav jaderné fyzik...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1128,8 +1186,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:41: Misplaced alignment tab character &.
-l.41   Abstrakt: &
+./titlepage.tex:43: Misplaced alignment tab character &.
+l.43   Abstrakt: &
                    Kosmické záření představuje veliký zdravotní risk ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1911,8 +1969,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:45: Misplaced alignment tab character &.
-l.45   Klíčová slova: &
+./titlepage.tex:47: Misplaced alignment tab character &.
+l.47   Klíčová slova: &
                            kosmické záření v blízkém okolí Země, det...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2019,90 +2077,90 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no D in font nullfont!
 
-./titlepage.tex:46: LaTeX Error: \begin{document} ended by \end{tabularx}.
+./titlepage.tex:48: LaTeX Error: \begin{document} ended by \end{tabularx}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \end{tabularx}
+l.48 \end{tabularx}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 34--47
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--49
 []
  []
 
 
-Overfull \hbox (26.71652pt too wide) in paragraph at lines 34--47
+Overfull \hbox (26.71652pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 Pros-
  []
 
 
-Overfull \hbox (26.4582pt too wide) in paragraph at lines 34--47
+Overfull \hbox (26.4582pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 torov
  []
 
 
-Overfull \hbox (17.95267pt too wide) in paragraph at lines 34--47
+Overfull \hbox (17.95267pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 dis-
  []
 
 
-Overfull \hbox (35.56233pt too wide) in paragraph at lines 34--47
+Overfull \hbox (35.56233pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 tribuce
  []
 
 
-Overfull \hbox (24.59709pt too wide) in paragraph at lines 34--47
+Overfull \hbox (24.59709pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 dvky
  []
 
 
-Overfull \hbox (26.51375pt too wide) in paragraph at lines 34--47
+Overfull \hbox (26.51375pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 uvnit
  []
 
 
-Overfull \hbox (25.13182pt too wide) in paragraph at lines 34--47
+Overfull \hbox (25.13182pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 Mez-
  []
 
 
-Overfull \hbox (13.4166pt too wide) in paragraph at lines 34--47
+Overfull \hbox (13.4166pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 in-
  []
 
 
-Overfull \hbox (23.58322pt too wide) in paragraph at lines 34--47
+Overfull \hbox (23.58322pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 rodn
  []
 
 
-Overfull \hbox (19.86932pt too wide) in paragraph at lines 34--47
+Overfull \hbox (19.86932pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 kos-
  []
 
 
-Overfull \hbox (23.63876pt too wide) in paragraph at lines 34--47
+Overfull \hbox (23.63876pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 mick
  []
 
 
-Overfull \hbox (24.82066pt too wide) in paragraph at lines 34--47
+Overfull \hbox (24.82066pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 stan-
  []
 
 
-Overfull \hbox (13.57632pt too wide) in paragraph at lines 34--47
+Overfull \hbox (13.57632pt too wide) in paragraph at lines 36--49
 \OT1/cmr/bx/n/10 ice 
  []
 
 
-./titlepage.tex:47: LaTeX Error: The font size command \normalsize is not defin
+./titlepage.tex:49: LaTeX Error: The font size command \normalsize is not defin
 ed:
                there is probably something wrong with the class file.
 
@@ -2110,39 +2168,39 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \newpage
+l.49 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[4]
+[5]
 
-./titlepage.tex:48: LaTeX Error: Environment tabularx undefined.
+./titlepage.tex:50: LaTeX Error: Environment tabularx undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 \begin{tabularx}
+l.50 \begin{tabularx}
                      {\textwidth}{>{\itshape}l X}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./titlepage.tex:48: Missing number, treated as zero.
+./titlepage.tex:50: Missing number, treated as zero.
 <to be read again> 
                    }
-l.48 \begin{tabularx}{\textwidth}
+l.50 \begin{tabularx}{\textwidth}
                                  {>{\itshape}l X}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./titlepage.tex:48: Illegal unit of measure (pt inserted).
+./titlepage.tex:50: Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.48 \begin{tabularx}{\textwidth}
+l.50 \begin{tabularx}{\textwidth}
                                  {>{\itshape}l X}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2160,8 +2218,8 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:49: Misplaced alignment tab character &.
-l.49   Title: &
+./titlepage.tex:51: Misplaced alignment tab character &.
+l.51   Title: &
                 \textbf{Dose distribution inside the International Space Sta...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2177,8 +2235,8 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:50: Misplaced alignment tab character &.
-l.50   Author: &
+./titlepage.tex:52: Misplaced alignment tab character &.
+l.52   Author: &
                  Michal Šesták\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2210,8 +2268,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:51: Misplaced alignment tab character &.
-l.51   Abstract: &
+./titlepage.tex:53: Misplaced alignment tab character &.
+l.53   Abstract: &
                    Cosmic rays represents a huge health risk. Passive detect...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2404,21 +2462,17 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
+Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -2919,8 +2973,8 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
-./titlepage.tex:52: Misplaced alignment tab character &.
-l.52   Key words: &
+./titlepage.tex:54: Misplaced alignment tab character &.
+l.54   Key words: &
                     cosmic rays in low Earth orbit, solid state nuclear trac...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3020,100 +3074,100 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no D in font nullfont!
 
-./titlepage.tex:53: LaTeX Error: \begin{document} ended by \end{tabularx}.
+./titlepage.tex:55: LaTeX Error: \begin{document} ended by \end{tabularx}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \end{tabularx}
+l.55 \end{tabularx}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 48--54
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--56
 []
  []
 
 
-Overfull \hbox (24.37625pt too wide) in paragraph at lines 48--54
+Overfull \hbox (24.37625pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 Dose
  []
 
 
-Overfull \hbox (17.95267pt too wide) in paragraph at lines 48--54
+Overfull \hbox (17.95267pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 dis-
  []
 
 
-Overfull \hbox (16.23604pt too wide) in paragraph at lines 48--54
+Overfull \hbox (16.23604pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 tri-
  []
 
 
-Overfull \hbox (16.61102pt too wide) in paragraph at lines 48--54
+Overfull \hbox (16.61102pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 bu-
  []
 
 
-Overfull \hbox (19.80545pt too wide) in paragraph at lines 48--54
+Overfull \hbox (19.80545pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 tion
  []
 
 
-Overfull \hbox (13.4166pt too wide) in paragraph at lines 48--54
+Overfull \hbox (13.4166pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 in-
  []
 
 
-Overfull \hbox (19.39017pt too wide) in paragraph at lines 48--54
+Overfull \hbox (19.39017pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 side
  []
 
 
-Overfull \hbox (16.13187pt too wide) in paragraph at lines 48--54
+Overfull \hbox (16.13187pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 the
  []
 
 
-Overfull \hbox (14.58325pt too wide) in paragraph at lines 48--54
+Overfull \hbox (14.58325pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 In-
  []
 
 
-Overfull \hbox (18.31242pt too wide) in paragraph at lines 48--54
+Overfull \hbox (18.31242pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 ter-
  []
 
 
-Overfull \hbox (15.8124pt too wide) in paragraph at lines 48--54
+Overfull \hbox (15.8124pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 na-
  []
 
 
-Overfull \hbox (28.5901pt too wide) in paragraph at lines 48--54
+Overfull \hbox (28.5901pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 tional
  []
 
 
-Overfull \hbox (28.74983pt too wide) in paragraph at lines 48--54
+Overfull \hbox (28.74983pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 Space
  []
 
 
-Overfull \hbox (20.28459pt too wide) in paragraph at lines 48--54
+Overfull \hbox (20.28459pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 Sta-
  []
 
 
-Overfull \hbox (19.80545pt too wide) in paragraph at lines 48--54
+Overfull \hbox (19.80545pt too wide) in paragraph at lines 50--56
 \OT1/cmr/bx/n/10 tion 
  []
 
 
-./titlepage.tex:54: LaTeX Error: The font size command \normalsize is not defin
+./titlepage.tex:56: LaTeX Error: The font size command \normalsize is not defin
 ed:
                there is probably something wrong with the class file.
 
@@ -3121,13 +3175,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 \newpage
+l.56 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[5])
+[6])
 ! Emergency stop.
 <*> titlepage.tex
                  
@@ -3141,5 +3195,5 @@ Here is how much of TeX's memory you used:
  3648 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 19i,8n,12p,837b,125s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,8n,12p,833b,125s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
