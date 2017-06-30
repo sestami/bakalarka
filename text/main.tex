@@ -10,6 +10,7 @@
 %\includeonly{parts/detektory}
 %\includeonly{parts/kosmickeZareni, parts/titlepage, parts/detektory, parts/experimentDosis, parts/praktickaCast}
 %\includeonly{parts/zaver}%, parts/titlepage, parts/kosmickeZareni}
+\includeonly{parts/zaver,parts/appendix}
 \begin{document}
 \pagestyle{empty}
 
@@ -34,7 +35,10 @@
 
 \include{parts/zaver}
 
-%\include{parts/appendix}
 %\nocite{*}
 \printbibliography[title=Seznam literatury]
+\markright{}
+\addcontentsline{toc}{chapter}{Seznam literatury}
+
+\include{parts/appendix}
 \end{document}

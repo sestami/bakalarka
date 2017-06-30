@@ -21,7 +21,7 @@
 
 \frenchspacing
 
-\usepackage[]{amsmath}
+\usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{siunitx}
@@ -73,15 +73,69 @@
 \usepackage[unicode, pdftex, colorlinks=true, linkcolor=red,
 urlcolor=blue, citecolor=blue, pdfauthor=MichalSestak, pdftitle=DoseDistributionInsideTheISS]{hyperref}
 
-\usepackage{appendix}
+\usepackage[toc, page]{appendix}
 
 \usepackage{pdfpages}
 
 %\usepackage{soulpos}
-%\usepackage{lmodern}
+\usepackage{lmodern}
 %\usepackage[author={Michal Šesták}]{pdfcomment}
 
 %definovani maker \mathit{}
 \newcommand{\RR}{\mathit{RR}}
 \newcommand{\LET}{\mathit{LET}}
 \newcommand{\unit}{keV/$\mu$m$\ $}
+
+%pro vlozeni python kodu do prilohy
+\usepackage[final]{listings}
+\usepackage{setspace}
+\definecolor{Code}{rgb}{0,0,0}
+\definecolor{Decorators}{rgb}{0.5,0.5,0.5}
+\definecolor{Numbers}{rgb}{0.5,0.5,0.5}
+\definecolor{MatchingBrackets}{rgb}{0.25,0.5,0.5}
+\definecolor{Keywords}{rgb}{0,0,1}
+\definecolor{Keywords2}{rgb}{1,0,0}
+\definecolor{self}{rgb}{0,0,0}
+\definecolor{Strings}{rgb}{0,0.63,0}
+\definecolor{Comments}{rgb}{0.5,0.5,0.5}
+\definecolor{Backquotes}{rgb}{0,0,0}
+\definecolor{Classname}{rgb}{0,0,0}
+\definecolor{FunctionName}{rgb}{0,0,0}
+\definecolor{Operators}{rgb}{0,0,0}
+\definecolor{Background}{rgb}{0.98,0.98,0.98}
+\lstdefinelanguage{Python}{
+numbers=left,
+numberstyle=\scriptsize\color{Numbers},
+numbersep=1em,
+%xleftmargin=1em,
+%framextopmargin=2em,
+%framexbottommargin=2em,
+showspaces=false,
+showtabs=false,
+showstringspaces=false,
+frame=l,
+tabsize=4,
+% Basic
+basicstyle=\ttfamily\footnotesize\setstretch{1},
+backgroundcolor=\color{Background},
+% Comments
+commentstyle=\color{Comments},
+morecomment=[l]{\#},
+% Strings
+stringstyle=\color{Strings},
+morestring=[s][\color{Strings}]{"}{"},
+morestring=[s][\color{Strings}]{'}{'},
+% keywords
+morekeywords={import,from,class,def,not,continue,return,True,False,None,access,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert,len,float,file,str,pow, open, min, max, xrange
+},
+keywordstyle={\color{Keywords}\bfseries},
+% additional keywords
+morekeywords={[2]for,while,if,is,in,elif,else,print,and,or,with, as, break},
+keywordstyle={[2]\color{Keywords2}\bfseries},
+emph={self},
+emphstyle={\color{self}\slshape},
+%
+breaklines=true,
+%breakatwhitespace=true,
+postbreak=\mbox{-> },
+}
