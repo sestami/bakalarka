@@ -16,7 +16,7 @@ set pointsize 2
 set xlabel "$\\mathit{LET}$ [keV/$\\mu$m]" #offset 0, -2
 set ylabel "$\\mathit{RR}$ [-]"
 set logscale x
-plot 'data.txt' using 1:2:3 with yerrorbars title titulek1, 'data.txt' using 1:4:5 with yerrorbars title titulek2
+plot 'data1.txt' using 1:2 linewidth 2 lt rgb "black" title titulek1, 'data2.txt' using 1:2 linewidth 2 lt rgb "red" title titulek2
 set terminal epslatex color size 14cm, 9cm
 set output 'TLD_RR.tex'
 #set terminal png 
