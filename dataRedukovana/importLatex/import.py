@@ -4,7 +4,7 @@ import numpy
 
 ELV2J = 0.000001602
 
-zp_pouz = "Zpusob pouziti: python vypocet_L.py jmeno_souboru hodnota_B "
+zp_pouz = "Zpusob pouziti: python vypocet_L.py jmeno_souboru hodnota_B"
 
 if (len(sys.argv) < 3):
     print "Malo parameteru na prikazove radce!"
@@ -65,7 +65,7 @@ for str_line in inFile:
 outFile.close()
 
 # zapsani davky a davkoveho ekvivalentu
-time=180 #dni
+time=186 #dni
 
 Dsum = sum(D_list)
 Hsum = sum(H_list)
@@ -122,12 +122,10 @@ for i in xrange(len(L_list)):
 Vprumer=0
 cosTheta=0
 fluence=[0]*len(stredyIntervalu)
-for i in xrange(len(cetnost)):
+for i in xrange(len(stredyIntervalu)):
     Vprumer=Vsum[i]/cetnost[i]
     cosTheta=(Vprumer**2-1)/Vprumer**2
     fluence[i]=cetnost[i]/(2*pi*cosTheta*ProcArea) #ProcArea je analyzovana plocha v cm^2
-
-for i in xrange(len(stredyIntervalu)):
     histFile.write(str(stredyIntervalu[i])+' '+str(cetnost[i])+' '+str(davka[i])+' '+str(davkEkv[i])+' '+str(fluence[i])+'\n')
 
 histFile.close()
