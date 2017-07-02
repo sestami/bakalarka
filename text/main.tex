@@ -1,16 +1,7 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 \documentclass[a4paper,12pt,oneside]{report}
 \input{parts/preamble}
-%\includeonly{parts/experimentDosis,parts/praktickaCast}
-%\includeonly{parts/experimentDosis}%, parts/praktickaCast}
-%\includeonly{parts/experimentDosis, parts/detektory}%, parts/praktickaCast}
-%\includeonly{parts/praktickaCast}
-%\includeonly{parts/detektory, parts/experimentDosis}
-%\includeonly{parts/detektory,parts/praktickaCast, parts/experimentDosis}
-%\includeonly{parts/detektory}
-%\includeonly{parts/kosmickeZareni, parts/titlepage, parts/detektory, parts/experimentDosis, parts/praktickaCast}
-%\includeonly{parts/zaver}%, parts/titlepage, parts/kosmickeZareni}
-\includeonly{parts/zaver,parts/appendix}
+%\includeonly{parts/titlepage,parts/praktickaCast,parts/appendix,parts/zaver}
 \begin{document}
 \pagestyle{empty}
 
@@ -19,7 +10,8 @@
 
 \pagestyle{fancy}
 \lhead{}
-\def\arraystretch{0.8}
+%\setlength{\extrarowheight}{3pt}
+\def\arraystretch{1.2}
 
 \include{parts/uvod}
 
@@ -36,9 +28,11 @@
 \include{parts/zaver}
 
 %\nocite{*}
+\setstretch{1}
 \printbibliography[title=Seznam literatury]
 \markright{}
 \addcontentsline{toc}{chapter}{Seznam literatury}
 
+\setstretch{1.5}
 \include{parts/appendix}
 \end{document}

@@ -3,7 +3,7 @@
 \usepackage[czech]{babel}
 \usepackage[T1]{fontenc}
 
-\renewcommand{\baselinestretch}{1.5}
+%\renewcommand{\baselinestretch}{1.5}
 
 %\usepackage{a4wide}
 \usepackage[left=3.5cm, right=2cm, top=2.5cm, bottom=2cm]{geometry}
@@ -13,7 +13,8 @@
             %tablename=Tab.,
             format=plain,
             labelfont=it,
-            textfont=it]{caption}
+            textfont=it,
+            font={normal, stretch=1.5}]{caption}
 \usepackage[rgb]{xcolor}
 \usepackage{float}
 \usepackage{subcaption}
@@ -33,6 +34,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 
+%nastavení \chapter příkazu
 \makeatletter
 \renewcommand{\@makechapterhead}[1]{%
 \vspace*{50 pt}%
@@ -86,9 +88,10 @@ urlcolor=blue, citecolor=blue, pdfauthor=MichalSestak, pdftitle=DoseDistribution
 \newcommand{\LET}{\mathit{LET}}
 \newcommand{\unit}{keV/$\mu$m$\ $}
 
+\usepackage{setspace}
+
 %pro vlozeni python kodu do prilohy
 \usepackage[final]{listings}
-\usepackage{setspace}
 \definecolor{Code}{rgb}{0,0,0}
 \definecolor{Decorators}{rgb}{0.5,0.5,0.5}
 \definecolor{Numbers}{rgb}{0.5,0.5,0.5}
@@ -126,7 +129,7 @@ stringstyle=\color{Strings},
 morestring=[s][\color{Strings}]{"}{"},
 morestring=[s][\color{Strings}]{'}{'},
 % keywords
-morekeywords={import,from,class,def,not,continue,return,True,False,None,access,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert,len,float,file,str,pow, open, min, max, xrange
+morekeywords={import,from,class,def,not,continue,return,True,False,None,access,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert,len,float,file,str,pow, open, min, max, xrange, sqrt,sum
 },
 keywordstyle={\color{Keywords}\bfseries},
 % additional keywords
@@ -139,3 +142,9 @@ breaklines=true,
 %breakatwhitespace=true,
 postbreak=\mbox{-> },
 }
+
+\setstretch{1.5}
+%\onehalfspacing
+
+\relpenalty=9999
+\binoppenalty=9999

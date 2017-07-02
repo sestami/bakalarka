@@ -35,7 +35,7 @@ OHB System AG, Universitätsallee 27-29, 28359 Bremen, Germany\\
 Měření byla, respektive jsou prováděna pasivními a aktivními detektory, které jsou pevně umístěny v modulu Columbus. Pasivní detektory zajišťují určení prostorové distribuce dávky a dlouhodobého vývoje pole záření, aktivní naopak slouží k určení změn pole záření v čase. V případě aktivních detektorů se jedná o dva detektory DOSTEL (DOSimetry TELescope). V dalším textu se budeme zabývat pouze pasivními detektory.
 
 \section{Rozmístění pasivních detektorů}
-V rámci experimentu DOSIS, resp. DOSIS3D je v modulu Columbus rozmístěno jedenáct PDP (Passive Detector Packages, balíčky pasivních detektorů), které obsahují termoluminiscenční detektory (TLD), detektory využívající optickou stimulaci (OSLD) a detektory stop v pevné fázi (TED). Na obr. \ref{fig:columbus_rozmisteni} vidíme rozmístění PDP; pět z nich je umístěno na čelní stěně, dalších šest na zadní stěně. Jedenáctý balíček označený symbolem X, též označovaný jako Triple PDP (trojitý PDP), je umístěn blízko aktivních detektorů a pokrývá větší plochu než ostatní PDP. Osm PDP je umístěno ve skříňových modulech (viz oddíl \ref{sec:ISS_columbus}); více informací o umístění pasivních detektorů je k dostání v \cite{dosis}. %další obrázek???
+V rámci experimentu DOSIS, resp. DOSIS3D je v modulu Columbus rozmístěno jedenáct PDP (Passive Detector Packages, balíčky pasivních detektorů), které obsahují termoluminiscenční detektory (TLD), detektory využívající optickou stimulaci (OSLD) a detektory stop v pevné fázi (TED). Na obr.~\ref{fig:columbus_rozmisteni} vidíme rozmístění PDP; pět z nich je umístěno na čelní stěně, dalších šest na zadní stěně. Jedenáctý balíček označený symbolem X, též označovaný jako Triple PDP (trojitý PDP), je umístěn blízko aktivních detektorů a pokrývá větší plochu než ostatní PDP. Osm PDP je umístěno ve skříňových modulech (viz oddíl~\ref{sec:ISS_columbus}); více informací o umístění pasivních detektorů je k dostání v~\cite{dosis}. %další obrázek???
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth]{columbus_rozmisteni.jpg}
@@ -74,7 +74,7 @@ DOSIS3D	&1	&Květen 2012-	&125 (113)	&90,4	&397-417\\
 		&	&Září 2014		&	        &       &       \\
 		&6	&Září 2014-		&167 (161)	&96,4	&413-418\\
 		&	&Březen 2015	&			&		&		\\
-		&7	&Březen 2015-	&259 (256	&98,8	&		\\
+		&7	&Březen 2015-	&259 (256)	&98,8	&		\\
 		&	&Prosinec 2015	&			&		&		\\
 		&8	&Prosinec 2015- &186 (180)	&96,8	&		\\
 		&	&Červen 2016	&			&		&		\\
@@ -116,7 +116,6 @@ V experimentech DOSIS a DOSIS3D jsou používány následující tři typy pasiv
 \subsection{Termoluminiscenční detektory}\label{sec:dosis_TLD}
 Používané TL detektory jsou v tabulce~\ref{tab:dosis_pouzivaneTLD}. Ta obsahuje název instituce spolu s názvy a materiály TLD, které jsou danými institucemi používány. Avšak to pro srovnání výsledků z různých TL detektorů nestačí, důležitou roli hrají následující parametry: čtecí systém (jímž jsou detektory vyhodnocovány), jak dlouho a při jaké teplotě probíhá annealing, rychlost zahřívání, zda-li se detektor před vyhodnocením předehřívá, rychlost chlazení, kalibrační metoda a zdroj, vyhodnocení vyhřívací křivky. Lomítko v názvu TLD (v tab. \ref{tab:dosis_pouzivaneTLD}) značí dva různé TLD lišící se pouze nuklidem v materiálu: TLD-600 a MTS-6 je označení pro $^6$LiF:Mg,Ti; TLD-700 a MTS-7 pro $^7$LiF:Mg,Ti; MCP-6 pro $^6$LiF:Mg,Cu,P; MCP-7 pro $^7$LiF:Mg,Cu,P. %, tato dvojice má jinak stejné parametry. Naopak je-li nějaký materiál uveden u dvou zcela odlišně pojmenovaných TLD, pak se tyto dva TLD liší alespoň v jednom parametru.
 \begin{table}[H]
-  \def\arraystretch{0.8}
   \centering
   \caption{TL detektory používané různými institucemi. \cite{dosis}}
   \label{tab:dosis_pouzivaneTLD}
@@ -149,7 +148,6 @@ Detektory založené na opticky stimulované luminiscenci využívají následuj
 \subsection{Detektory stop v pevné fázi}
 Všechny používané detektory stop v pevné fázi jsou CR-39. V tab.~\ref{tab:dosis_pouzivaneTED} jsou uvedeny instituce, které TED využívají; tabulka také obsahuje výrobce daného TED. Avšak tato tabulka již není aktuální, jelikož většina institucí přešla v posledních letech na TASTRAK o tloušťce 1~mm, který byl původně využíván pouze MTA EK. Různorodost využívaných TED a jejich způsobů vyhodnocení totiž komplikovalo vzájemné porovnávání a interpretaci naměřených dat~\cite{cesky}. TASTRAK, který je v tabulce u IPF, má tloušťku 0,7~mm. Důležitými parametry jsou: doba leptání; teplota, při níž leptání probíhá; koncentrace NaOH, jímž se leptalo; odleptaná vrstva; analyzovaná plocha.
 \begin{table}[h]
-  \def\arraystretch{0.8}
   \centering
   \caption{Přehled institucí používající TED, u každé instituce jsou uvedeny výrobci příslušného detektoru. V posledních letech většina institucí přešla k používání TASTRAKu o tloušťce 1~mm.~\cite{dosis}}
   \label{tab:dosis_pouzivaneTED}
@@ -202,7 +200,6 @@ Na naměřená data lze pohlížet z několika hledisek. Nejprve je uvedeno srov
 V obr. \ref{fig:dosis_vysl_jednaSada} jsou uvedeny dávkové příkony naměřené detektory z 2. sady DOSIS3D v závislosti na pozici detektoru, tzn. na PDP. Jedná se o TL detektory z materiálů: $^6$LiF:Mg,Ti; $^7$LiF:Mg,Ti; CaF$_2$:Tm; $^{\text{Nat}}$LiF:Mg,Ti; $^6$LiF:Mg,Cu,P; $^7$LiF:Mg,Cu,P; Al$_2$O$_3$:C a CaSO$_4$:Dy a o všechny OSL detektory. Je vidět, že data ze všech detektorů sledují v podstatě stejný trend a že dávkové příkony z detektorů stejného materiálu vycházejí přibližně stejně. Avšak na druhou stranu jsou zde patrné rozdíly mezi naměřenými dávkovými příkony detektorů různých materiálů. Jedním z důvodů je rozdílná účinnost detekce těžkých nabitých částic každého TL/OSL materiálu (viz oddíl \ref{sec:detektory_TLD}).
 \begin{table}[H]
   \centering
-  \def\arraystretch{0.8}
   \caption{Poměry odezev TLD materiálů s odezvou referenčního $^7$LiF:Mg,Ti. Odezvou se myslí určená dávka z daného detektoru \cite{dosis}.}
   \label{tab:dosis_TLD_ratio}
   \begin{tabular}{ll}
@@ -253,7 +250,6 @@ V tab. \ref{tab:dosis_vysl_srovnaniPassiveActive} jsou srovnány dávkové pří
 Při porovnávání dat z TLD a DOSTEL je třeba brát v úvahu několik věcí. Zaprvé účinnost detekce částic nad cca 10 keV/$\mu$m u TLD klesá, zatímco u DOSTEL je v podstatě stále stoprocentní. Dále pasivní detektory byly v PDP umístěny okolo 95~\% svého měřícího cyklu, zbytek času strávily cestováním na, resp. z ISS; nicméně toto pravděpodobně nezaneslo do měření nějakou větší chybu, protože při průletu atmosférou detektory obdrží zanedbatelnou dávku díky krátkému času letu.
 \begin{table}[H]
   \centering
-  \def\arraystretch{1}
   \footnotesize
   \caption{Porovnání dávkových příkonů určených pomocí aktivního detektoru DOSTEL-1 a pomocí TLD (materiál $^7$LiF:Mg,Ti), které byly umístěny v PDP X, v rámci dosud vyhodnocených sad~\cite{dosis}.}
   \label{tab:dosis_vysl_srovnaniPassiveActive}
@@ -276,9 +272,9 @@ Při porovnávání dat z TLD a DOSTEL je třeba brát v úvahu několik věcí.
 
 Výhodou aktivních detektorů je, že dokážou rozeznat příspěvky k dávce od GCR a od zachycených protonů v SAA.
 \subsection{Srovnání s jinými experimenty}
-Data z DOSIS a DOSIS3D je možné srovnat i s daty z jiných experimentů. Zde uvedeme srovnání s daty naměřenými v americké, ruské a japonské části ISS. Pro zvýraznění vlivu nadmořské výšky na měření je dále uvedeno i srovnání s daty, která byla naměřena v biologickém satelitu BION-M1 (ten se nacházel v danou dobu v jiné nadmořské výšce než ISS).
+Data z DOSIS a DOSIS3D je možné srovnat i s daty z jiných experimentů. Zde uvedeme srovnání s daty naměřenými v americké, ruské a japonské části ISS. Dále uvedeme srovnání s daty naměřenými v satelitu BION-M1, který se v danou dobu nacházel v jiné nadmořské výšce než ISS.
 \begin{enumerate}
-\item Na různých místech v americké části ISS jsou od organizace NASA/SRAG umístěné tzv. monitory prostorového rozložení záření (RAM, Radiation Area Monitor), které obsahují termoluminiscenční detektory ($^7$LiF:Mg,Ti) a slouží ke stanovení prostorové distribuce dávky v ISS~\cite{RAM}. Můžeme tedy srovnávat jejich výsledky s výsledky DOSIS/DOSIS3D. RAM detektory měřily na ISS od dubna 2014 do listopadu 2014, celkem 218 dní; tato doba pokrývá pátou a částečně i šestou sadu DOSIS3D (tab.~\ref{tab:dosis_timeline_passive}). V modulu Columbus byly naměřeny dávkové příkony v rozsahu $[216\pm8;313\pm9]$ $\mu$Gy/den, v rámci programu RAM bylo rozpětí naměřených dávkových příkonů $[201\pm5;421\pm12]$ $\mu$Gy/den. Minimum je tedy přibližně stejné, avšak maximum je vyšší pro RAM. To bylo naměřeno v
+\item Na různých místech v americké části ISS jsou od organizace NASA/SRAG umístěné tzv. monitory prostorového rozložení záření (RAM, Radiation Area Monitor), které obsahují termoluminiscenční detektory ($^7$LiF:Mg,Ti) a slouží ke stanovení prostorové distribuce dávky v ISS~\cite{RAM}. Můžeme tedy srovnávat jejich výsledky s výsledky DOSIS/DOSIS3D. RAM detektory měřily na ISS od dubna 2014 do listopadu 2014, celkem 218 dní; tato doba pokrývá pátou a částečně i šestou sadu DOSIS3D (tab.~\ref{tab:dosis_timeline_passive}). V modulu Columbus byly naměřeny pomocí $^7$LiF:Mg,Ti dávkové příkony v rozsahu $[216\pm8;313\pm9]$ $\mu$Gy/den, v rámci programu RAM bylo rozpětí naměřených dávkových příkonů $[201\pm5;421\pm12]$ $\mu$Gy/den. Minimum je tedy přibližně stejné, avšak maximum je vyšší pro RAM. To bylo naměřeno v
   blízkosti okénka, a tudíž ho lze spojit s nižším stíněním. Celkově lze z těchto srovnání tvrdit, že dávkové příkony se v jednotlivých modulech mohou v závislosti na lokálním stínění lišit až dvojnásobně.~\cite{dosis}
 
 \item V letech 2007 a 2009 probíhalo měření spadající pod experiment MATROSHKA-R pomocí TLD (Al-P) a TED (HARZLAS TD-1, Page) v Ruském provozním modulu Zvezda (informace o modulu jsou k dohlednání např. v~\cite{serviceModule}) a v modulu Pirs~(\cite{piers1}); více o průběhu měření viz tab. \ref{tab:dosis_passDetectors_timeline}. Detektory byly v obou případech umístěny v šesti tzv. SPD (sborka passivnych detektorov, obdoba PDP u DOSIS\&DOSIS3D), přičemž dva SPD se nacházely v Pirs modulu a čtyři ve Zvezdě. 
@@ -313,22 +309,22 @@ Srovnejme nyní data od TLD Al-P z druhé fáze experimentu MATROSHKA-R (viz tab
 	\bottomrule
   \end{tabular}
 \end{table}
-Dávkové příkony z modulu Pirs jsou jasně nejvyšší, poté následují dávkové příkony z modulu Zvezda; horní hranice rozsahu dávkových příkonů z modulu Columbus odpovídá minimální hodnotě naměřené ve Zvezdě. Rozdíl mezi Pirsem a Zvezdou je dán rozdílem v tloušťce stínění \cite{passDetectors}. Stínění mohlo hrát roli i v naměření mnohem nižší dávky v modulu Columbus, avšak vzhledem k rozdílné relativní účinnosti Al-P a $^7$LiF:Mg,Ti to nemůžeme tvrdit. Na obr. \ref{fig:dosis_passDetectors_LETspektrum} jsou srovnána $\LET$ spektra z modulu Pirs (SPD 2) a z modulu Zvezda (SPD 6); je zcela jasně vidět, že méně stíněný Pirs obdržel větší dávku od částic s $\LET<100$ keV/$\mu$m, u částic s vyšším $\LET$ žádný rozdíl
-není \cite{passDetectors}. (Poznámka: lze srovnat obr. \ref{fig:dosis_passDetectors_LETspektrum} s obr. \ref{fig:stineni} -- rozdíl ve spektrech je způsoben tím, že první obr. představuje diferenciální spektrum, zatímco druhý zobrazuje integrální spektrum.) 
+Dávkové příkony z modulu Pirs jsou jasně nejvyšší, poté následují dávkové příkony z modulu Zvezda; horní hranice rozsahu dávkových příkonů z modulu Columbus odpovídá minimální hodnotě naměřené ve Zvezdě. Rozdíl mezi Pirsem a Zvezdou je dán rozdílem v tloušťce stínění \cite{passDetectors}. Stínění mohlo hrát roli i v naměření mnohem nižší dávky v modulu Columbus, avšak vzhledem k rozdílné relativní účinnosti Al-P (lze dohledat v \cite{dataTLD_RR}) a $^7$LiF:Mg,Ti to nemůžeme tvrdit. Na obr. \ref{fig:dosis_passDetectors_LETspektrum} jsou srovnána $\LET$ spektra měřená TED z modulu Pirs (SPD 2) a z modulu Zvezda (SPD 6); je zcela jasně vidět, že méně stíněný Pirs obdržel větší dávku od částic s $\LET<100$ keV/$\mu$m, u částic s vyšším $\LET$ žádný rozdíl v rámci
+nejistot není~\cite{passDetectors}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.65\textwidth]{dosis_LETspektrum_passDetectors.jpg}
-  \caption{$\LET$ spektra z dat naměřených v modulu Pirs (Piers-1) a v modulu Zvezda (SM) v příslušných SPD.~\cite{passDetectors}}
+  \caption{$\LET$ spektra naměřená v modulu Pirs (Piers-1) a v modulu Zvezda (SM) v příslušných SPD.~\cite{passDetectors}}
   \label{fig:dosis_passDetectors_LETspektrum}
 \end{figure}
-\item Lepší srovnání poskytuje měření z roku 2012, které také proběhlo v rámci MATROSHKA-R. Bylo prováděno TL detektorem CaSO$_4$:Dy, který byl umístěn na šesti pozicích v ruské části ISS (jeden byl v modulu Pirs, jeden v ruském výzkumném modulu~\cite{researchModule} a čtyři v modulu Zvezda). Měření započalo v květnu 2012 a probíhalo jeden rok, což odpovídá první a druhé sadě experimentu DOSIS3D. Průměrný dávkový příkon naměřený ve Zvezdě je roven 262 $\mu$Gy/den, což je velmi blízké hodnotě průměrného dávkového příkonu naměřeného v rámci DOSIS3D (TL detektorem CaSO$_4$:Dy), který je roven 275 $\mu$Gy/den. Data z Pirsu a výzkumného modulu dosahují hodnot okolo 500 $\mu$Gy/den, jedná se zase o důsledek nižšího stínění. Z uvedených informací (i z předchozích odrážek) plyne, že za předpokladu
+\item Lepší srovnání poskytuje měření z roku 2012, které také proběhlo v rámci MATROSHKA-R. Bylo prováděno TL detektorem CaSO$_4$:Dy (stejný jako v DOSIS\&DOSIS3D), který byl umístěn na šesti pozicích v ruské části ISS (jeden byl v modulu Pirs, jeden v ruském výzkumném modulu~\cite{researchModule} a čtyři v modulu Zvezda). Měření započalo v květnu 2012 a probíhalo jeden rok, což odpovídá první a druhé sadě experimentu DOSIS3D. Průměrný dávkový příkon naměřený ve Zvezdě je roven 262 $\mu$Gy/den, což je velmi blízké hodnotě průměrného dávkového příkonu naměřeného v rámci DOSIS3D (TL detektorem CaSO$_4$:Dy), který je roven 275 $\mu$Gy/den. Data z Pirsu a výzkumného modulu dosahují hodnot okolo 500 $\mu$Gy/den, jedná se zase o důsledek nižšího stínění. Z uvedených informací (i z předchozích odrážek) plyne, že za předpokladu
   stálosti nadmořské výšky a dalších parametrů jsou rozdíly v dávkách dány hlavně stíněním celého objektu, menší rozdíly jsou pak způsobeny lokálním stíněním (které je představováno např. uloženými zásobami, přístroji).~\cite{ambrozova_dvaExperimenty}
-  \item Článek~\cite{ambrozova_dvaExperimenty} poskytuje i porovnání s daty, které byly naměřeny v jiné nadmořské výšce. Satelit BION-M1 byl vypuštěn 19. dubna 2013 a na orbitě o nadmořské výšce 575 km setrval 30 dní. Obsahoval mj. biologické vzorky a detektory, konkrétně TLD CaSO$_4$:Dy a TED HARZLAS TD-1. Ty byly uloženy ve čtyřech boxech uvnitř satelitu a ve dvou boxech na vnějším plášti satelitu. Průměr z dávkových příkonů naměřených ve vnitřních boxech pomocí TLD činí 967 $\mu$Gy/den, ve vnějších boxech 2,2 mGy/den. Nadmořská výška ISS byla přibližně 409 km a v modulu Columbus byl naměřen dávkový dávka cca 275 $\mu$Gy/den, viz předchozí odrážka. Tyto obrovské rozdíly v naměřených hodnotách ukazují důležitost vlivu změny nadmořské výšky (ISS proti BION-M1, ovšem dále je třeba vzít v úvahu, že BION-M1 měl méně
-	stíněn) a stínění (vnitřek proti vnějšku satelitu BION-M1).
-  \item V japonském modulu Kibo \cite{kibo} probíhá již od jeho připojení k ISS v roce 2008 měření pomocí TLD (prášek Mg$_2$SiO$_4$:Tb) a TED (CR-39 materiály HARZLAS TD-1 a Fukuvi chemical) v rámci projektu PADLES (PAssive Dosimeters for Lifescience Experiments in Space). V letech 2008 až 2010 proběhly tři obměny detektorů (viz tab.~\ref{tab:dosis_kibo}).
+  \item Článek~\cite{ambrozova_dvaExperimenty} poskytuje i porovnání s daty, které byly naměřeny v jiné nadmořské výšce. Satelit BION-M1 byl vypuštěn 19. dubna 2013 a na orbitě o nadmořské výšce 575 km setrval 30 dní. Obsahoval mj. biologické vzorky a detektory, konkrétně TLD CaSO$_4$:Dy a TED HARZLAS TD-1. Ty byly uloženy ve čtyřech boxech uvnitř satelitu a ve dvou boxech na vnějším plášti satelitu. Průměr z dávkových příkonů naměřených ve vnitřních boxech pomocí TLD činí 967 $\mu$Gy/den, ve vnějších boxech 2,2 mGy/den. Nadmořská výška ISS byla přibližně 409 km a v modulu Columbus byl naměřen dávkový příkon cca 275 $\mu$Gy/den, viz předchozí odrážka. Tyto obrovské rozdíly v naměřených hodnotách ukazují důležitost vlivu změny nadmořské výšky (ISS proti BION-M1, ovšem dále je třeba vzít
+	v úvahu, že BION-M1 byl méně stíněn) a stínění (vnitřek proti vnějšku satelitu BION-M1).
+  \item V japonském modulu Kibo~\cite{kibo} probíhá již od jeho připojení k ISS v roce 2008 měření pomocí TLD (prášek Mg$_2$SiO$_4$:Tb) a TED (CR-39 materiál HARZLAS TD-1 od výrobce Fukuvi chemical) v rámci projektu PADLES (PAssive Dosimeters for Lifescience Experiments in Space). V letech 2008 až 2010 proběhly tři obměny detektorů (viz tab.~\ref{tab:dosis_kibo}).
 	\begin{table}[ht]
 	  \centering
-	  \caption{Obměna PADLES v modulu Kibo. \cite{japonsky}}
+	  \caption{PADLES v modulu Kibo.~\cite{japonsky}}
 	  \label{tab:dosis_kibo}
 	  \begin{tabular}{llll}
 		\toprule
@@ -340,13 +336,12 @@ není \cite{passDetectors}. (Poznámka: lze srovnat obr. \ref{fig:dosis_passDete
 	\bottomrule
 	  \end{tabular}
 	\end{table}
-	Detektory byly umístěny na dvanácti pozicích v Přetlakovém modulu, v případě třetí fáze navíc i na pěti pozicích v Logistickém modulu (přetlaková komora). Průměrný dávkový příkon naměřený TLD v první fázi je $311\pm 30$ $\mu$Gy/den, v druhé fázi $268\pm29$ $\mu$Gy/den, v třetí fázi pro Přetlakový modul $286\pm33$ $\mu$Gy/den a pro Logistický modul $289\pm27$ $\mu$Gy/den. V době první fáze PADLES experiment DOSIS ještě neprobíhal. Druhá a třetí fáze PADLES odpovídá přibližně první a druhé sadě experimentu DOSIS (červenec 2009 až květen 2010). Rozsahy dávkových příkonů z $^7$LiF:Mg,Ti z těchto sad jsou přibližně $[225;300]$ $\mu$Gy/den, resp. $[200;265]$ $\mu$Gy/den (viz obr. \ref{fig:dosis_vysl_viceSad}). Vidíme, že data z modulů Kibo a Columbus jsou velmi podobná. To, že $\dot{D}$ z druhé fáze na třetí fázi PADLES
-	vzrostl,
-	zatímco u DOSIS klesl, může být dáno různým počátkem a koncem fází u PADLES a DOSIS. \cite{japonsky}
-  \item K monitorování dávkových příkonů v ISS se používá i Pille TLD systém. Tento systém byl využíván na každé kosmické stanice od druhé poloviny 70. let 20. století.
+	Detektory byly umístěny na dvanácti pozicích v Přetlakovém modulu, v případě třetí fáze navíc i na pěti pozicích v Logistickém modulu (přetlaková komora). Průměrný dávkový příkon naměřený TLD v první fázi je $311\pm 30$ $\mu$Gy/den, v druhé fázi $268\pm29$ $\mu$Gy/den, v třetí fázi pro Přetlakový modul $286\pm33$ $\mu$Gy/den a pro Logistický modul $289\pm27$ $\mu$Gy/den. V době první fáze PADLES experiment DOSIS ještě neprobíhal. Druhá a třetí fáze PADLES odpovídá přibližně první a druhé sadě experimentu DOSIS (červenec 2009 až květen 2010). Rozsahy dávkových příkonů z $^7$LiF:Mg,Ti z těchto sad jsou přibližně $[225;300]$ $\mu$Gy/den, resp. $[200;265]$ $\mu$Gy/den (viz obr. \ref{fig:dosis_vysl_viceSad}). Vidíme, že data z modulů Kibo a Columbus jsou velmi podobná. To, že $\dot{D}$ z
+	druhé fáze na třetí fázi PADLES vzrostl, zatímco u DOSIS klesl, může být dáno různým počátkem a koncem fází u PADLES a DOSIS. \cite{japonsky}
+  \item K monitorování dávkových příkonů v ISS se používá i Pille TLD systém~\cite{pilleClanek}. Tento systém byl využíván na každé kosmické stanici od druhé poloviny 70. let 20. století.
 	\begin{table}[ht]
 	  \centering
-	  \caption{Rozsahy průměrných týdenních dávkových příkonů naměřených TLD systémem Pille v daný časový úsek~\cite{pille, pille2}. Za dvojitou svislou čárou jsou průměrné dávkové příkony od CaSO$_4$:Dy pro $i$-tou sadu DOSIS3D, kde $i=$číslo řádku.}
+	  \caption{Rozsahy průměrných dávkových příkonů naměřených TLD systémem Pille v daný časový úsek (průměrováno za týden)~\cite{pille, pille2}. Za dvojitou svislou čárou jsou průměrné dávkové příkony od CaSO$_4$:Dy pro první až šestou sadu DOSIS3D.}
 	  \label{tab:dosis_pille}
 	  \begin{tabular}{l|l||l}
 		\toprule
@@ -354,26 +349,26 @@ není \cite{passDetectors}. (Poznámka: lze srovnat obr. \ref{fig:dosis_passDete
 		\midrule
 		Časový úsek&$\dot{D}$ [$\mu$Gy/den]&$\dot{D}$ [$\mu$Gy/den]\\
 		\midrule
-		Květen $\ $ 2012-Říjen 2012&$[160;200]$&$264$	\\
-		Listopad 2012-Duben  2013&$[150;210]$&$250$	\\
-		Květen $\ $ 2013-Listopad 2013&$[165;190]$&$240$	\\
-		Listopad 2013-Květen  2014&$[140;180]$&$240$	\\
-		Květen $\ $ 2014-Listopad 2014&$[140;170]$&$220$	\\
-		Listopad 2014-Březen  2015&$[130;160]$&$215$	\\
+		Květen $\ $ 2012-Říjen 2012&$[160;200]$&$303\pm9$	\\
+		Listopad 2012-Duben  2013&$[150;210]$&$248\pm8$	\\
+		Květen $\ $ 2013-Listopad 2013&$[165;190]$&$243\pm9$	\\
+		Listopad 2013-Květen  2014&$[140;180]$&$234\pm8$	\\
+		Květen $\ $ 2014-Listopad 2014&$[140;170]$&$228\pm7$	\\
+		Listopad 2014-Březen  2015&$[130;160]$&$212\pm5$	\\
 		\bottomrule
 	  \end{tabular}
 	\end{table}
-	 Jedná se o TL detektor CaSO$_4$:Dy (avšak v jiné formě než v jakou používá NPI) s čtecím systémem, což umožňuje vyhodnocovat detektory přímo na orbitě. Na ISS se nachází v modulu Zvezda od roku 2003, kde se používá jako osobní dozimetr při CME, při výstupech do vesmíru a také pro mapování prostorové distribuce dávky. Detektory byly v roce 2009 obměněny a v současnosti se jich ve Zvezdě nachází dvanáct. Naměřené dávky neprošly korekcí na $\LET_{\text{H$_2$O}}>10$ keV/$\mu$m a nebyly převedeny na absorbované dávky ve vodě (resp. tkáňově ekvivalentním materiálu). V levé části tab. \ref{tab:dosis_pille} jsou
-	 přibližné rozsahy průměrných týdenních dávkových příkonů naměřených v daný časový úsek.	První časový úsek Pille odpovídá přibližně první sadě DOSIS3D, druhý úsek druhé sadě DOSIS3D a takto to pokračuje až k šestému úseku/šesté sadě. Pravá část tab.~\ref{tab:dosis_pille} obsahuje průměrné hodnoty dávkových příkonů od CaSO$_4$ pro danou sadu; tyto dávkové příkony byly získány přenásobením průměrné hodnoty z $^7$LiF:Mg,Ti (viz obr.~\ref{fig:dosis_vysl_viceSad}) poměrem odezev CaSO$_4$:Dy a $^7$LiF:Mg,Ti (viz tab.~\ref{tab:dosis_TLD_ratio}). Vidíme, že dávkové příkony od Pille jsou systematicky nižší. Částečně to bude dáno tím, že výsledky od Pille nejsou převedeny na absorbovanou dávku ve vodě. Dále pozorujeme, že $\dot{D}$ od Pille sleduje podobný trend jako
+	 Jedná se o TL detektor CaSO$_4$:Dy (avšak v jiné formě než jakou používá NPI) s čtecím systémem, což umožňuje vyhodnocovat detektory přímo na orbitě. Na ISS se nachází v modulu Zvezda od roku 2003, kde se používá jako osobní dozimetr při CME, při výstupech do vesmíru a také pro mapování prostorové distribuce dávky. Detektory byly v roce 2009 obměněny a v současnosti se jich ve Zvezdě nachází dvanáct. Naměřené dávky neprošly korekcí na $\LET_{\text{H$_2$O}}>10$ keV/$\mu$m a jsou kalibrované na kermu ve vzduchu, tj. nebyly převedeny na absorbované dávky ve vodě (resp. tkáňově ekvivalentním materiálu). V levé části tab.~\ref{tab:dosis_pille} jsou přibližné rozsahy průměrných dávkových příkonů naměřených v daný časový úsek, průměrovány byly hodnoty
+	 naměřené za týden. První časový úsek Pille odpovídá přibližně první sadě DOSIS3D, druhý úsek druhé sadě DOSIS3D a takto to pokračuje až k šestému úseku/šesté sadě. Pravá část tab.~\ref{tab:dosis_pille} obsahuje průměrné hodnoty dávkových příkonů od CaSO$_4$ pro danou sadu. Vidíme, že dávkové příkony od Pille jsou systematicky nižší. Částečně to bude dáno tím, že výsledky od Pille nejsou převedeny na absorbovanou dávku ve vodě. Dále pozorujeme, že $\dot{D}$ od Pille sleduje podobný trend jako
 	 $\dot{D}$ od DOSIS3D, tzn. pozvolné klesání.~\cite{pille, pille2}
  \end{enumerate}
- \textbf{Shrnutí:} V první odrážce jsme srovnali $\dot{D}$ z DOSIS\%DOSIS3D s $\dot{D}$ z americké části ISS (program RAM). Dávkové příkony z RAM měly stejnou minimální hodnotu jako dáv. příkony z modulu Columbus, ale maximální hodnotu měly vyšší. Také se zjistilo, že dávkové příkony se mohou lišit v jednom modulu v závislosti na lokálním stínění až dvojnásobně.
+ \textbf{Shrnutí:} V prvním bodě jsme srovnali $\dot{D}$ z DOSIS\&DOSIS3D s $\dot{D}$ z americké části ISS (program RAM). Dávkové příkony z RAM měly stejnou minimální hodnotu jako dáv. příkony z modulu Columbus, ale maximální hodnotu měly vyšší. Také se zjistilo, že dávkové příkony se mohou lišit v jednom modulu v závislosti na lokálním stínění až dvojnásobně.
  
- Ve druhé, třetí a šesté odrážce jsme data z DOSIS\&DOSIS3D srovnávali s daty naměřenými v ruské části ISS, hlavně v modulu Zvezda. V druhé odrážce jsme zjistili, že dávkové příkony byly vyšší ve Zvezdě, naopak v třetí a páté vyšly dávkové příkony vyšší v modulu Columbus. Příčinou jiného výsledku v druhé odrážce jsou pravděpodobně odlišné relativní účinnosti použitých TLD (experimentů diskutovaných v druhé odrážce).
+ Ve druhém, třetím a šestém bodě jsme data z DOSIS\&DOSIS3D srovnávali s daty naměřenými v ruské části ISS, hlavně v modulu Zvezda. V druhé odrážce jsme zjistili, že dávkové příkony byly vyšší ve Zvezdě, naopak v třetí a páté vyšly dávkové příkony vyšší v modulu Columbus. Příčinou jiného výsledku v druhé odrážce jsou pravděpodobně odlišné relativní účinnosti použitých TLD (v experimentech diskutovaných v druhé odrážce).
 
- V páté odrážce jsme porovnali dávkové příkony z modulu Columbus s dávkovými příkony v japonském modulu Kibo. Dávkové příkony vycházejí podobně.
+ V pátém bodě jsme porovnali dávkové příkony z modulu Columbus s dávkovými příkony v japonském modulu Kibo. Dávkové příkony vycházejí podobně.
 
- Ve čtvrté odrážce proběhlo srovnání s dávkovými příkony naměřenými v satelitu BION-M1, který měl cca o 170 km větší nadmořskou výšku než ISS. To korelovalo s mnohem vyššími dávkovými příkony oproti $\dot{D}$ z modulu Columbus. Dávkové příkony z povrchu pláště satelitu jsou více jak dvojnásobné ve srovnání s dávkovými příkony uvnitř satelitu.
+ Ve čtvrtém bodě proběhlo srovnání s dávkovými příkony naměřenými v satelitu BION-M1, který měl cca o 170 km větší nadmořskou výšku než ISS. To korelovalo s mnohem vyššími dávkovými příkony oproti $\dot{D}$ z modulu Columbus. Dávkové příkony z povrchu pláště satelitu jsou více jak dvojnásobné ve srovnání s dávkovými příkony uvnitř satelitu.
 
 
  %Srovnáním dat od TL detektorů z DOSIS3D s daty získanými v ISS mimo modul Columbus od detektorů stejného materiálu plyne, že velmi závisí na lokálním stínění. Data se v závislosti na jeho tloušťce mohou lišit až dvojnásobně.  
