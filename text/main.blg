@@ -1,20 +1,20 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[104] biber:303> INFO - === Thu Jun 29, 2017, 12:51:55
-[265] Biber.pm:359> INFO - Reading 'main.bcf'
-[414] Biber.pm:835> INFO - Found 39 citekeys in bib section 0
-[486] Biber.pm:3670> INFO - Processing section 0
-[549] Biber.pm:3840> INFO - Looking for bibtex format file 'citace.bib' for section 0
-[575] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[634] bibtex.pm:1292> INFO - Found BibTeX data source 'citace.bib'
-[714] Utils.pm:164> WARN - Range field 'pages' in entry 'ambrozova_dvaExperimenty' is malformed, falling back to literal
-[788] Utils.pm:164> WARN - BibTeX subsystem: /tmp/6ftEGCN6CO/citace.bib_425.utf8, line 78, warning: 815 characters of junk seen at toplevel
-[788] Utils.pm:164> WARN - BibTeX subsystem: /tmp/6ftEGCN6CO/citace.bib_425.utf8, line 135, warning: 10 characters of junk seen at toplevel
-[788] Utils.pm:164> WARN - BibTeX subsystem: /tmp/6ftEGCN6CO/citace.bib_425.utf8, line 184, warning: 20 characters of junk seen at toplevel
-[788] Utils.pm:164> WARN - BibTeX subsystem: /tmp/6ftEGCN6CO/citace.bib_425.utf8, line 201, warning: 20 characters of junk seen at toplevel
-[839] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[840] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
-[840] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs_CZ'
-[881] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[892] bbl.pm:712> INFO - Output to main.bbl
-[893] Biber.pm:109> INFO - WARNINGS: 5
+[55] biber:303> INFO - === Wed Jul  5, 2017, 15:59:14
+[86] Biber.pm:359> INFO - Reading 'main.bcf'
+[236] Biber.pm:835> INFO - Found 40 citekeys in bib section 0
+[263] Biber.pm:3670> INFO - Processing section 0
+[284] Biber.pm:3840> INFO - Looking for bibtex format file 'citace.bib' for section 0
+[292] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[306] bibtex.pm:1292> INFO - Found BibTeX data source 'citace.bib'
+[352] Utils.pm:164> WARN - Range field 'pages' in entry 'ambrozova_dvaExperimenty' is malformed, falling back to literal
+[430] Utils.pm:164> WARN - BibTeX subsystem: /tmp/TG1hhAUwWo/citace.bib_11153.utf8, line 78, warning: 815 characters of junk seen at toplevel
+[431] Utils.pm:164> WARN - BibTeX subsystem: /tmp/TG1hhAUwWo/citace.bib_11153.utf8, line 135, warning: 10 characters of junk seen at toplevel
+[431] Utils.pm:164> WARN - BibTeX subsystem: /tmp/TG1hhAUwWo/citace.bib_11153.utf8, line 184, warning: 20 characters of junk seen at toplevel
+[431] Utils.pm:164> WARN - BibTeX subsystem: /tmp/TG1hhAUwWo/citace.bib_11153.utf8, line 201, warning: 20 characters of junk seen at toplevel
+[494] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[495] UCollate.pm:68> INFO - Overriding locale 'cs_CZ' defaults 'variable = shifted' with 'variable = non-ignorable'
+[495] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'cs_CZ'
+[538] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[549] bbl.pm:712> INFO - Output to main.bbl
+[549] Biber.pm:109> INFO - WARNINGS: 5

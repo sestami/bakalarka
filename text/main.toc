@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {3.1}Modul Columbus}{26}{section.3.1}
 \contentsline {chapter}{\numberline {4}Experimenty DOSIS a DOSIS 3D}{28}{chapter.4}
 \contentsline {section}{\numberline {4.1}Rozm\IeC {\'\i }st\IeC {\v e}n\IeC {\'\i } pasivn\IeC {\'\i }ch detektor\IeC {\r u}}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pr\IeC {\r u}b\IeC {\v e}h experiment\IeC {\r u}}{29}{section.4.2}
+\contentsline {section}{\numberline {4.2}Pr\IeC {\r u}b\IeC {\v e}h experiment\IeC {\r u}}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}V\IeC {\'y}voj nadmo\IeC {\v r}sk\IeC {\'e} v\IeC {\'y}\IeC {\v s}ky a slune\IeC {\v c}n\IeC {\'\i }ho cyklu}{30}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e} detektory}{31}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Termoluminiscen\IeC {\v c}n\IeC {\'\i } detektory}{32}{subsection.4.3.1}
@@ -39,4 +39,6 @@
 \contentsline {section}{\numberline {5.1}Metodika}{45}{section.5.1}
 \contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{46}{section.5.2}
 \contentsline {section}{\numberline {5.3}Diskuze}{54}{section.5.3}
-\contentsline {chapter}{Z\IeC {\'a}v\IeC {\v e}r}{56}{chapter*.46}
+\contentsline {chapter}{Z\IeC {\'a}v\IeC {\v e}r}{57}{chapter*.47}
+\contentsline {chapter}{Seznam literatury}{62}{chapter*.48}
+\contentsline {chapter}{\numberline {A}Python skript pro vyhodnocov\IeC {\'a}n\IeC {\'\i } stop}{63}{appendix.A}
