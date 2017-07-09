@@ -25,7 +25,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
-\usepackage{siunitx}
+\usepackage[output-decimal-marker={,}]{siunitx}
+\usepackage{icomma}
 
 %\usepackage{array}
 %\usepackage{makecell}
@@ -67,10 +68,13 @@
   ,sortlocale=cs_CZ
   ,bibencoding=UTF8
   ,spacecolon=false
-  ,block=ragged
+  ,block=space
 ]{biblatex}
-
 \addbibresource{citace.bib}
+
+%\AtEveryCitekey{%
+  %\DeclareFieldFormat*{title}{\printunit{\newline}}%
+  %\DeclareFieldFormat*{citetitle}{\printunit{\newline}}}
 
 \usepackage[unicode, pdftex, colorlinks=true, linkcolor=red,
 urlcolor=blue, citecolor=blue, pdfauthor=MichalSestak, pdftitle=DoseDistributionInsideTheISS]{hyperref}
